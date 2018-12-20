@@ -1,1 +1,2 @@
-# zpp2018
+# Kompilacja na students
+	pdflatex main.tex
