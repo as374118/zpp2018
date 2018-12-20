@@ -1,0 +1,47 @@
+\BOOKMARK [0][-]{chapter.1}{Wprowadzenie}{}
+\BOOKMARK [1][-]{section.1.1}{Rozwiazanie dotychczasowe}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Og\363lnie informacje o systemie USOS}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Cel pracy}{chapter.1}
+\BOOKMARK [1][-]{section.1.4}{Struktura pracy}{chapter.1}
+\BOOKMARK [1][-]{section.1.5}{Podzia\233 pracy}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Wymagania uzytkownik\363w}{}
+\BOOKMARK [1][-]{section.2.1}{Wymagania}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Rozmowa z Dziekanem}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Ankieta dla student\363w}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Rozmowa z Sekcja Studencka}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Specyfikacja}{}
+\BOOKMARK [1][-]{section.3.1}{Cel projektu}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Zapisy}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Cykl zapis\363w}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Dodatkowe wymagania}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Formularz}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{Szczeg\363\233owa specyfikacja uzytkowania}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.6.1}{Uzywanie USOSadm poprzez juz zalogowanego uzytkownika z odpowiednimi uprawnieniami.}{section.3.6}
+\BOOKMARK [2][-]{subsection.3.6.2}{Uzywanie USOSweb poprzez juz zalogowane uzytkowanik z odpowiednimi uprawnieniami.}{section.3.6}
+\BOOKMARK [1][-]{section.3.7}{Dodatkowe wymagania}{chapter.3}
+\BOOKMARK [1][-]{section.3.8}{Schemat bazy danych}{chapter.3}
+\BOOKMARK [1][-]{section.3.9}{Przyk\233ady}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Implementacja}{}
+\BOOKMARK [1][-]{section.4.1}{USOS}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{USOSadm}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Informacje og\363lne}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Aplikacja kliencka}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Serwer}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.4}{Komunikacja z baza danych}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.5}{Opis implementacji}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.6}{S\233ownik uzasadnien}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.7}{Kalendarz}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.8}{Notatki}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.9}{Spotkania os\363b}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{USOSweb}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Opis dzia\233ania systemu USOSweb}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Akcje}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Szablony}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{Modu\233y pomocnicze}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.5}{Problemy i ich rozwiazania}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.6}{Zmiany w USOSWebie}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.7}{Potencjalne ataki i zabezpieczenia}{section.4.3}
+\BOOKMARK [0][-]{chapter.5}{Potencjalny rozw\363j}{}
+\BOOKMARK [0][-]{chapter.6}{Dodatki}{}
+\BOOKMARK [1][-]{section.6.1}{Dokumentacja instalacyjna}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Opis zawartosci p\233yty CD}{chapter.6}
