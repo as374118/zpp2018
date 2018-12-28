@@ -130,8 +130,7 @@ Software evolution\\}
 %\listoffigures
 %\listoftables
 
-\chapter{Wprowadzenie}
-\section{Spotkanie}
+\chapter{Wprowadzenie} \label{chap:wpr}
 Niektóre problemy wymagają osobistego spotkania z Dziekanem Wydziału Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego (MIM). Niniejsza praca ma na celu usprawnienie procesu zapisów na spotkanie z Dziekanem.
 \section{Rozwiązanie dotychczasowe}
 Obecnie student chcący zapisać się na spotkanie z Dziekanem MIM musi przejść przez następujący proces:
@@ -199,13 +198,15 @@ Dziekana, będącego jednym z głównych odbiorców modułu, jako pierwszego zap
 \setlength\itemsep{0,05em}
 \item Powinien istnieć mechanizm ręcznej i automatycznej akceptacji próśb o spotkanie.
 \item Moduł musi dawać możliwość konfiguracji limitów czasowych oraz limitów ilości osób.
+\item Jak najwięcej pól w widokach spraw dla Dziekana oraz Sekcji powinno mieć domyślnie wypełnione wartości w celu przyśpieszenia pracy
+\item Proces zapisywania się do Dziekana nie powinien być łatwy (np. trzeba szczegółowo opisać temat wizyty)
 \item Jednocześnie można być zapisanym tylko na jedno spotkanie.
 \item Dziekan powinien mieć możliwość zostawienia w systemie notatki ze~spotkania.
 \item Powinno być możliwe usuwanie informacji o starych spotkaniach, z zachowaniem notatek.
 \end{itemize}
 Wymagania jakie przedstawił Dziekan w dużej mierze uformowały kształt jaki ten projekt przyjął. Na ich podstawie rozwijaliśmy lub~dodawaliśmy do modułu funkcjonalności.
 
-\section{Ankieta dla studentów}
+\section{Ankieta dla studentów} \label{sec:ankieta}
 W trakcie projektowania modułu przeprowadziliśmy ankietę internetową wśród studentów MIM, aby dowiedzieć się jakie byłyby ich preferencje względem niektórych funkcjonalności i~czy pokrywają się z~wymyślonymi przez nas rozwiązaniami. Ankietę wypełniło 170 studentów. Ich odpowiedzi wyglądały następująco:
 \begin{itemize}
 \setlength\itemsep{0,05em}
@@ -728,16 +729,32 @@ W naszym rozwiązaniu zostały utworzone następujące moduły pomocnicze:
 \end{itemize}
 
 \subsection{Wybór jednostki}
-TODO: Wstawić screena i napisać co trzeba klikać
-
-\subsection{Wybór kalendarza spotkań}
-TODO: Wstawić screena i napisać co trzeba klikać
+TODO: Wstawić screena i napisać co trzeba klikać (Może to wywalić?)
 
 \subsection{Wybór spotkania}
-TODO: Wstawić screena i napisać co trzeba klikać
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{kalendarzUSOSweb.jpg}
+  \caption{Kalendarz spotkań.}
+  \label{fig:kalweb}
+\end{figure}
 
-\subsection{Wypisywanie się}
-TODO: Wstawić screena i napisać co trzeba klikać
+Na ekranie \ref{fig:kalweb} są widoczne trzy kalendarze spotkań. Jeden z nich nie ma zdefiniowanego żadnego spotkania. Pozostałe dwa mają po jednym spotkaniu, na które można się zapisać. Aby zapisać się należy kliknąć odpowiedni przycisk.
+
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
+  \caption{Zapis na spotkanie.}
+  \label{fig:zapisweb}
+\end{figure}
+
+ekran \ref{fig:zapisweb}: Należy wybrać powód zapisu z listy, dodać komentarz tekstowy i kliknąć przycisk \enquote{ZAPISZ}
+
+\subsection{Moje spotkania}
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{mojeSpotkaniaUSOSweb.jpg}
+  \caption{Moje spotkania.}
+  \label{fig:mojeweb}
+\end{figure}
+Na ekranie \ref{fig:mojeweb} widać spotkania, które student złożył prośby o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
 
 \subsection{Problemy i ich rozwiązania}
 \subsubsection{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}
@@ -776,19 +793,16 @@ Każdy parametr będący częścią zapytania do bazy jest escape-owany w celu z
 
 \chapter{Potencjalny dalszy rozwój}  \label{chap:rozwoj}
 
-Projekt będzie można rozszerzyć o integracje z mobilnym USOS. Obecna architektura pozwoli na zbudowanie na niej kontroli stanu i przepływu studentów w czasie rzeczywistym, poprzez:
-\begin{itemize}
-	\item Akcje Dziekana zaznaczającego studentów których spotkanie się już odbyło.
-	\item Akcje studentów, zaznaczające czy będą na spotkaniu i czy się na nie spóźnią.
-\end{itemize}
-Integracja tych rzeczy pozwoli na zminimalizowanie czasu, jaki studenci muszą poświęcić czekając na swoją kolej, tym samym pozwalając Dziekanowi na kontrole przepływu studentów, dając możliwość przewidywania czasu zakończenia spotkania. Potencjalnymi rozszerzeniami są także:
-\begin{itemize}
-	\item Możliwość obsługi spotkań poprzez pracowników naukowych z poziomu USOSweb.
-	\item Obsługa konsultacji z dydaktykami.
-	\item Wykorzystanie modułu do tworzenia spotkań studenckich lub okolicznościowych, jak np. święta Bożego Narodzenia na wydziale.
-\end{itemize}
+\section{Mobilny USOS}
 
-Dodatkowo, można by połączyć spotkania z już istniejącymi w USOS funkcjonalnościami takimi jak podania, płatności czy wymiany studenckie. Osiągnąć to można chociażby poprzez pobieranie do spotkań większej ilości danych z baz danych, oraz rozszerzenie spotkań o podtypy spotkań.
+W ankiecie dla studentów pojawiły się odpowiedzi, że studenci chcieliby znać godzinę spotkania, a nie tylko numer na liście. Projekt będzie można rozszerzyć o integracje z mobilnym USOS. Potrzebne będzie stworzenie mechanizmów do kontroli stanu spotkania i przepływu studentów w czasie rzeczywistym. Dodanie akcji Dziekana, w której określałby, które spotkanie się rozpoczęło/zakończyło oraz odpowiednich funkcji w mobilny USOS mogłoby umożliwić śledzenie stanu spotkania przez studentów. Na przykład student jest na zajęciach, sprawdza przebieg spotkania w aplikacji mobilnej i wie, w którym momencie musi iść na spotkanie.
+
+\section{Spotkania innego rodzaju}
+W rozdziale~\ref{chap:wpr} zauważono, że system powstał po to, aby prowadzić zapisy na spotkania z Dziekanem MIM. Dalszy rozwój systemu mógłby dopasować system również do organizacji innych wydarzeń. Wymagałoby to możliwości obsługi spotkań poprzez pracowników naukowych z poziomu USOSweb. Możliwe byłoby tworzenie wydarzeń takich jak:
+\begin{itemize}
+	\item konsultacje z dydaktykami,
+	\item spotkania studenckie lub okolicznościowe np. święta Bożego Narodzenia.
+\end{itemize}
 
 %\chapter{Spis literatury}
 \chapter{Dodatki} \label{chap:dodatki}
@@ -801,8 +815,7 @@ TODO
 \begin{thebibliography}{99}
 \addcontentsline{toc}{chapter}{Bibliografia}
 
-\bibitem[przewodnik]{prz} Jan Rudziński, \textit{Przewodnik po systemie}, Między uniwersyteckie Centrum Informatyzacji, (2010).
-% https://www.usos.edu.pl/sites/default/files/pl-usos-przewodnik.pdf
+\bibitem[przewodnik]{prz} Jan Rudziński, \textit{Przewodnik po systemie}, Między uniwersyteckie Centrum Informatyzacji, 2010, https://www.usos.edu.pl/sites/default/files/pl-usos-przewodnik.pdf.
 
 
 \end{thebibliography}
