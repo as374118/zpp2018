@@ -699,7 +699,6 @@ Na ekranie \ref{fig:formularz_notatek} widać formularz od dodawania lub modyfik
 \FloatBarrier
 \section{USOSweb} \label{sec:impusosweb}
 
-<<<<<<< HEAD
 \subsection{Informacje ogólne}
 Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi cześciami systemu, stworzyliśmy moduł pozwalający studentowi na:
 \begin{itemize}
@@ -800,8 +799,21 @@ W naszym rozwiązaniu zostały utworzone cztery moduły pomocnicze.
 \subitem{zestaw funkcji pomocniczych.}
 \end{itemize}
 
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{moje_jednostki_usosweb.jpg}
+  \caption{Moje jednostki.}
+  \label{fig:mojedweb}
+\end{figure}
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
+  \caption{Wszystkie jednostki.}
+  \label{fig:wszjweb}
+\end{figure}
+
 \subsection{Wybór jednostki}
-TODO: Wstawić screena i napisać co trzeba klikać (Może to wywalić? - Nie rozumiem tego pytania (Olek))
+Na ekranie \ref{fig:mojedweb} jest lista jednostek studenta, ofierujących spotkania (jeśli jest tylko jedna - uzytkownik zostanie automatycznie przekierowany na widok kalendarzy spotkań dla tej jednej jednostki).
+Na ekranie \ref{fig:wszjweb} jest lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) ofierujących spotkania.
 
 \subsection{Wybór spotkania}
 
@@ -871,7 +883,7 @@ W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika
 \subsubsection{CSRF}
 W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu w którym zmieniamy dane dodaliśmy sprawdzenie tokenu CSRF.
 \paragraph{SQL injection}
-Każdy parametr będący częścią zapytania do bazy jest escape-owany w celu zapobiegania atakom typu SQL-injection.
+Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje sie wyłącznie jako tekst (nie jako część polecenia). To się robi w celu zapobiegania atakom typu SQL-injection.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
 %\section{Dokumentacja USOS}

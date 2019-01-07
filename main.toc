@@ -54,20 +54,20 @@
 \contentsline {subsection}{\numberline {4.4.4}Wyb\IeC {\'o}r jednostki}{29}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Wyb\IeC {\'o}r spotkania}{29}{subsection.4.4.5}
 \contentsline {subsection}{\numberline {4.4.6}Moje spotkania}{29}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}Problemy i ich rozwi\IeC {\k a}zania}{31}{subsection.4.4.7}
-\contentsline {subsubsection}{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{31}{section*.14}
-\contentsline {paragraph}{W jaki spos\IeC {\'o}b wyci\IeC {\k a}gn\IeC {\k a}\IeC {\'c} tak\IeC {\k a} drzewiast\IeC {\k a} struktur\IeC {\k e} z bazy danych w optymalny spos\IeC {\'o}b?}{32}{section*.15}
-\contentsline {subsubsection}{Podobne akcje}{32}{section*.16}
-\contentsline {subsubsection}{Wieloj\IeC {\k e}zyczno\IeC {\'s}\IeC {\'c}}{32}{section*.17}
-\contentsline {subsection}{\numberline {4.4.8}Zmiany w USOSWebie}{32}{subsection.4.4.8}
-\contentsline {subsubsection}{Wyj\IeC {\k a}tki}{32}{section*.18}
-\contentsline {subsubsection}{B\IeC {\l }\IeC {\k a}d w smarty}{32}{section*.19}
-\contentsline {subsection}{\numberline {4.4.9}Potencjalne ataki i zabezpieczenia}{33}{subsection.4.4.9}
-\contentsline {subsubsection}{CSRF}{33}{section*.20}
-\contentsline {paragraph}{SQL injection}{33}{section*.21}
+\contentsline {subsection}{\numberline {4.4.7}Problemy i ich rozwi\IeC {\k a}zania}{32}{subsection.4.4.7}
+\contentsline {subsubsection}{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{32}{section*.16}
+\contentsline {paragraph}{W jaki spos\IeC {\'o}b wyci\IeC {\k a}gn\IeC {\k a}\IeC {\'c} tak\IeC {\k a} drzewiast\IeC {\k a} struktur\IeC {\k e} z bazy danych w optymalny spos\IeC {\'o}b?}{33}{section*.17}
+\contentsline {subsubsection}{Podobne akcje}{33}{section*.18}
+\contentsline {subsubsection}{Wieloj\IeC {\k e}zyczno\IeC {\'s}\IeC {\'c}}{33}{section*.19}
+\contentsline {subsection}{\numberline {4.4.8}Zmiany w USOSWebie}{33}{subsection.4.4.8}
+\contentsline {subsubsection}{Wyj\IeC {\k a}tki}{33}{section*.20}
+\contentsline {subsubsection}{B\IeC {\l }\IeC {\k a}d w smarty}{33}{section*.21}
+\contentsline {subsection}{\numberline {4.4.9}Potencjalne ataki i zabezpieczenia}{34}{subsection.4.4.9}
+\contentsline {subsubsection}{CSRF}{34}{section*.22}
+\contentsline {paragraph}{SQL injection}{34}{section*.23}
 \contentsline {chapter}{\numberline {5}Potencjalny dalszy rozw\IeC {\'o}j}{35}{chapter.5}
 \contentsline {section}{\numberline {5.1}Mobilny USOS}{35}{section.5.1}
 \contentsline {section}{\numberline {5.2}Spotkania innego rodzaju}{35}{section.5.2}
 \contentsline {chapter}{\numberline {6}Dodatki}{37}{chapter.6}
 \contentsline {section}{\numberline {6.1}Opis zawarto\IeC {\'s}ci p\IeC {\l }yty CD}{37}{section.6.1}
-\contentsline {chapter}{Bibliografia}{39}{chapter*.22}
+\contentsline {chapter}{Bibliografia}{39}{chapter*.24}
