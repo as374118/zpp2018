@@ -99,6 +99,8 @@ Software evolution\\}
 \usepackage[tableposition = top]{caption}
 % \usepackage[none]{hyphenat}
 \usepackage{graphicx}
+\usepackage{float} 
+\usepackage[section]{placeins}
 
 \newlist{step}{enumerate}{10}
 \setlist[step]{label*=\arabic*.,leftmargin=2em}
@@ -475,12 +477,6 @@ Status \enquote{nowości} formularz zyskuje w~chwili utworzenia. Tracony jest po
 	
 \section{Schemat bazy danych}
 
-\begin{figure}[b!]
-  \includegraphics[width=\linewidth]{schemat.jpg}
-  \caption{Schemat bazy danych.}
-  \label{fig:schemat}
-\end{figure}
-
 W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy następujący schemat bazy danych, pokazany na rysunku \ref{fig:schemat}. Kluczowe jej tabele zawierają następujące informacje:
 
 \begin{itemize}
@@ -510,7 +506,13 @@ W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy następujący schem
 	\end{itemize}
 \end{itemize}
 
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{schemat.jpg}
+  \caption{Schemat bazy danych.}
+  \label{fig:schemat}
+\end{figure}
 
+\FloatBarrier
 \section{Przykłady}
 Przykładowe scenariusze użycia modułu. Dla prostoty przyjęto dzień jako niepodzielną jednostkę czasu.
 
@@ -662,13 +664,13 @@ Funkcjonalność została wydzielona w oddzielnym module do USOSadm, \enquote{Sp
 \subsection{Słownik uzasadnień}
 Widok Słownika Uzasadnień jest bardzo prosty w budowie i obsłudze.
 
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
   \caption{Widok uzasadnień zapisów na spotkanie.}
   \label{fig:uzasadnienia}
 \end{figure}
 
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{formularz_uzasadnien.jpg}
   \caption{Formularz dodawania uzasadnienia zapisu na spotkanie.}
   \label{fig:formularz_uzasadnienia}
@@ -680,39 +682,62 @@ TODO: Wstawić screena i napisać co trzeba klikać
 \subsection{Notatki}
 Widok notatek w sumie też.
 
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_notatek.jpg}
   \caption{Widok notatek ze spotkań.}
   \label{fig:notatki}
 \end{figure}
 
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{formularz_notatek.jpg}
   \caption{Formularz dodawania notatki ze spotkania.}
   \label{fig:formularz_notatek}
 \end{figure}
 
 
+\FloatBarrier
+\section{USOSweb} \label{sec:impusosweb}
 
-\section{USOSweb}\label{sec:impusosweb}
-Implementacja funkcjonalności w USOSweb polega na rozbudowaniu go, używając najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący USOSweb. Zachowując spójność z pozostałym kodem systemu, stworzyliśmy moduł pozwalający studentowi na:
+\subsection{Informacje ogólne}
+Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi cześciami systemu, stworzyliśmy moduł pozwalający studentowi na:
 \begin{itemize}
-\item{Wybór jednostki w ramach której odbywa się interesujące studenta spotkanie.}
-\item{Wyświetlanie kalendarza spotkań wybranej osoby lub jednostki.}
-\item{Wyświetlanie terminów spotkań dla każdego kalendarza.}
-\item{Wykonywanie dostępnych akcji związanych ze spotkaniem:
-\begin{itemize}
-\item{Zapisywanie się na listę główną lub rezerwową.}
-\item{Wypisywanie się.}
-\item{Podgląd aktualnego stanu zapisu na spotkanie, w tym informacje takie jak liczba dostępnych miejsc.}
-\end{itemize}
+  \item{Wyświetlanie informacji o jednostkach ofierujących spotkania.}
+  \item{Wybór jednostki w ramach której odbywa się interesujące studenta spotkanie.}
+  \item{Wyświetlanie kalendarza spotkań wybranej osoby lub jednostki.}
+  \item{Wyświetlanie terminów spotkań dla każdego kalendarza wraz ze wszystkimi niezbędnymi informacjami (zajętość miejsc, stan zapisów...).}
+  \item{Wykonywanie dostępnych akcji związanych ze spotkaniem:
+  \begin{itemize}
+    \item{Zapisywanie się na listę główną lub rezerwową.}
+    \item{Wypisywanie się.}
+    \item{Podgląd aktualnego stanu zapisu na spotkanie, w tym informacje takie jak liczba dostępnych miejsc.}
+  \end{itemize}
 }
-\item{Wyświetlanie spotkań związanych ze studentem.}
+\item{Wyświetlanie spotkań związanych ze studentem (czyli takich, na które student jest albo był zapisany).}
 \end{itemize}
 
-Dużą uwagę zwróciliśmy na nie pozwolenie studentowi na wykonywanie akcji, do których w danej chwili nie ma on dostępu. W tym celu przy każdym zapytaniu do serwera które powodowałoby zmianę w bazie danych - sprawdzamy czy dany student ma dostęp do tej akcji. Moduł został zabezpieczony przeciwko potencjalnym atakom, więcej na ten temat w sekcji \ref{subsec:bezpiecz}.
+Dużą uwagę zwróciliśmy na kontrolę dostępów. Czyli pozwalamy studentowi wykonywać tylko te akcje z danymi (na przykład zapisami na spotkania), do których w danej chwili on ma dostęp. W tym celu przy każdym zapytaniu do serwera, wysyłanym z aplikacji klienckiej albo przeglądarki, sprawdzamy, czy użytkownik jest zalogowany oraz czy ma dostęp do danej akcji. Nie zapomnięliśmy również o bezpieczeństwie. Moduł posiada zabezpieczenie przeciwko potencjalnym atakom, więcej na ten temat w sekcji \ref{subsec:bezpiecz}. Staraliśmy maksymalizować użycie gotowych modułów, stworzonych w USOSwebie, minimalizując tym samym duplikowanie kodu i redundancje całego systemu. Często mieliśmy sytuacje, kiedy trzeba było rozbudować jakąś część systemu, żeby ona w pełni załatwiała nasze potrzeby i umożliwiała wygodne korzystanie w przyszłości.
+
 \subsection{Opis działania systemu USOSweb}
-USOSweb oparty jest o kontroler zaimplementowany w języku PHP, który dostaje w parametrach GET opis akcji, którą użytkownik chciałby wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ew. powoduje efekty uboczne). Za pomocą plików konfiguracyjnych actions.xml akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy.
+Jak każda aplikacja webowa system USOSweb składa się z następujących głównych składowych.
+\begin{itemize}
+  \item
+  Część serwerowa - program działający na zdalnym komputerze podłączonym do sieci Internet (w USOSweb-ie jest zaimplementowany w PHP)
+  \item
+  Aplikacja kliencka - program, działający na komputerze użytkownika, łączący się z aplikacją serwerową (zaimplementowany w JS)
+\end{itemize}
+
+
+Do zrozumienia dalszego opisu implementacji częśći systemu USOSweb niezbędne są następne definicję
+\begin{itemize}
+  \item
+  Akcja - klasa obiektów , reprezentujących interakcje częśći klienckiej i serwerowej. Każda zapytanie na serwer (GET, POST, ...) powinno mieć zdefiniowaną akcję, która opisuje zachowanie serwera dla danego zapytania. W sensie programistycznym każda osobna akcja jest klasą (w języku PHP) która naśladuję klasę Action.
+  \item
+  Użytkownik - student albo pracownik, mający konto w systemie CAS, korzystający z systemu USOSweb
+  \item
+  Zalogowany użytkownik - użytkownik, który wykonał procedurę logowania się. Kontekst zalogowanego użytkownika zawiera identyfikator, imię i nazwisko, oraz wiele innych pomocniczych informacji. 
+\end{itemize}
+
+Aplikacja serwerowa oparta jest o kontroler, zaimplementowany w języku PHP, który dostaje w parametrach GET opis akcji, którą użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ew. powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, zjadujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (np. funkcji albo stałych).
 
 \subsection{Akcje}
 Podczas implementacji przez nas modułu spotkań, zaimplementowane zostały następujące akcje:
@@ -749,10 +774,10 @@ W naszym rozwiązaniu zostały utworzone następujące moduły pomocnicze:
 \end{itemize}
 
 \subsection{Wybór jednostki}
-TODO: Wstawić screena i napisać co trzeba klikać (Może to wywalić?)
+TODO: Wstawić screena i napisać co trzeba klikać (Może to wywalić? - Nie rozumiem tego pytania (Olek))
 
 \subsection{Wybór spotkania}
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{kalendarzUSOSweb.jpg}
   \caption{Kalendarz spotkań.}
   \label{fig:kalweb}
@@ -760,7 +785,7 @@ TODO: Wstawić screena i napisać co trzeba klikać (Może to wywalić?)
 
 Na ekranie \ref{fig:kalweb} są widoczne trzy kalendarze spotkań. Jeden z nich nie ma zdefiniowanego żadnego spotkania. Pozostałe dwa mają po jednym spotkaniu, na które można się zapisać. Aby zapisać się należy kliknąć odpowiedni przycisk.
 
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
   \caption{Zapis na spotkanie.}
   \label{fig:zapisweb}
@@ -769,13 +794,14 @@ Na ekranie \ref{fig:kalweb} są widoczne trzy kalendarze spotkań. Jeden z nich 
 ekran \ref{fig:zapisweb}: Należy wybrać powód zapisu z listy, dodać komentarz tekstowy i kliknąć przycisk \enquote{ZAPISZ}
 
 \subsection{Moje spotkania}
-\begin{figure}[b!]
+\begin{figure}[!]
   \includegraphics[width=\linewidth]{mojeSpotkaniaUSOSweb.jpg}
   \caption{Moje spotkania.}
   \label{fig:mojeweb}
 \end{figure}
 Na ekranie \ref{fig:mojeweb} widać spotkania, które student złożył prośby o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
 
+\FloatBarrier
 \subsection{Problemy i ich rozwiązania}
 \subsubsection{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}
 Widok spotkań danej jednostki oraz widok spotkań studenta został zaprojektowany w taki sposób, że dla jego realizacji potrzebowaliśmy dostać w wyniku akcji drzewiastą strukturę następnej postaci:
@@ -785,8 +811,18 @@ Widok spotkań danej jednostki oraz widok spotkań studenta został zaprojektowa
 \item{Drugim poziom: Kalendarze spotkań, gdzie każdy kalendarz wskazuje na odpowiedni cykl dydaktyczny, oraz informacje z nimi związane (nazwa, osoba),}
 \item{Trzeci poziom: Spotkania (terminy) z informacją o stanie danego spotkania w kontekście zalogowanego studenta (stan zapisu, stan spotkania, ilość osób zapisanych na~listę~główną oraz~rezerwową, data i~czas rozpoczęcia i~zakończenia spotkania itd.)}
 \end{itemize}
-Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole \enquote{kalendarzeSpotkan}, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy \enquote{SpotkanieOsoba} i~zawierał całą informację pomocniczą. 
-Tylko jaki sposób wyciągnąć taką drzewiastą strukturę z bazy danych w optymalny sposób? Relacyjne bazy danych SQL pozwalają na pobranie informacji w~postaci tabel. Można by pobierać listę cykli, potem dla każdego cyklu listę kalendarzy i~dla~każdego~kalendarza - listę spotkań. Co prawda, to spowodowałoby gigantyczną ilość zapytań. Innym rozwiązaniem mogło być pobranie całej drzewiastej struktury w jednym zapytaniu. Jako że relacyjna baza danych z której korzystamy zwraca dane tylko w postaci tabel można wywnioskować, że pobieralibyśmy gigantyczną ilość zbędnych i~duplikujących się danych o cyklach i~kalendarzach. Wybranym przez nas rozwiązaniem było wykonanie trzech zapytań: pobieranie cyklów i~informacji o~nich, pobieranie kalendarzy wraz z~informacjami o~nich oraz~pobranie~spotkań. Po pobraniu danych wiążemy je: tworzymy opisaną wyżej drzewiastą strukturę, iterując po każdej z~list i~używając informacji zawartej w~polach z~kodem cyklu albo~kodem~kalendarza.
+Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole \enquote{kalendarzeSpotkan}, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy \enquote{SpotkanieOsoba} i~zawierał całą informację pomocniczą. Relacyjne bazy danych SQL pozwalają na pobranie informacji wyłącznie w~postaci tabel. Więc powstało poniższe pytanie.
+
+\paragraph{W jaki sposób wyciągnąć taką drzewiastą strukturę z bazy danych w optymalny sposób?}
+\begin{itemize}
+  \item
+  Można pobierać listę cykli, potem dla każdego cyklu listę kalendarzy i~dla~każdego~kalendarza - listę spotkań. Co prawda, to spowodowałoby gigantyczną ilość zapytań.
+  \item
+  Innym rozwiązaniem mogło być pobranie całej drzewiastej struktury w jednym zapytaniu. Jako że relacyjna baza danych z której korzystamy zwraca dane tylko w postaci tabel można wywnioskować, że pobieralibyśmy gigantyczną ilość zbędnych i~duplikujących się danych o cyklach i~kalendarzach.
+  \item
+  Najlepszym rozwiązaniem było wykonanie trzech zapytań: pobieranie cyklów i~informacji o~nich, pobieranie kalendarzy wraz z~informacjami o~nich oraz~pobranie~spotkań. Po pobraniu danych wiążemy je: tworzymy opisaną wyżej drzewiastą strukturę, iterując po każdej z~list i~używając informacji zawartej w~polach z~kodem cyklu albo~kodem~kalendarza.
+\end{itemize}
+Oczywiście wybraliśmy ostatni sposób, tym samym wykonując minimalną niezbędną liczbą zapytań do bazy danych, co znacząco zmniejsza czas oczekiwania aplikacji serwerowej i przyśpiesza działanie całej aplikacji.
 
 \subsubsection{Podobne akcje}
 W module spotkań mieliśmy dwie pary bardzo podobnych akcji: akcje spotkań studenta i~spotkań w~jednostce, oraz~akcje wyświetlania jednostek użytkownika i~akcje wyświetlania wszystkich jednostek. W przypadku każdej z~tych par utworzyliśmy implementację ich wspólnej części i~korzystaliśmy z~niej, zapobiegając duplikowania kodu.
