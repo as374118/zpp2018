@@ -178,7 +178,7 @@ W~rozdziale~\ref{chap:specyfikacja} znajduje się specyfikacja nowych funkcjonal
 \subsection{Maciej Góralski}
 Napisał większość pracy licencjackiej.
 \subsection{Kacper Pawelec}
-Stworzył widoki słownik uzasadnień, kalendarz, spotkania osób w USOSadm.
+Stworzył widoki słownik uzasadnień, kalendarz w USOSadm.
 \subsection{Aliaksei Suvorau}
 Zaprojektował bazę danych, napisał skrypt tworzący bazę danych Oracle. Zaimplementował wszystkie funkcje USOSweb.
 \subsection{Michał Swidziński}
@@ -653,24 +653,42 @@ Komunikacja z~bazą~danych została zrealizowana przy pomocy własnego, bogatego
 \subsection{Opis implementacji}
 Funkcjonalność została wydzielona w oddzielnym module do USOSadm, \enquote{Spotkania}. Składa się łącznie z 4 widoków:
 \begin{itemize}
-% TODO: sprawdzić nazwy formulazy w USOSadm
-\item Słownik uzasadnień -- pozwala zdefiniować najczęstsze uzasadnienia zapisów na spotkania jak i odrzucenia spotkań,
-\item Kalendarz Spotkań -- pozwala na definicję kalendarzy spotkań, spotkań, zapisywanie studentów oraz akceptowanie zapisów na spotkania,
-\item Notatki -- pozwala na przeglądanie i dodawanie notatek ze spotkań osób,
-\item Spotkania osób -- udostępnia funkcjonalność potrzebną do przeprowadzenia spotkania, taką jak przeglądanie spotkań danej osoby, przeglądanie zapisów na spotkanie oraz notatek z poprzednich spotkań danej osoby.
-\end{itemize}
+\item Słownik uzasadnień -- pozwala zdefiniować najczęstsze uzasadnienia zapisów na spotkania jak i odrzucenia spotkań.
+\item Kalendarz Spotkań -- pozwala na definicję kalendarzy spotkań, spotkań, zapisywanie studentów oraz akceptowanie zapisów na spotkania.
+\item Notatki -- pozwala na przeglądanie i dodawanie notatek ze spotkań osób.
 
 \subsection{Słownik uzasadnień}
-TODO: Wstawić screena i napisać co trzeba klikać
+Widok Słownika Uzasadnień jest bardzo prosty w budowie i obsłudze.
+
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
+  \caption{Widok uzasadnień zapisów na spotkanie.}
+  \label{fig:uzasadnienia}
+\end{figure}
+
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{formularz_uzasadnien.jpg}
+  \caption{Formularz dodawania uzasadnienia zapisu na spotkanie.}
+  \label{fig:formularz_uzasadnienia}
+\end{figure}
 
 \subsection{Kalendarz}
 TODO: Wstawić screena i napisać co trzeba klikać
 
 \subsection{Notatki}
-TODO: Wstawić screena i napisać co trzeba klikać
+Widok notatek w sumie też.
 
-\subsection{Spotkania osób}
-TODO: Wstawić screena i napisać co trzeba klikać
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{widok_notatek.jpg}
+  \caption{Widok notatek ze spotkań.}
+  \label{fig:notatki}
+\end{figure}
+
+\begin{figure}[b!]
+  \includegraphics[width=\linewidth]{formularz_notatek.jpg}
+  \caption{Formularz dodawania notatki ze spotkania.}
+  \label{fig:formularz_notatek}
+\end{figure}
 
 
 
