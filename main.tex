@@ -700,9 +700,9 @@ Na ekranie \ref{fig:formularz_notatek} widać formularz od dodawania lub modyfik
 \section{USOSweb} \label{sec:impusosweb}
 
 \subsection{Informacje ogólne}
-Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi cześciami systemu, stworzyliśmy moduł pozwalający studentowi na:
+Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi częściami systemu, stworzyliśmy moduł pozwalający studentowi na:
 \begin{itemize}
-  \item{Wyświetlanie informacji o jednostkach ofierujących spotkania.}
+  \item{Wyświetlanie informacji o jednostkach oferujących spotkania.}
   \item{Wybór jednostki w ramach której odbywa się interesujące studenta spotkanie.}
   \item{Wyświetlanie kalendarza spotkań wybranej osoby lub jednostki.}
   \item{Wyświetlanie terminów spotkań dla każdego kalendarza wraz ze wszystkimi niezbędnymi informacjami (zajętość miejsc, stan zapisów...).}
@@ -716,45 +716,29 @@ Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pom
 \item{Wyświetlanie spotkań związanych ze studentem (czyli takich, na które student jest albo był zapisany).}
 \end{itemize}
 
-Dużą uwagę zwróciliśmy na kontrolę dostępów. Czyli pozwalamy studentowi wykonywać tylko te akcje z danymi (na przykład zapisami na spotkania), do których w danej chwili on ma dostęp. W tym celu przy każdym zapytaniu do serwera, wysyłanym z aplikacji klienckiej albo przeglądarki, sprawdzamy, czy użytkownik jest zalogowany oraz czy ma dostęp do danej akcji. Nie zapomnięliśmy również o bezpieczeństwie. Moduł posiada zabezpieczenie przeciwko potencjalnym atakom, więcej na ten temat w sekcji \ref{subsec:bezpiecz}. Staraliśmy maksymalizować użycie gotowych modułów, stworzonych w USOSwebie, minimalizując tym samym duplikowanie kodu i redundancje całego systemu. Często mieliśmy sytuacje, kiedy trzeba było rozbudować jakąś część systemu, żeby ona w pełni załatwiała nasze potrzeby i umożliwiała wygodne korzystanie w przyszłości.
+Dużą uwagę zwróciliśmy na kontrolę dostępów. Czyli pozwalamy studentowi wykonywać tylko te akcje z danymi (na przykład zapisami na spotkania), do których w danej chwili on ma dostęp. W tym celu przy każdym zapytaniu do serwera, wysyłanym z aplikacji klienckiej albo przeglądarki, sprawdzamy, czy użytkownik jest zalogowany oraz czy ma dostęp do danej akcji. Nie zapomnieliśmy również o bezpieczeństwie. Moduł posiada zabezpieczenie przeciwko potencjalnym atakom, więcej na ten temat w sekcji \ref{subsec:bezpiecz}. Staraliśmy maksymalizować użycie gotowych modułów, stworzonych w USOSwebie, minimalizując tym samym duplikowanie kodu i redundancje całego systemu. Często mieliśmy sytuacje, kiedy trzeba było rozbudować jakąś część systemu, żeby ona w pełni załatwiała nasze potrzeby i umożliwiała wygodne korzystanie w przyszłości.
 
 \subsection{Opis działania systemu USOSweb}
-Jak każda aplikacja webowa system USOSweb składa się z następujących głównych składowych.
+Jak każda aplikacja webowa system USOSweb składa się z niżej opisanych elementów.
 \begin{itemize}
   \item
-  Część serwerowa - program działający na zdalnym komputerze podłączonym do sieci Internet (w USOSweb-ie jest zaimplementowany w PHP)
+  Część serwerowa - program działający na zdalnym komputerze podłączonym do sieci Internet (w USOSweb jest zaimplementowany w PHP).
   \item
-  Aplikacja kliencka - program, działający na komputerze użytkownika, łączący się z aplikacją serwerową (zaimplementowany w JS)
+  Aplikacja kliencka - program, działający na komputerze użytkownika, łączący się z aplikacją serwerową (zaimplementowany w JS).
 \end{itemize}
 
 
-Do zrozumienia dalszego opisu implementacji częśći systemu USOSweb niezbędne są następne definicję
+Do zrozumienia dalszego opisu implementacji części systemu USOSweb niezbędne są niżej opisane definicje.
 \begin{itemize}
   \item
-  Akcja - klasa obiektów , reprezentujących interakcje częśći klienckiej i serwerowej. Każda zapytanie na serwer (GET, POST, ...) powinno mieć zdefiniowaną akcję, która opisuje zachowanie serwera dla danego zapytania. W sensie programistycznym każda osobna akcja jest klasą (w języku PHP) która naśladuję klasę Action.
+  Akcja - klasa obiektów , reprezentujących interakcje części klienckiej i serwerowej. Każda zapytanie na serwer (GET, POST, ...) powinno mieć zdefiniowaną akcję, która opisuje zachowanie serwera dla danego zapytania. W sensie programistycznym każda osobna akcja jest klasą (w języku PHP) która naśladuję klasę Action.
   \item
-  Użytkownik - student albo pracownik, mający konto w systemie CAS, korzystający z systemu USOSweb
+  Użytkownik - student albo pracownik, mający konto w systemie CAS, korzystający z systemu USOSweb.
   \item
   Zalogowany użytkownik - użytkownik, który wykonał procedurę logowania się. Kontekst zalogowanego użytkownika zawiera identyfikator, imię i nazwisko, oraz wiele innych pomocniczych informacji. 
 \end{itemize}
 
-Aplikacja serwerowa oparta jest o kontroler, zaimplementowany w języku PHP, który dostaje w parametrach GET opis akcji, którą użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ew. powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, zjadujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (np. funkcji albo stałych).
-
-\section{USOSweb}\label{sec:impusosweb}
-Implementacja funkcjonalności w USOSweb polega na rozbudowaniu go, używając najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący USOSweb. Zachowując spójność z pozostałym kodem systemu, stworzyliśmy moduł pozwalający studentowi na:
-\begin{itemize}
-\item{wybór jednostki w ramach której odbywa się interesujące studenta spotkanie,}
-\item{wyświetlanie kalendarza spotkań wybranej osoby lub jednostki,}
-\item{wyświetlanie terminów spotkań dla każdego kalendarza,}
-\item{wykonywanie dostępnych akcji związanych ze spotkaniem:
-\begin{itemize}
-\item{zapisywanie się na listę główną lub rezerwową,}
-\item{wypisywanie się,}
-\item{podgląd aktualnego stanu zapisu na spotkanie, w tym informacje takie jak liczba dostępnych miejsc,}
-\end{itemize}
-}
-\item{wyświetlanie spotkań związanych ze studentem.}
-\end{itemize}
+Aplikacja serwerowa oparta jest o kontroler, zaimplementowany w języku PHP, który dostaje w parametrach GET opis akcji, którą użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ew. powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, znajdujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (np. funkcji albo stałych).
 
 \subsection{Akcje}
 Podczas implementacji przez nas modułu spotkań, powstało pięć akcji.
@@ -812,8 +796,8 @@ W naszym rozwiązaniu zostały utworzone cztery moduły pomocnicze.
 \end{figure}
 
 \subsection{Wybór jednostki}
-Na ekranie \ref{fig:mojedweb} jest lista jednostek studenta, ofierujących spotkania (jeśli jest tylko jedna - uzytkownik zostanie automatycznie przekierowany na widok kalendarzy spotkań dla tej jednej jednostki).
-Na ekranie \ref{fig:wszjweb} jest lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) ofierujących spotkania.
+Na ekranie \ref{fig:mojedweb} jest lista jednostek studenta, oferujących spotkania (jeśli jest tylko jedna - użytkownik zostanie automatycznie przekierowany na widok kalendarzy spotkań dla tej jednej jednostki).
+Na ekranie \ref{fig:wszjweb} jest lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania.
 
 \subsection{Wybór spotkania}
 
@@ -883,7 +867,7 @@ W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika
 \subsubsection{CSRF}
 W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu w którym zmieniamy dane dodaliśmy sprawdzenie tokenu CSRF.
 \paragraph{SQL injection}
-Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje sie wyłącznie jako tekst (nie jako część polecenia). To się robi w celu zapobiegania atakom typu SQL-injection.
+Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje się wyłącznie jako tekst (nie jako część polecenia). To robi się w celu zapobiegania atakom typu SQL-injection.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
 %\section{Dokumentacja USOS}
