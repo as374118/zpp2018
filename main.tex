@@ -511,7 +511,7 @@ W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy następujący schem
   \label{fig:schemat}
 \end{figure}
 
-\FloatBarrier
+%\FloatBarrier
 \section{Przykłady}
 Przykładowe scenariusze użycia modułu. Dla prostoty przyjęto dzień jako niepodzielną jednostkę czasu.
 
@@ -696,7 +696,7 @@ Na ekranie \ref{fig:formularz_notatek} widać formularz od dodawania lub modyfik
 \end{figure}
 
 
-\FloatBarrier
+%\FloatBarrier
 \section{USOSweb} \label{sec:impusosweb}
 
 \subsection{Informacje ogólne}
@@ -735,7 +735,7 @@ Do zrozumienia dalszego opisu implementacji części systemu USOSweb niezbędne 
   \item
   Użytkownik - student albo pracownik, mający konto w systemie CAS, korzystający z systemu USOSweb.
   \item
-  Zalogowany użytkownik - użytkownik, który wykonał procedurę logowania się. Kontekst zalogowanego użytkownika zawiera identyfikator, imię i nazwisko, oraz wiele innych pomocniczych informacji. 
+  Zalogowany użytkownik - użytkownik, który wykonał procedurę logowania się. Kontekst zalogowanego użytkownika zawiera identyfikator, imię i nazwisko oraz wiele innych pomocniczych informacji. 
 \end{itemize}
 
 Aplikacja serwerowa oparta jest o kontroler, zaimplementowany w języku PHP, który dostaje w parametrach GET opis akcji, którą użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ew. powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, znajdujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (np. funkcji albo stałych).
@@ -827,16 +827,16 @@ Ekran \ref{fig:zapisweb}: Należy wybrać powód zapisu z listy, dodać komentar
 
 Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
 
-\FloatBarrier
+%\FloatBarrier
 \subsection{Problemy i ich rozwiązania}
 \subsubsection{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}
-Widok spotkań danej jednostki oraz widok spotkań studenta został zaprojektowany w taki sposób, że do jego realizacji potrzebowaliśmy dostać w wyniku akcji drzewiastą strukturę następnej postaci:
+Widok spotkań danej jednostki oraz widok spotkań studenta został zaprojektowany w taki sposób, że do jego realizacji potrzebowaliśmy otrzymać w wyniku akcji drzewiastą strukturę następnej postaci:
 
 \begin{itemize}
 \item{pierwszy poziom}
 \subitem{cykle dydaktyczne z informacją pomocniczą (nazwa, stan, kod),}
 \item{drugim poziom}
-\subitem{kalendarze spotkań, gdzie każdy kalendarz wskazuje na odpowiedni cykl dydaktyczny, oraz informacje z nimi związane (nazwa, osoba),}
+\subitem{kalendarze spotkań, gdzie każdy kalendarz wskazuje na odpowiedni cykl dydaktyczny oraz informacje z nimi związane (nazwa, osoba),}
 \item{trzeci poziom}
 \subitem{spotkania (terminy) z informacją o stanie danego spotkania w kontekście zalogowanego studenta (stan zapisu, stan spotkania, ilość osób zapisanych na~listę~główną oraz~rezerwową, data i~czas rozpoczęcia i~zakończenia spotkania i tym podobne).}
 \end{itemize}
@@ -858,7 +858,7 @@ Oczywiście wybraliśmy ostatni sposób, tym samym wykonując minimalną niezbę
 W module spotkań mieliśmy dwie pary bardzo podobnych akcji: akcje spotkań studenta i~spotkań w~jednostce oraz~akcje wyświetlania jednostek użytkownika i~akcje wyświetlania wszystkich jednostek. W przypadku każdej z~tych par utworzyliśmy implementację ich wspólnej części i~korzystaliśmy z~niej, zapobiegając duplikowania kodu.
 \subsubsection{Wielojęzyczność}
 System USOSweb wspiera dwa języki: angielski oraz polski. Dla wsparcia wielojęzyczności w naszym module korzystaliśmy z wbudowanego w szablony smarty znacznika \{t\}, a w~modelu bazy danych dla pól tekstowych takich jak nazwa albo opis tworzyliśmy duplikat w języku angielskim.
-\subsection{Zmiany w USOSWebie}
+\subsection{Zmiany w USOSWeb}
 \subsubsection{Wyjątki}
 Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość zwracania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie podnoszenia wyjątku, który jest obiektem klasy ActionError.
 \subsubsection{Błąd w smarty}
