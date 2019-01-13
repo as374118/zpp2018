@@ -158,7 +158,7 @@ USOS dostarcza między innymi takie usługi jak:
 \item elektroniczne Legitymacje Studenckie,
 \item przygotowywanie oferty dydaktycznej,
 \item zarządzanie tokiem studiów,
-\item podania, stypendia i~ankiety,
+\item elektroniczne podania, stypendia i~ankiety,
 \item akademiki i~płatności.
 \end{enumerate}
 
@@ -180,11 +180,11 @@ W~rozdziale~\ref{chap:specyfikacja} znajduje się specyfikacja nowych funkcjonal
 \subsection{Maciej Góralski}
 Napisał większość pracy licencjackiej.
 \subsection{Kacper Pawelec}
-Stworzył widoki słownik uzasadnień, kalendarz w USOSadm.
+Stworzył widoki Słownik Uzasadnień, Kalendarze Spotkań w USOSadm.
 \subsection{Aliaksei Suvorau}
 Zaprojektował bazę danych, napisał skrypt tworzący bazę danych Oracle. Zaimplementował wszystkie funkcje USOSweb.
 \subsection{Michał Swidziński}
-Napisał skrypt tworzący bazę danych MySQL. Stworzył widok notatki w USOSadm. Napisał część pracy licencjackiej.
+Napisał skrypt tworzący bazę danych MySQL. Stworzył widok Notatki w USOSadm. Napisał część pracy licencjackiej.
 
 
 \chapter{Wymagania użytkowników} \label{chap:wymagania}
@@ -284,7 +284,7 @@ Zapytaliśmy o zdanie również pracowników Sekcji Studenckiej. Ich wymagania w
 \setlength\itemsep{0,05em}
     \item system powinien być wygodny i prosty w obsłudze,
     \item jak najwięcej opcji i pól powinno mieć domyślne wartości,
-    \item powinna istnieć opcja automatycznej akceptacji spotkań,
+    \item powinna istnieć opcja automatycznej akceptacji zapisów na spotkania,
     \item limity dostępnych miejsc, czasowe i inne powinny być modyfikowalne.
 \end{itemize}
 Odpowiedź pracowników Sekcji Studenckiej wyraźnie podkreśliła wagę jaką ma wygoda i~łatwość użytkowania. W związku z tym w postanowiliśmy położyć dodatkowy nacisk na~te~cechy systemu.
@@ -372,7 +372,7 @@ Status \enquote{nowości} formularz zyskuje w~chwili utworzenia. Tracony jest po
 
 \section{Szczegółowa specyfikacja użytkowania}
 
-\subsection{Używanie USOSadm przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
+\subsection{Używanie modułu do USOSadm przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
 	\begin{step}
 		\item Utworzenie kalendarza spotkań.
 			\begin{step}
@@ -387,9 +387,9 @@ Status \enquote{nowości} formularz zyskuje w~chwili utworzenia. Tracony jest po
 			\end{step}
 				\item Utworzenie spotkań, dla każdego podanie:
 					\begin{itemize}
-						\item początek i~koniec okresu zapisów,
 						\item początek i~koniec spotkania,
-						\item początek i~koniec okresu akceptacji.
+						\item początek i~koniec okresu zapisów,
+						\item limity miejsc na spotkanie.
 					\end{itemize}
 				\item Utworzenie listy powodów odrzuceń, dla każdego podając:
 					\begin{itemize}
@@ -397,7 +397,7 @@ Status \enquote{nowości} formularz zyskuje w~chwili utworzenia. Tracony jest po
 						\item nazwę,
 						\item treść powodu.
 					\end{itemize}
-		\item Udostępnienie kalendarza poprzez zmianę stanu na~\enquote{Dostępne}.
+		\item Udostępnienie kalendarza poprzez zmianę stanu na~\enquote{Aktywny}.
 		\item Okres akceptacji.
 			\begin{step}
 				\item Wyświetlenie list studentów.
@@ -411,11 +411,12 @@ Status \enquote{nowości} formularz zyskuje w~chwili utworzenia. Tracony jest po
 						 	\end{itemize}
 					\end{step}
 				\item Akceptacja studenta.
-				\item Odrzucenie studenta. 
+				\item Odrzucenie studenta z opcjonalnym podaniem powodu.
+				\item Wysłanie masowych maili do zaakceptowanych i odrzuconych osób z informacją o decyzji i spotkaniu.
 			\end{step}
 	\end{step}
 	
-\subsection{Używanie USOSweb przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
+\subsection{Używanie modułu do USOSweb przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
 	\begin{step}
 			\item Wejście w widok \enquote{Dla studentów}.
 			\item Przejście w zakładkę \enquote{Moje jednostki} lub~\enquote{Wszystkie jednostki}.
@@ -570,7 +571,7 @@ Przykładowe scenariusze użycia modułu. Dla prostoty przyjęto dzień jako nie
 \begin{table}[h]
 	\begin{center}
 	\centering
-	\caption{Token przeniesienia pozwala na przeniesienie tylko do nieotwartego spotkania}
+	\caption{Token przeniesienia pozwala na przeniesienie tylko do spotkania, którego okres zapisów jeszcze sie nie zaczął}
 	\begin{tabularx}{\columnwidth}{ v X n n n }
 	\toprule
 	Dzień & Student & Spotkanie1 & Spotkanie2 & Spotkanie3\\
@@ -581,7 +582,7 @@ Przykładowe scenariusze użycia modułu. Dla prostoty przyjęto dzień jako nie
 	\midrule[0.001em]
 	3  & Nie dostaje się na spotkanie, pozostaje w rezerwie.  & Akceptacja &  &\\
 	\midrule[0.001em]
-	4  & Dostaje token przeniesienia.\newline Dostępne spotkania: brak & Spotkanie &  &\\
+	4  & Dostaje token przeniesienia.\newline Dostępne spotkania: brak & Spotkanie & Zapisy &\\
 	\midrule[0.001em]
 	5  & Token wygasa &  & Zapisy & Definicja\\
 	\midrule[0.001em]
@@ -607,7 +608,7 @@ Przykładowe scenariusze użycia modułu. Dla prostoty przyjęto dzień jako nie
 	\midrule[0.001em]
 	3  & Nie dostaje się na spotkanie, pozostaje w rezerwie.  & Akceptacja & Zapisy\\
 	\midrule[0.001em]
-	4  & Dostaje token przeniesienia.\newline Dostępne spotkania: brak.\newline Dostępne spotkania: Spotkanie2.\newline Zapisanie na Spotkanie2 & Spotkanie & Zapisy\\
+	4  & Dostaje token przeniesienia.\newline Dostępne spotkania do przeniesienia: brak.\newline Dostępne spotkania do zapisu: Spotkanie2.\newline Zapisanie na Spotkanie2 & Spotkanie & Zapisy\\
 	\midrule[0.001em]
 	5  & Token wygasa &  & Akceptacja \\
 	\midrule[0.001em]
@@ -653,12 +654,56 @@ Serwer USOSadm odpowiedzialny jest za~większą część logiki aplikacji. Napis
 Komunikacja z~bazą~danych została zrealizowana przy pomocy własnego, bogatego API zrealizowanego przy pomocy technologi Hibernate. Technologia Hibernate pozwala na~odwzorowanie danych z~bazy~danych za~pomocą odpowiednio spreparowanych obiektów w~Javie.
 
 \subsection{Opis implementacji}
-Funkcjonalność została wydzielona w oddzielnym module do USOSadm, \enquote{Spotkania}. Składa się łącznie z 4 widoków:
+Do zrozumienia implementacji potrzebna jest znajomość kilku pojęć:
+\begin{itemize}
+\item JavaBean -- standard pisania klas:
+\begin{itemize}
+\item Wszystkie atrybuty klasy są prywatne,
+\item Klasa usodtępnia publiczny konstruktor bezargumentowy,
+\item Klasa implementuje interfejs Serializable, pozwalający na serializację.
+\end{itemize}
+Klasy w USOSadm odpowiedzialne za obsługę logiki biznesowej napisane są zgodnie z tym standardem.
+\item Service -- klasa udostępniająca wyskopoziomowe funkcje dostępu i manupilacji danymi.
+\item Data Access Object, w krócie DAO -- klasa udostępniająca generyczną funkcjonalność manipulacji bazą danych.
+\end{itemize}
+Funkcjonalność została wydzielona w oddzielnym module do USOSadm, \enquote{Spotkania}. Składa się łącznie z 3 widoków:
 \begin{itemize}
 \item Słownik uzasadnień -- pozwala zdefiniować najczęstsze uzasadnienia zapisów na spotkania jak i odrzucenia spotkań.
 \item Kalendarz Spotkań -- pozwala na definicję kalendarzy spotkań, spotkań, zapisywanie studentów oraz akceptowanie zapisów na spotkania.
 \item Notatki -- pozwala na przeglądanie i dodawanie notatek ze spotkań osób.
 \end{itemize}
+Każdy widok składa się, zgodnie z przyjętymi standardami, z szeregu tabel i formularzy. Za logikę biznesową każdego widoku odpowiada osobny Bean. Za każdą dodatkową tabelę w widoku odpowiada osobny dodatkowy moduł, róœnież spełniający standard Bean. Dodatkowa funkcjonalność jest implementowana w odpowiednich modułach. Klasy te odpowiadają także za walidację danych.
+Każdy rodzaj danych dostępny w widoku wymaga własnej klasy Service korzystającej z odpowiadającego temu typowi danych DAO. Klasy Service są używane przez główne klasy widoków oraz dodatkowe moduły do mapulacji danymi.
+
+\subsection{Klasy implementacji}
+Aby zaimplementować nasze widoki, stworzono trzy główne klasy:
+
+\begin{itemize}
+\item KalendarzeSpotkanBean -- odpowiedzialny za widok Kalendarze Spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
+\begin{itemize}
+\item TODO jak implementacja zostanie sfinalizowana
+\end{itemize}
+\item NotatkiZeSpotkanBean -- odpowiedzialny za widok Notatki.
+\item UzasadnieniaSpotkanBean -- odpowiedzialny za widok Słownik Uzasadnień.
+\end{itemize}
+
+Klasy Service i DAO w większości są instancjami istniejących szablonów będących częścią USOSadm. Jest to możliwe ze względu na staranną architekturę systemu.
+
+\subsection{Pobieranie danych}
+Bardzo często obiekty w bazie danych odwołują się do innych obiektów z bazy. Przy pracy z danym obiektem może być konieczne skorzystanie z danych pewnych zależnych obiektóœ, chociaż nie musi. Z uwagi na to wyróżniamy dwa posoby pobierania zależnych rekordów:
+
+\begin{itemize}
+\item Gorliwe -- zależne rekordy pobierane są od razu. Jest to szybszy sposób na pobranie wszystkich danych, lecz w przypadku, kiedy oddatkowe dane nie są potrzebne, pobieramy potencjalnie duże ilości zbędnych danych.
+\item Leniwe -- zależne rekordy pobierane są dopiero później, na żądanie.
+\end{itemize}
+
+Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W przypadku, gdy te zależne dane trzeba np. wyświetlić w tabeli, inicjalizuje się je explicite podczas pobierania danych w klasie Service.
+
+\subsection{Szablony}
+Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istniejącymi standardami, każda tabela i formularz posiada swój własny, odrębny szablon.
+
+\subsection{Moduł Spotkania}
+Dostęp do modułu Spotkania został umieszczony w menu Studenci. TODO obrazek?
 
 \subsection{Słownik uzasadnień}
 Widok Słownika Uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} widać jednostki, typy, nazwy po polsku, nazwy po angielsku uzasadnień. Po wybraniu uzasadnienia można zobaczyć teść po polsku i treść po angielsku na dole ekranu.
@@ -695,6 +740,8 @@ Na ekranie \ref{fig:formularz_notatek} widać formularz od dodawania lub modyfik
   \label{fig:formularz_notatek}
 \end{figure}
 
+\subsection{Tokeny}
+Niestety nie udało się zaimplementować mechanizmu tokenów w ramach tego modułu. Pozostaje on jako możliwa ścieżka dalszego rozwoju funkcjonalności.
 
 %\FloatBarrier
 \section{USOSweb} \label{sec:impusosweb}
