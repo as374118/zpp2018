@@ -438,7 +438,7 @@ Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana 
 	\begin{step}
 		%\item Interfejs powinien mieć zintegrowane, zrozumiałe instrukcje użytkowania.
 		\item Interesanci nie mogą mieć dostępu do danych zapisów innych interesantów.
-		\item Korzystanie z aplikacji wymaga konta w uczelnianym Centralnym Systemie Uwierzytelniania (CAS, z ang. textit{Central Authentication Service}).
+		\item Korzystanie z aplikacji wymaga konta w uczelnianym Centralnym Systemie Uwierzytelniania (CAS, z ang. \textit{Central Authentication Service}).
 	\end{step}
 	
 \section{Schemat bazy danych}
@@ -612,8 +612,6 @@ Celem prac w obrębie USOSadm było zaimplementowanie funkcjonalności przy wyko
 \item definiowania listy najczęstszych powodów zapisów na spotkania.
 \end{itemize}
 
-% do przemyslenia
-
 \subsection{Aplikacja kliencka}
 Aplikacja kliencka USOSadm to część aplikacji wykonywana na stanowisku klienta. Składa się m.in. z~kodu HTML i~skryptów JavaScript. Działa w przeglądarce internetowej Mozilla Firefox lub Google Chrome. Na stanowisku należy zainstalować również przeglądarkę dokumentów PDF. Jeśli na stanowisku są obsługiwane Elektroniczne Legitymacje Studenckie/Doktoranckie lub są składane podpisy cyfrowe, to potrzebna jest również aplikacja USOS SIGN \cite{wdr}.
 
@@ -638,12 +636,12 @@ Każdą, utworzoną przez nas, tabelę w USOSadm obsługuje oddzielna klasa zgod
 Aby zaimplementować nasze formularze, stworzono trzy główne klasy:
 
 \begin{itemize}
-\item KalendarzeSpotkanBean -- odpowiedzialny za widok Kalendarze spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
+\item \textsl{KalendarzeSpotkanBean} -- odpowiedzialny za widok Kalendarze spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
 \begin{itemize}
 \item TODO jak implementacja zostanie sfinalizowana
 \end{itemize}
-\item NotatkiZeSpotkanBean -- odpowiedzialny za widok Notatki.
-\item UzasadnieniaSpotkanBean -- odpowiedzialny za widok Słownik uzasadnień.
+\item \textsl{NotatkiZeSpotkanBean} -- odpowiedzialny za widok Notatki.
+\item \textsl{UzasadnieniaSpotkanBean} -- odpowiedzialny za widok Słownik uzasadnień.
 \end{itemize}
 
 \subsection{Pobieranie danych}
@@ -753,43 +751,43 @@ Aplikacja serwerowa oparta jest na kontrolerze, zaimplementowanym w języku PHP,
 \subsection{Akcje}
 Podczas implementacji modułu spotkań, powstało pięć akcji.
 \begin{itemize}
-\item{MojeSpotkaniaAction
+\item{\textsl{MojeSpotkaniaAction}
 \subitem{Akcja odpowiada za wyświetlanie spotkań, związanych z zalogowanym studentem.}
 }
-\item{SpotkaniaJednostkiAction
+\item{\textsl{SpotkaniaJednostkiAction}
 \subitem{Akcja odpowiada za wyświetlanie kalendarzy spotkań wraz z terminami tych spotkań oraz związanych z nimi informacji w wybranej jednostce.}}
-\item{WyborJednostkiAction
+\item{\textsl{WyborJednostkiAction}
 \subitem{Akcja odpowiada za wyświetlanie jednostek i informacji o liczbie spotkań w każdej z jednostek. Przyjmuje dodatkowy parametr w GET, który włącza lub ~wyłącza ograniczenie listy jednostek tylko do tych, które są związane ze~studentem.}}
-\item{ZapisNaSpotkanieAction
+\item{\textsl{ZapisNaSpotkanieAction}
 \subitem{Akcja odpowiada za tworzenie formularza, pozwalającego na wykonywanie przez studenta dostępnych działań z~danym~spotkaniem. Akcja przyjmuje w GET informację o~spotkaniu, czyli identyfikator spotkania z bazy i tworzy odpowiedni formularz dla studenta w~zależności od tego, co zalogowany student może zrobić ze~wskazanym~spotkaniem w~danym~momencie.}}
-\item{ZmianaZapisuNaSpotkanieAction
+\item{\textsl{ZmianaZapisuNaSpotkanieAction}
 \subitem{Akcja odpowiada za~zmianę stanu zapisu zalogowanego studenta na dane spotkanie. Jest to jedyna akcja w~danym module, która zmienia dane w~bazie danych. Przyjmuje ona parametry zapytania w postaci POST i~sprawdza CSRF token w celu zabezpieczenia się przed atakami CSRF. Dla każdego zapytania przed modyfikowaniem danych w bazie na początku jest prowadzony proces tak zwanej walidacji w~celu uniemożliwienia wykonania niepoprawnych zmian.}}
 \end{itemize}
 \subsection{Szablony}
 USOSweb korzysta z szablonów Smarty, które są powiązane z~akcjami za~pomocą plików konfiguracyjnych i~zapewniają odpowiednią prezentację danych powstających w~wyniku danej akcji. W~module~spotkań utworzyliśmy pięć szablonów.
 \begin{itemize}
-\item{FormularzSpotkania}
+\item{\textsl{FormularzSpotkania}}
 \subitem{Formularz, który wyświetla się w~oknie~modalnym i pozwala na wykonanie przez studenta dozwolonej akcji związanej ze spotkaniem.}
-\item{SpotkaniaJednostki}
+\item{\textsl{SpotkaniaJednostki}}
 \subitem{Rozwijana lista cykli, gdzie domyślnie rozwinięte są tylko aktywne cykle. Każdy cykl zawiera listę kalendarzy spotkań. Dla każdego kalendarza wyświetlany zostaje opis osoby prowadzącej spotkania i nazwa kalendarza spotkań. Zawiera on również listę dostępnych terminów i~przycisk pozwalający na pokazanie także niedostępnych terminów.}
-\item{MojeSpotkania}
+\item{\textsl{MojeSpotkania}}
 \subitem{Lista spotkań związanych ze studentem. Widok jest identyczny z~widokiem spotkań jednostki, ale pokazywane są tylko spotkania i~kalendarze związane z danym studentem, czyli takie spotkania, na które on jest zapisany. Nie ma żadnych ograniczeń na jednostkę, w której dane spotkanie się odbywa.}
-\item{Spotkanie}
-\subitem{Szablon pomocniczy używany w szablonie FormularzSpotkania.}
-\item{WyborJednostki}
+\item{\textsl{Spotkanie}}
+\subitem{Szablon pomocniczy używany w szablonie \textsl{FormularzSpotkania}.}
+\item{\textsl{WyborJednostki}}
 \subitem{Lista jednostek z informacją o liczbie kalendarzy spotkań w danej jednostce.}
 \end{itemize}
 \subsection{Moduły pomocnicze}
 Często akcje w USOSweb wykonują te same czynności, jak na przykład pobranie kontekstu zalogowanego użytkownika lub nazwy jednostki na podstawie kodu albo utworzenie struktury pozwalającej na wyświetlanie tabeli z~danymi na~podstawie zapytania.
 W naszym rozwiązaniu zostały utworzone cztery moduły pomocnicze.
 \begin{itemize}
-\item{CyklDydaktyczny}
+\item{\textsl{CyklDydaktyczny}}
 \subitem{Klasa jest modelem cyklu dydaktycznego. Zawiera jedną statyczną metodę pozwalającą na pobranie z~bazy danych informacji o~wszystkich kalendarzach spotkań w cyklu dla danej jednostki wraz z terminami spotkań i~kontekstem każdego osobnego spotkania dla~użytkownika. Funkcja ta wykonuje stałą~liczbę zapytań do~bazy~danych.}
-\item{KalendarzSpotkan}
+\item{\textsl{KalendarzSpotkan}}
 \subitem{Klasa jest modelem kalendarza spotkań i~posiada metodę statyczną, pozwalającą na~pobranie z~bazy~danych informacji o~wszystkich kalendarzach spotkań i~spotkaniach dla każdego z~kalendarzy. Wykonuje 2 zapytania do bazy danych.}
-\item{SpotkanieOsoba}
+\item{\textsl{SpotkanieOsoba}}
 \subitem{Klasa jest modelem opisującym stan spotkania w~kontekście danej osoby. Ma dużą liczbę niestatycznych funkcji pomocniczych, wykorzystywanych w wielu miejscach modułu spotkań.}
-\item{SpotkaniaUtils}
+\item{\textsl{SpotkaniaUtils}}
 \subitem{Zestaw funkcji pomocniczych.}
 \end{itemize}
 
@@ -851,7 +849,7 @@ Widok spotkań danej jednostki oraz widok spotkań studenta zostały zaprojektow
 \subitem{spotkania (terminy) z informacją o stanie danego spotkania w kontekście zalogowanego studenta (stan zapisu, stan spotkania, liczba osób zapisanych na~listę~główną oraz~rezerwową, data i~czas rozpoczęcia i~zakończenia spotkania).}
 \end{itemize}
 
-Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole kalendarzeSpotkan, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy SpotkanieOsoba i~zawierał całą informację pomocniczą. Relacyjne bazy danych SQL pozwalają na pobranie informacji wyłącznie w~postaci tabel. Należało więc rozwiązać następujący problem.
+Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole \textsl{kalendarzeSpotkan}, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy \textsl{SpotkanieOsoba} i~zawierał całą informację pomocniczą. Relacyjne bazy danych SQL pozwalają na pobranie informacji wyłącznie w~postaci tabel. Należało więc rozwiązać następujący problem.
 
 \paragraph{W jaki sposób wyciągnąć taką drzewiastą strukturę z bazy danych w optymalny sposób?}
 \begin{itemize}
@@ -870,7 +868,7 @@ W module spotkań mieliśmy dwie pary bardzo podobnych akcji: akcje spotkań stu
 System USOSweb wspiera dwa języki: angielski oraz polski. Dla wsparcia wielojęzyczności w naszym module korzystaliśmy z wbudowanego w szablony Smarty znacznika \{t\}, a w~modelu bazy danych dla pól tekstowych takich, jak nazwa albo opis, tworzyliśmy duplikat w języku angielskim.
 \subsection{Zmiany w USOSWeb}
 \subsubsection{Wyjątki}
-Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość zwracania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie podnoszenia wyjątku, który jest obiektem klasy ActionError.
+Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość zwracania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie podnoszenia wyjątku, który jest obiektem klasy \textsl{ActionError}.
 \subsubsection{Błąd w Smarty}
 W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika \{textarea\} w~szablonach~Smarty. Po wskazaniu atrybutu \textsc{limit} w~danym~tagu, będąc w~kontekście okna modalnego cała zawartość strony znikała. Zmieniliśmy kod JavaScript obsługujący wypisywanie limitu oraz pozostałych dostępnych liter, naprawiając ten błąd.
 \subsection{Potencjalne ataki i zabezpieczenia} \label{subsec:bezpiecz}
