@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  8 JAN 2019 02:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  24 JAN 2019 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -480,11 +480,11 @@ o-rzy-sta-niu czasu Dzie-kana na spo-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 508.
 
-<schemat.jpg, id=464, 839.135pt x 826.08624pt>
+<schemat.jpg, id=464, 839.135pt x 854.19125pt>
 File: schemat.jpg Graphic file (type jpg)
 <use schemat.jpg>
 Package pdftex.def Info: schemat.jpg  used on input line 509.
-(pdftex.def)             Requested size: 441.01773pt x 434.15555pt.
+(pdftex.def)             Requested size: 441.01773pt x 448.92635pt.
 [17] [18 <./schemat.jpg>]
 Overfull \hbox (1.83382pt too wide) in paragraph at lines 538--538
 []|\T1/cmr/m/n/10.95 Spotkanie1| 
@@ -704,7 +704,7 @@ exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (41 pages, 4123298 bytes).
+Output written on main.pdf (41 pages, 4126654 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  620 compressed objects within 7 object streams
