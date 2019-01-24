@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  24 JAN 2019 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  24 JAN 2019 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,11 +335,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'polish'.
 
-(./main.aux
-
-LaTeX Warning: Label `sec:impusosweb' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
@@ -360,7 +356,6 @@ LaTeX Font Info:    ... okay on input line 120.
 Package hyperref Info: Link coloring OFF on input line 120.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
@@ -453,17 +448,15 @@ Rozdzia\l  1.
 [5
 
 ]
-
-LaTeX Warning: Citation `usosstart' on page 6 undefined on input line 162.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 167.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
- [6] [7] [8
+ [6] [7]
+[8
 
 ]
 Rozdzia\l  2.
@@ -482,7 +475,7 @@ o-rzy-sta-niu czasu Dzie-kana na spo-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 447.
 
-<schemat.jpg, id=448, 839.135pt x 854.19125pt>
+<schemat.jpg, id=444, 839.135pt x 854.19125pt>
 File: schemat.jpg Graphic file (type jpg)
 <use schemat.jpg>
 Package pdftex.def Info: schemat.jpg  used on input line 448.
@@ -573,50 +566,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19] [20]
 Rozdzia\l  4.
-
-LaTeX Warning: Citation `rfd' on page 21 undefined on input line 602.
-
-
-LaTeX Warning: Citation `wikibd' on page 21 undefined on input line 603.
-
-
-LaTeX Warning: Citation `wdr' on page 21 undefined on input line 604.
-
-
-LaTeX Warning: Citation `wdr' on page 21 undefined on input line 619.
-
 [21
 
 ]
-
-LaTeX Warning: Citation `wikijsf' on page 22 undefined on input line 622.
-
-
-LaTeX Warning: Citation `hibernate' on page 22 undefined on input line 625.
-
-
-LaTeX Warning: Citation `javabean' on page 22 undefined on input line 632.
+Overfull \hbox (12.01204pt too wide) in paragraph at lines 632--633
+[]\T1/cmr/m/n/10.95 obsªuguje zda-rze-nia (na przy-kªad wy-±wie-tla spo-tka-nie
+ po wy-bra-niu ka-len-da-rza) [[]]. 
+ []
 
 [22]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 661.
 
-<spotkaniaadm.jpg, id=492, 562.60187pt x 276.53313pt>
+<spotkaniaadm.jpg, id=501, 562.60187pt x 276.53313pt>
 File: spotkaniaadm.jpg Graphic file (type jpg)
 <use spotkaniaadm.jpg>
 Package pdftex.def Info: spotkaniaadm.jpg  used on input line 662.
 (pdftex.def)             Requested size: 441.01773pt x 216.77095pt.
-
-LaTeX Warning: Reference `fig:modspoadm' on page 23 undefined on input line 668
-.
-
 [23 <./spotkaniaadm.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 677.
 
-<widok_notatek.jpg, id=503, 1359.0775pt x 903.375pt>
+<widok_notatek.jpg, id=512, 1359.0775pt x 903.375pt>
 File: widok_notatek.jpg Graphic file (type jpg)
 <use widok_notatek.jpg>
 Package pdftex.def Info: widok_notatek.jpg  used on input line 678.
@@ -625,7 +598,7 @@ Package pdftex.def Info: widok_notatek.jpg  used on input line 678.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 683.
 
-<formularz_notatek.jpg, id=504, 1005.7575pt x 587.19376pt>
+<formularz_notatek.jpg, id=513, 1005.7575pt x 587.19376pt>
 File: formularz_notatek.jpg Graphic file (type jpg)
 <use formularz_notatek.jpg>
 Package pdftex.def Info: formularz_notatek.jpg  used on input line 684.
@@ -634,7 +607,7 @@ Package pdftex.def Info: formularz_notatek.jpg  used on input line 684.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 693.
 
-<widok_uzasadnien.jpg, id=507, 1359.0775pt x 1015.795pt>
+<widok_uzasadnien.jpg, id=516, 1359.0775pt x 1015.795pt>
 File: widok_uzasadnien.jpg Graphic file (type jpg)
 <use widok_uzasadnien.jpg>
 Package pdftex.def Info: widok_uzasadnien.jpg  used on input line 694.
@@ -643,7 +616,7 @@ Package pdftex.def Info: widok_uzasadnien.jpg  used on input line 694.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 699.
 
-<formularz_uzasadnien.jpg, id=508, 675.52374pt x 525.965pt>
+<formularz_uzasadnien.jpg, id=517, 675.52374pt x 525.965pt>
 File: formularz_uzasadnien.jpg Graphic file (type jpg)
 <use formularz_uzasadnien.jpg>
 Package pdftex.def Info: formularz_uzasadnien.jpg  used on input line 700.
@@ -654,7 +627,7 @@ g>] [26 <./formularz_uzasadnien.jpg>] [27] [28] [29]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 808.
 
-<moje_jednostki_usosweb.jpg, id=548, 1089.06876pt x 810.02625pt>
+<moje_jednostki_usosweb.jpg, id=551, 1089.06876pt x 810.02625pt>
 File: moje_jednostki_usosweb.jpg Graphic file (type jpg)
 <use moje_jednostki_usosweb.jpg>
 Package pdftex.def Info: moje_jednostki_usosweb.jpg  used on input line 809.
@@ -663,7 +636,7 @@ Package pdftex.def Info: moje_jednostki_usosweb.jpg  used on input line 809.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 814.
 
-<wszystkie_jednostki_usosweb.jpg, id=549, 1328.965pt x 743.77875pt>
+<wszystkie_jednostki_usosweb.jpg, id=552, 1328.965pt x 743.77875pt>
 File: wszystkie_jednostki_usosweb.jpg Graphic file (type jpg)
 <use wszystkie_jednostki_usosweb.jpg>
 Package pdftex.def Info: wszystkie_jednostki_usosweb.jpg  used on input line 81
@@ -673,7 +646,7 @@ Package pdftex.def Info: wszystkie_jednostki_usosweb.jpg  used on input line 81
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 826.
 
-<kalendarzUSOSweb.jpg, id=552, 1411.2725pt x 750.805pt>
+<kalendarzUSOSweb.jpg, id=555, 1411.2725pt x 750.805pt>
 File: kalendarzUSOSweb.jpg Graphic file (type jpg)
 <use kalendarzUSOSweb.jpg>
 Package pdftex.def Info: kalendarzUSOSweb.jpg  used on input line 827.
@@ -682,7 +655,7 @@ Package pdftex.def Info: kalendarzUSOSweb.jpg  used on input line 827.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 834.
 
-<zapisUSOSweb.jpg, id=554, 1061.9675pt x 622.325pt>
+<zapisUSOSweb.jpg, id=557, 1061.9675pt x 622.325pt>
 File: zapisUSOSweb.jpg Graphic file (type jpg)
 <use zapisUSOSweb.jpg>
 Package pdftex.def Info: zapisUSOSweb.jpg  used on input line 835.
@@ -691,7 +664,7 @@ Package pdftex.def Info: zapisUSOSweb.jpg  used on input line 835.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 844.
 
-<mojeSpotkaniaUSOSweb.jpg, id=556, 1407.2575pt x 752.8125pt>
+<mojeSpotkaniaUSOSweb.jpg, id=559, 1407.2575pt x 752.8125pt>
 File: mojeSpotkaniaUSOSweb.jpg Graphic file (type jpg)
 <use mojeSpotkaniaUSOSweb.jpg>
 Package pdftex.def Info: mojeSpotkaniaUSOSweb.jpg  used on input line 845.
@@ -705,12 +678,6 @@ ak¡ struk-tur¦ naj-wy-god-niej przed-
 
 [33] [34]
 Rozdzia\l  5.
-
-LaTeX Warning: Citation `dziennikadm' on page 35 undefined on input line 907.
-
-
-LaTeX Warning: Citation `dziennikweb' on page 35 undefined on input line 907.
-
 [35
 
 ] [36
@@ -775,85 +742,49 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 7990AC246C4DF8FF2D29328C097211F1;4343
-(rerunfilecheck)             After:  C818DC1B726DB02F7876FE0BEDD50E9D;4229.
+(rerunfilecheck)             Before: 9FDAFDBD403B9D063ACD136FE2C116F0;4260
+(rerunfilecheck)             After:  FA33EA0685D58F6124380BC7C800EA10;3980.
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 960.
  ) 
 Here is how much of TeX's memory you used:
- 8742 strings out of 492649
- 130486 string characters out of 6129623
- 251923 words of memory out of 5000000
- 12319 multiletter control sequences out of 15000+600000
+ 8729 strings out of 492649
+ 130272 string characters out of 6129623
+ 252328 words of memory out of 5000000
+ 12317 multiletter control sequences out of 15000+600000
  19522 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,9n,39p,1149b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.8} has been referenced but does no
-t exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.14} has been referenced but does n
+ot exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.24} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter*.32} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.4.9} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.4.8} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.4.7} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.4.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.6.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.6.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.6.1} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
 exist, replaced by a fixed one
 
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
@@ -870,10 +801,10 @@ ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
 018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (41 pages, 3310636 bytes).
+Output written on main.pdf (41 pages, 3310461 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 649 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 568 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 

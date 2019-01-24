@@ -165,14 +165,14 @@ USOS dostarcza między innymi takie usługi jak:
 USOS składa się między innymi z:
 \begin{itemize}
 \item USOSadm -- moduł przeznaczony dla pracowników administracji, napisany w Javie, pozwalający na cyfryzację typowych zadań administracyjnych, jak zarządzanie rejestracjami, płatnościami, wymianą międzynarodową i tym podobne,
-\item USOSweb -- moduł przeznaczony dla studentów napisany w PHP, udostępnia podstawowe informacje o~toku~studiów studenta oraz~funkcje~zdalnego załatwiania wielu formalności, jak rejestracja na przedmioty czy składanie podań.
+\item USOSweb -- moduł przeznaczony dla studentów, napisany w PHP, udostępnia podstawowe informacje o~toku~studiów studenta oraz~funkcje~zdalnego załatwiania wielu formalności, jak rejestracja na przedmioty czy składanie podań.
 \end{itemize}
 
 
 \section{Cel pracy}
 ~~~~~W ramach pracy powstał moduł do systemów USOSadm i~USOSweb, dzięki któremu będzie możliwe umawianie, kontrola i~archiwizacja wizyt studentów u~Dziekana. W USOSweb studenci i~osoby spoza wydziału będą mogły zapisywać się na spotkania z~Dziekanem w~odgórnie ustalonych terminach. Poza ułatwieniem rejestracji i~zwiększeniem jej dostępności, system ten będzie oszczędzać czas Dziekana oraz studentów. Ponadto zmniejszy się zużycie papieru.
 \section{Struktura pracy}
-~~~~~Praca składa się z~5 rozdziałów i~dodatków.
+~~~~~Praca składa się z~6 rozdziałów i~dodatku.
 Wymagania i~uwagi potencjalnych użytkowników zostały opisane w~rozdziale~\ref{chap:wymagania}.
 W~rozdziale~\ref{chap:specyfikacja} znajduje się specyfikacja nowych funkcjonalności. W~rozdziale \ref{chap:implementacja} jest zawarty opis technologii użytych do~implementacji oraz jej szczegóły. Podsumowanie jest w~rozdziale \ref{chap:rozwoj}.
 
@@ -299,16 +299,16 @@ Pracownicy Sekcji Studenckiej wyraźnie podkreślali wagę wygody i~łatwości u
 ~~~~~Celem projektu jest dodanie do aplikacji USOSadm i USOSweb funkcjonalności zapisów na~spotkania z~Dziekanem. System dzieli się na dwie części: moduł USOSweb dla osoby zapisującej się na spotkanie i~moduł USOSadm dla personelu obsługującego spotkania.
 
 \section{Definicje}
-\subsection{Kalendarz spotkań}
+\subsubsection{Kalendarz spotkań}
 ~~~~~Obiekt, w którym definiuje się rodzaj spotkania, osobę prowadzącą spotkanie, cykl dydaktyczny oraz jednostkę. Przykład: Dziekan może w danym cyklu dydaktycznym prowadzić spotkania dziekańskie w~jednym kalendarzu oraz konsultacje na~dwóch~różnych~wydziałach w~dwóch~innych~kalendarzach.
 
-\subsection{Słownik}
+\subsubsection{Słownik}
 ~~~~~Część danych  przechowywanych  w  systemie  USOS, które  raczej  rzadko się zmieniają, a  jednocześnie są wykorzystywane w wielu formularzach systemu, na przykład lista budynków i sal uczelni jest słownikiem, natomiast lista zajęć odbywanych w danej sali już nie \cite{prz}.
 
-\subsection{Słownik uzasadnień}
+\subsubsection{Słownik uzasadnień}
 ~~~~~Słownik, który zawiera powody do zapisu na spotkanie oraz powody odrzucenia prośby o spotkanie.
 
-\subsection{Okres zapisów}
+\subsubsection{Okres zapisów}
 ~~~~~Przedział czasu, w którym można składać prośby o zapisanie na spotkanie.
 
 %\subsection{Miejsce rezerwowe na spotkanie}

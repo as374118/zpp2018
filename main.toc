@@ -18,10 +18,10 @@
 \contentsline {chapter}{\numberline {3}Specyfikacja}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Cel projektu}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Definicje}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Kalendarz spotka\IeC {\'n}}{13}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}S\IeC {\l }ownik}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}S\IeC {\l }ownik uzasadnie\IeC {\'n}}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Okres zapis\IeC {\'o}w}{13}{subsection.3.2.4}
+\contentsline {subsubsection}{Kalendarz spotka\IeC {\'n}}{13}{section*.6}
+\contentsline {subsubsection}{S\IeC {\l }ownik}{13}{section*.7}
+\contentsline {subsubsection}{S\IeC {\l }ownik uzasadnie\IeC {\'n}}{13}{section*.8}
+\contentsline {subsubsection}{Okres zapis\IeC {\'o}w}{13}{section*.9}
 \contentsline {section}{\numberline {3.3}Definiowanie spotkania}{13}{section.3.3}
 \contentsline {section}{\numberline {3.4}Zapisy na spotkanie}{14}{section.3.4}
 \contentsline {section}{\numberline {3.5}Uczestnik spotkania}{14}{section.3.5}
@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {3.7.2}U\IeC {\.z}ywanie modu\IeC {\l }u do USOSweb przez zalogowanego u\IeC {\.z}ytkownika z odpowiednimi uprawnieniami.}{15}{subsection.3.7.2}
 \contentsline {section}{\numberline {3.8}Dodatkowe wymagania}{16}{section.3.8}
 \contentsline {section}{\numberline {3.9}Schemat bazy danych}{18}{section.3.9}
-\contentsline {section}{\numberline {3.10}Przyk\IeC {\l }ady}{18}{section.3.10}
+\contentsline {section}{\numberline {3.10}Przyk\IeC {\l }adowe scenariusze u\IeC {\.z}ycia modu\IeC {\l }u}{18}{section.3.10}
 \contentsline {chapter}{\numberline {4}Implementacja}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}USOS}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}USOSadm}{21}{section.4.2}
@@ -57,22 +57,22 @@
 \contentsline {subsection}{\numberline {4.3.7}Wyb\IeC {\'o}r spotkania}{30}{subsection.4.3.7}
 \contentsline {subsection}{\numberline {4.3.8}Moje spotkania}{30}{subsection.4.3.8}
 \contentsline {subsection}{\numberline {4.3.9}Problemy i ich rozwi\IeC {\k a}zania}{33}{subsection.4.3.9}
-\contentsline {subsubsection}{~~~~~Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{33}{section*.21}
-\contentsline {paragraph}{W jaki spos\IeC {\'o}b wyci\IeC {\k a}gn\IeC {\k a}\IeC {\'c} tak\IeC {\k a} drzewiast\IeC {\k a} struktur\IeC {\k e} z bazy danych w optymalny spos\IeC {\'o}b?}{33}{section*.22}
-\contentsline {subsubsection}{Podobne akcje}{33}{section*.23}
-\contentsline {subsubsection}{Wieloj\IeC {\k e}zyczno\IeC {\'s}\IeC {\'c}}{34}{section*.24}
+\contentsline {subsubsection}{~~~~~Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{33}{section*.25}
+\contentsline {paragraph}{W jaki spos\IeC {\'o}b wyci\IeC {\k a}gn\IeC {\k a}\IeC {\'c} tak\IeC {\k a} drzewiast\IeC {\k a} struktur\IeC {\k e} z bazy danych w optymalny spos\IeC {\'o}b?}{33}{section*.26}
+\contentsline {subsubsection}{Podobne akcje}{33}{section*.27}
+\contentsline {subsubsection}{Wieloj\IeC {\k e}zyczno\IeC {\'s}\IeC {\'c}}{34}{section*.28}
 \contentsline {subsection}{\numberline {4.3.10}Zmiany w USOSWeb}{34}{subsection.4.3.10}
-\contentsline {subsubsection}{Wyj\IeC {\k a}tki}{34}{section*.25}
-\contentsline {subsubsection}{B\IeC {\l }\IeC {\k a}d w Smarty}{34}{section*.26}
+\contentsline {subsubsection}{Wyj\IeC {\k a}tki}{34}{section*.29}
+\contentsline {subsubsection}{B\IeC {\l }\IeC {\k a}d w Smarty}{34}{section*.30}
 \contentsline {subsection}{\numberline {4.3.11}Potencjalne ataki i zabezpieczenia}{34}{subsection.4.3.11}
-\contentsline {subsubsection}{CSRF}{34}{section*.27}
-\contentsline {subsubsection}{SQL injection}{34}{section*.28}
+\contentsline {subsubsection}{CSRF}{34}{section*.31}
+\contentsline {subsubsection}{SQL injection}{34}{section*.32}
 \contentsline {chapter}{\numberline {5}Podsumowanie}{35}{chapter.5}
 \contentsline {section}{\numberline {5.1}Co zrobiono}{35}{section.5.1}
 \contentsline {section}{\numberline {5.2}Potencjalny dalszy rozw\IeC {\'o}j}{35}{section.5.2}
-\contentsline {subsubsection}{Tokeny}{35}{section*.29}
-\contentsline {subsubsection}{Mobilny USOS}{35}{section*.30}
-\contentsline {subsubsection}{Spotkania innego rodzaju}{35}{section*.31}
+\contentsline {subsubsection}{Tokeny}{35}{section*.33}
+\contentsline {subsubsection}{Mobilny USOS}{35}{section*.34}
+\contentsline {subsubsection}{Spotkania innego rodzaju}{35}{section*.35}
 \contentsline {chapter}{\numberline {6}Dodatki}{37}{chapter.6}
 \contentsline {section}{\numberline {6.1}Opis zawarto\IeC {\'s}ci p\IeC {\l }yty CD}{37}{section.6.1}
-\contentsline {chapter}{Bibliografia}{39}{chapter*.32}
+\contentsline {chapter}{Bibliografia}{39}{chapter*.36}
