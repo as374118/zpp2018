@@ -5,60 +5,58 @@
 \BOOKMARK [1][-]{section.1.4}{Cel pracy}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.5}{Struktura pracy}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.6}{Podzia\233 pracy}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.6.1}{Maciej G\363ralski}{section.1.6}% 8
-\BOOKMARK [2][-]{subsection.1.6.2}{Kacper Pawelec}{section.1.6}% 9
-\BOOKMARK [2][-]{subsection.1.6.3}{Aliaksei Suvorau}{section.1.6}% 10
-\BOOKMARK [2][-]{subsection.1.6.4}{Micha\233 Swidzinski}{section.1.6}% 11
-\BOOKMARK [0][-]{chapter.2}{Wymagania uzytkownik\363w}{}% 12
-\BOOKMARK [1][-]{section.2.1}{Wymagania}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.2}{Rozmowa z Dziekanem}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Ankieta dla student\363w}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Rozmowa z Sekcja Studencka}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Specyfikacja}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Cel projektu}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Definicje}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.2.1}{Kalendarz spotkan}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.2}{S\233ownik}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.3}{S\233ownik uzasadnien}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.4}{Okres zapis\363w}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.5}{Okres akceptacji}{section.3.2}% 24
-\BOOKMARK [1][-]{section.3.3}{Definiowanie spotkania}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Zapisy na spotkanie}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.5}{Dodatkowe wymagania}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.6}{Formularz}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.7}{Szczeg\363\233owa specyfikacja uzytkowania}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.7.1}{Uzywanie USOSadm przez zalogowanego uzytkownika z odpowiednimi uprawnieniami.}{section.3.7}% 30
-\BOOKMARK [2][-]{subsection.3.7.2}{Uzywanie USOSweb przez zalogowanego uzytkownika z odpowiednimi uprawnieniami.}{section.3.7}% 31
-\BOOKMARK [1][-]{section.3.8}{Dodatkowe wymagania}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.9}{Schemat bazy danych}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.10}{Przyk\233ady}{chapter.3}% 34
-\BOOKMARK [0][-]{chapter.4}{Implementacja}{}% 35
-\BOOKMARK [1][-]{section.4.1}{USOS}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.2}{USOSadm}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.2.1}{Informacje og\363lne}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.2}{Aplikacja kliencka}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.3}{Serwer}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.4}{Komunikacja z baza danych}{section.4.2}% 41
-\BOOKMARK [2][-]{subsection.4.2.5}{Opis implementacji}{section.4.2}% 42
-\BOOKMARK [2][-]{subsection.4.2.6}{S\233ownik uzasadnien}{section.4.2}% 43
-\BOOKMARK [2][-]{subsection.4.2.7}{Kalendarz}{section.4.2}% 44
-\BOOKMARK [2][-]{subsection.4.2.8}{Notatki}{section.4.2}% 45
-\BOOKMARK [1][-]{section.4.3}{USOSweb}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.3.1}{Informacje og\363lne}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.2}{Opis dzia\233ania systemu USOSweb}{section.4.3}% 48
-\BOOKMARK [1][-]{section.4.4}{USOSweb}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.4.1}{Akcje}{section.4.4}% 50
-\BOOKMARK [2][-]{subsection.4.4.2}{Szablony}{section.4.4}% 51
-\BOOKMARK [2][-]{subsection.4.4.3}{Modu\233y pomocnicze}{section.4.4}% 52
-\BOOKMARK [2][-]{subsection.4.4.4}{Wyb\363r jednostki}{section.4.4}% 53
-\BOOKMARK [2][-]{subsection.4.4.5}{Wyb\363r spotkania}{section.4.4}% 54
-\BOOKMARK [2][-]{subsection.4.4.6}{Moje spotkania}{section.4.4}% 55
-\BOOKMARK [2][-]{subsection.4.4.7}{Problemy i ich rozwiazania}{section.4.4}% 56
-\BOOKMARK [2][-]{subsection.4.4.8}{Zmiany w USOSWebie}{section.4.4}% 57
-\BOOKMARK [2][-]{subsection.4.4.9}{Potencjalne ataki i zabezpieczenia}{section.4.4}% 58
-\BOOKMARK [0][-]{chapter.5}{Potencjalny dalszy rozw\363j}{}% 59
-\BOOKMARK [1][-]{section.5.1}{Mobilny USOS}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.2}{Spotkania innego rodzaju}{chapter.5}% 61
-\BOOKMARK [0][-]{chapter.6}{Dodatki}{}% 62
-\BOOKMARK [1][-]{section.6.1}{Opis zawartosci p\233yty CD}{chapter.6}% 63
-\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 64
+\BOOKMARK [0][-]{chapter.2}{Wymagania uzytkownik\363w}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Wymagania}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Rozmowa z Dziekanem}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Ankieta dla student\363w}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Rozmowa z Sekcja Studencka}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Specyfikacja}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Cel projektu}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Definicje}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{Kalendarz spotkan}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{S\233ownik}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.3}{S\233ownik uzasadnien}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.4}{Okres zapis\363w}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{Definiowanie spotkania}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Zapisy na spotkanie}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Uczestnik spotkania}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.6}{Dodatkowe wymagania}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.7}{Szczeg\363\233owa specyfikacja uzytkowania}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.7.1}{Uzywanie modu\233u do USOSadm przez zalogowanego uzytkownika z odpowiednimi uprawnieniami.}{section.3.7}% 25
+\BOOKMARK [2][-]{subsection.3.7.2}{Uzywanie modu\233u do USOSweb przez zalogowanego uzytkownika z odpowiednimi uprawnieniami.}{section.3.7}% 26
+\BOOKMARK [1][-]{section.3.8}{Dodatkowe wymagania}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.9}{Schemat bazy danych}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.10}{Przyk\233ady}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Implementacja}{}% 30
+\BOOKMARK [1][-]{section.4.1}{USOS}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{USOSadm}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Informacje og\363lne}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{Aplikacja kliencka}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.3}{Serwer}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.4}{Komunikacja z baza danych}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.5}{JavaBean}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.6}{Klasy implementacji}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.7}{Pobieranie danych}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.8}{Szablony}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.9}{Modu\233 Spotkania}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.10}{Kalendarz}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.11}{Notatki}{section.4.2}% 43
+\BOOKMARK [2][-]{subsection.4.2.12}{S\233ownik uzasadnien}{section.4.2}% 44
+\BOOKMARK [1][-]{section.4.3}{USOSweb}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.3.1}{Informacje og\363lne}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.2}{Opis dzia\233ania systemu USOSweb}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.3}{Akcje}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.4}{Szablony}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.5}{Modu\233y pomocnicze}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.6}{Wyb\363r jednostki}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.7}{Wyb\363r spotkania}{section.4.3}% 52
+\BOOKMARK [2][-]{subsection.4.3.8}{Moje spotkania}{section.4.3}% 53
+\BOOKMARK [2][-]{subsection.4.3.9}{Problemy i ich rozwiazania}{section.4.3}% 54
+\BOOKMARK [2][-]{subsection.4.3.10}{Zmiany w USOSWeb}{section.4.3}% 55
+\BOOKMARK [2][-]{subsection.4.3.11}{Potencjalne ataki i zabezpieczenia}{section.4.3}% 56
+\BOOKMARK [0][-]{chapter.5}{Podsumowanie}{}% 57
+\BOOKMARK [1][-]{section.5.1}{Co zrobiono}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.2}{Potencjalny dalszy rozw\363j}{chapter.5}% 59
+\BOOKMARK [0][-]{chapter.6}{Dodatki}{}% 60
+\BOOKMARK [1][-]{section.6.1}{Opis zawartosci p\233yty CD}{chapter.6}% 61
+\BOOKMARK [0][-]{chapter*.32}{Bibliografia}{}% 62
