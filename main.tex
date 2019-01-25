@@ -172,7 +172,7 @@ USOS składa się między innymi z:
 \section{Cel pracy}
 ~~~~~W ramach pracy powstał moduł do systemów USOSadm i~USOSweb, dzięki któremu będzie możliwe umawianie, kontrola i~archiwizacja wizyt studentów u~Dziekana. W USOSweb studenci i~osoby spoza wydziału będą mogły zapisywać się na spotkania z~Dziekanem w~odgórnie ustalonych terminach. Poza ułatwieniem rejestracji i~zwiększeniem jej dostępności, system ten będzie oszczędzać czas Dziekana oraz studentów. Ponadto zmniejszy się zużycie papieru.
 \section{Struktura pracy}
-~~~~~Praca składa się z~6 rozdziałów i~dodatku.
+~~~~~Praca składa się z~5 rozdziałów i~dodatku.
 Wymagania i~uwagi potencjalnych użytkowników zostały opisane w~rozdziale~\ref{chap:wymagania}.
 W~rozdziale~\ref{chap:specyfikacja} znajduje się specyfikacja nowych funkcjonalności. W~rozdziale \ref{chap:implementacja} jest zawarty opis technologii użytych do~implementacji oraz jej szczegóły. Podsumowanie jest w~rozdziale \ref{chap:rozwoj}.
 
@@ -634,15 +634,17 @@ Składowe, z którymi mieliśmy styczność podczas naszej pracy, to:
 Każdą, utworzoną przez nas, tabelę w USOSadm obsługuje oddzielna klasa zgodna z JavaBean.
 
 \subsection{Klasy implementacji}
-~~~~~Aby zaimplementować nasze formularze, stworzono trzy główne klasy:
+~~~~~Aby zaimplementować nasze formularze, stworzono trzy główne klasy oraz trzy dodatkowe:
 
 \begin{itemize}
-\item \textsl{KalendarzeSpotkanBean} -- odpowiedzialny za widok Kalendarze spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
+\item \textsl{KalendarzeSpotkanBean} -- odpowiada za widok Kalendarze spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
 \begin{itemize}
-\item TODO jak implementacja zostanie sfinalizowana
+\item \textsl{SpotkaniaModule} -- obsługuje formularz Spotkania w kalendarzu, w którym wyświetlają się spotkania, po wybraniu kalendarza.
+\item \textsl{UczestnicySpotkanModule} -- obsługuje formularz Uczestnicy spotkania, w którym wyświetlają się uczestnicy spotkania, po wybraniu spotkania.
+\item \textsl{NotatkiUczestnikowModule} -- obsługuje formularz, w którym wyświetlają się notatki osoby wybranej na formularzu Uczestnicy spotkania.
 \end{itemize}
-\item \textsl{NotatkiZeSpotkanBean} -- odpowiedzialny za widok Notatki.
-\item \textsl{UzasadnieniaSpotkanBean} -- odpowiedzialny za widok Słownik uzasadnień.
+\item \textsl{NotatkiZeSpotkanBean} -- odpowiada za widok Notatki.
+\item \textsl{UzasadnieniaSpotkanBean} -- odpowiada za widok Słownik uzasadnień.
 \end{itemize}
 
 \subsection{Pobieranie danych}
@@ -667,12 +669,23 @@ Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W p
 \subsection{Moduł Spotkania}
 ~~~~~Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na ekranie \ref{fig:modspoadm}.
 
-\subsection{Kalendarz}
-TODO: Wstawić screena i napisać co trzeba klikać
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{Kalendarzadm.jpg}
+  \caption{Widok Kalendarze spotkań.}
+  \label{fig:kalenadm}
+\end{figure}
+
+\subsection{Kalendarze spotkań}
+~~~~~Na ekranie \ref{fig:kalenadm} należy wybrać kalendarz w górnej części ekranu. Wtedy na formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się uczestnicy tego spotkania. Po wybraniu uczestnika można zobaczyć jego notatki na dole ekranu.
+
+Do tworzenia nowych kalendarzy, spotkań, uczestników, notatek służą przyciski \enquote{+Dodaj} w lewych górnych rogach odpowiednich formularzy.
 
 \subsection{Notatki}
 ~~~~~Na ekranie \ref{fig:notatki} należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
+
 Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań.
+
+Aby stworzyć nową notatkę należy kliknąć przycisk \enquote{+Dodaj}, znajduje się on po lewej stronie między formularzem, na którym wybiera się studenta, a formularzem z notatkami. 
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_notatek.jpg}
@@ -688,7 +701,8 @@ Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania 
 
 \subsection{Słownik uzasadnień}
 ~~~~~Widok Słownika uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} umieszczono: jednostki, typy uzasadnień oraz ich nazwy po polsku i angielsku. Po wybraniu uzasadnienia na dole ekranu pojawi się jego treść po polsku i angielsku.
-Na ekranie \ref{fig:formularz_uzasadnienia} znajduje się formularz służący do dodawania lub modyfikowania uzasadnień.
+
+Po wciśnięciu przycisku \enquote{Dodaj} lub przycisku przy uzasadnieniu do modyfikowania pojawi się formularz widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
@@ -806,20 +820,15 @@ Zestaw funkcji pomocniczych.
 \end{itemize}
 
 \begin{figure}[!]
-  \includegraphics[width=\linewidth]{moje_jednostki_usosweb.jpg}
-  \caption{Moje jednostki.}
-  \label{fig:mojedweb} % TODO podmienic obrazek
-\end{figure}
-
-\begin{figure}[!]
   \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
   \caption{Wszystkie jednostki.}
   \label{fig:wszjweb}
 \end{figure}
 
 \subsection{Wybór jednostki}
-~~~~~Na ekranie \ref{fig:mojedweb} jest widoczna lista jednostek studenta, oferujących spotkania (jeśli jest tylko jedna, to użytkownik zostanie automatycznie przekierowany na widok kalendarzy spotkań dla tej jednej jednostki).
-Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania.
+~~~~~Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania. Jeśli jest tylko jedna to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
+
+Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jednostki studenta. Jeśli jest tylko jedna to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
 
 \subsection{Wybór spotkania}
 
