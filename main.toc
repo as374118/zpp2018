@@ -44,35 +44,35 @@
 \contentsline {subsection}{\numberline {4.2.7}Pobieranie danych}{23}{subsection.4.2.7}
 \contentsline {subsection}{\numberline {4.2.8}Szablony}{23}{subsection.4.2.8}
 \contentsline {subsection}{\numberline {4.2.9}Modu\IeC {\l } Spotkania}{23}{subsection.4.2.9}
-\contentsline {subsection}{\numberline {4.2.10}Kalendarz}{23}{subsection.4.2.10}
+\contentsline {subsection}{\numberline {4.2.10}Kalendarze spotka\IeC {\'n}}{23}{subsection.4.2.10}
 \contentsline {subsection}{\numberline {4.2.11}Notatki}{24}{subsection.4.2.11}
 \contentsline {subsection}{\numberline {4.2.12}S\IeC {\l }ownik uzasadnie\IeC {\'n}}{24}{subsection.4.2.12}
-\contentsline {section}{\numberline {4.3}USOSweb}{27}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Informacje og\IeC {\'o}lne}{27}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Opis dzia\IeC {\l }ania systemu USOSweb}{27}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Akcje}{28}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Szablony}{29}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Modu\IeC {\l }y pomocnicze}{29}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Wyb\IeC {\'o}r jednostki}{30}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Wyb\IeC {\'o}r spotkania}{30}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}Moje spotkania}{30}{subsection.4.3.8}
-\contentsline {subsection}{\numberline {4.3.9}Problemy i ich rozwi\IeC {\k a}zania}{33}{subsection.4.3.9}
-\contentsline {subsubsection}{~~~~~Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{33}{section*.25}
+\contentsline {section}{\numberline {4.3}USOSweb}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Informacje og\IeC {\'o}lne}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Opis dzia\IeC {\l }ania systemu USOSweb}{28}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Akcje}{29}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Szablony}{30}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Modu\IeC {\l }y pomocnicze}{30}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Wyb\IeC {\'o}r jednostki}{31}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}Wyb\IeC {\'o}r spotkania}{31}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}Moje spotkania}{31}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}Problemy i ich rozwi\IeC {\k a}zania}{31}{subsection.4.3.9}
+\contentsline {subsubsection}{~~~~~Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}{31}{section*.25}
 \contentsline {paragraph}{W jaki spos\IeC {\'o}b wyci\IeC {\k a}gn\IeC {\k a}\IeC {\'c} tak\IeC {\k a} drzewiast\IeC {\k a} struktur\IeC {\k e} z bazy danych w optymalny spos\IeC {\'o}b?}{33}{section*.26}
-\contentsline {subsubsection}{Podobne akcje}{33}{section*.27}
+\contentsline {subsubsection}{Podobne akcje}{34}{section*.27}
 \contentsline {subsubsection}{Wieloj\IeC {\k e}zyczno\IeC {\'s}\IeC {\'c}}{34}{section*.28}
 \contentsline {subsection}{\numberline {4.3.10}Zmiany w USOSWeb}{34}{subsection.4.3.10}
 \contentsline {subsubsection}{Wyj\IeC {\k a}tki}{34}{section*.29}
 \contentsline {subsubsection}{B\IeC {\l }\IeC {\k a}d w Smarty}{34}{section*.30}
 \contentsline {subsection}{\numberline {4.3.11}Potencjalne ataki i zabezpieczenia}{34}{subsection.4.3.11}
 \contentsline {subsubsection}{CSRF}{34}{section*.31}
-\contentsline {subsubsection}{SQL injection}{34}{section*.32}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Co zrobiono}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Potencjalny dalszy rozw\IeC {\'o}j}{35}{section.5.2}
-\contentsline {subsubsection}{Tokeny}{35}{section*.33}
-\contentsline {subsubsection}{Mobilny USOS}{35}{section*.34}
-\contentsline {subsubsection}{Spotkania innego rodzaju}{35}{section*.35}
-\contentsline {chapter}{\numberline {6}Dodatki}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Opis zawarto\IeC {\'s}ci p\IeC {\l }yty CD}{37}{section.6.1}
-\contentsline {chapter}{Bibliografia}{39}{chapter*.36}
+\contentsline {subsubsection}{SQL injection}{35}{section*.32}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Co zrobiono}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Potencjalny dalszy rozw\IeC {\'o}j}{37}{section.5.2}
+\contentsline {subsubsection}{Tokeny}{37}{section*.33}
+\contentsline {subsubsection}{Mobilny USOS}{37}{section*.34}
+\contentsline {subsubsection}{Spotkania innego rodzaju}{37}{section*.35}
+\contentsline {chapter}{\numberline {6}Dodatki}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Opis zawarto\IeC {\'s}ci p\IeC {\l }yty CD}{39}{section.6.1}
+\contentsline {chapter}{Bibliografia}{41}{chapter*.36}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  24 JAN 2019 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.9)  26 JAN 2019 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,7 +475,7 @@ o-rzy-sta-niu czasu Dzie-kana na spo-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 447.
 
-<schemat.jpg, id=444, 839.135pt x 854.19125pt>
+<schemat.jpg, id=423, 839.135pt x 854.19125pt>
 File: schemat.jpg Graphic file (type jpg)
 <use schemat.jpg>
 Package pdftex.def Info: schemat.jpg  used on input line 448.
@@ -577,234 +577,195 @@ Overfull \hbox (12.01204pt too wide) in paragraph at lines 632--633
 [22]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 661.
+               Default added (so using `!tbp') on input line 663.
 
-<spotkaniaadm.jpg, id=501, 562.60187pt x 276.53313pt>
+<spotkaniaadm.jpg, id=480, 562.60187pt x 276.53313pt>
 File: spotkaniaadm.jpg Graphic file (type jpg)
 <use spotkaniaadm.jpg>
-Package pdftex.def Info: spotkaniaadm.jpg  used on input line 662.
+Package pdftex.def Info: spotkaniaadm.jpg  used on input line 664.
 (pdftex.def)             Requested size: 441.01773pt x 216.77095pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 672.
+
+<Kalendarzadm.jpg, id=482, 679.53876pt x 451.6875pt>
+File: Kalendarzadm.jpg Graphic file (type jpg)
+<use Kalendarzadm.jpg>
+Package pdftex.def Info: Kalendarzadm.jpg  used on input line 673.
+(pdftex.def)             Requested size: 441.01773pt x 293.1454pt.
 [23 <./spotkaniaadm.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 677.
+               Default added (so using `!tbp') on input line 690.
 
-<widok_notatek.jpg, id=512, 1359.0775pt x 903.375pt>
+<widok_notatek.jpg, id=493, 1359.0775pt x 903.375pt>
 File: widok_notatek.jpg Graphic file (type jpg)
 <use widok_notatek.jpg>
-Package pdftex.def Info: widok_notatek.jpg  used on input line 678.
+Package pdftex.def Info: widok_notatek.jpg  used on input line 691.
 (pdftex.def)             Requested size: 441.01773pt x 293.13852pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 683.
+               Default added (so using `!tbp') on input line 696.
 
-<formularz_notatek.jpg, id=513, 1005.7575pt x 587.19376pt>
+<formularz_notatek.jpg, id=494, 1005.7575pt x 587.19376pt>
 File: formularz_notatek.jpg Graphic file (type jpg)
 <use formularz_notatek.jpg>
-Package pdftex.def Info: formularz_notatek.jpg  used on input line 684.
+Package pdftex.def Info: formularz_notatek.jpg  used on input line 697.
 (pdftex.def)             Requested size: 441.01773pt x 257.47902pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 693.
+               Default added (so using `!tbp') on input line 707.
 
-<widok_uzasadnien.jpg, id=516, 1359.0775pt x 1015.795pt>
+<widok_uzasadnien.jpg, id=497, 1359.0775pt x 1015.795pt>
 File: widok_uzasadnien.jpg Graphic file (type jpg)
 <use widok_uzasadnien.jpg>
-Package pdftex.def Info: widok_uzasadnien.jpg  used on input line 694.
+Package pdftex.def Info: widok_uzasadnien.jpg  used on input line 708.
 (pdftex.def)             Requested size: 441.01773pt x 329.61797pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 699.
+               Default added (so using `!tbp') on input line 713.
 
-<formularz_uzasadnien.jpg, id=517, 675.52374pt x 525.965pt>
+<formularz_uzasadnien.jpg, id=498, 675.52374pt x 525.965pt>
 File: formularz_uzasadnien.jpg Graphic file (type jpg)
 <use formularz_uzasadnien.jpg>
-Package pdftex.def Info: formularz_uzasadnien.jpg  used on input line 700.
+Package pdftex.def Info: formularz_uzasadnien.jpg  used on input line 714.
 (pdftex.def)             Requested size: 441.01773pt x 343.38199pt.
-[24 <./widok_notatek.jpg>] [25 <./formularz_notatek.jpg> <./widok_uzasadnien.jp
-g>] [26 <./formularz_uzasadnien.jpg>] [27] [28] [29]
+[24 <./Kalendarzadm.jpg>] [25 <./widok_notatek.jpg> <./formularz_notatek.jpg>]
+[26 <./widok_uzasadnien.jpg>] [27 <./formularz_uzasadnien.jpg>] [28] [29]
+[30]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 808.
+               Default added (so using `!tbp') on input line 822.
 
-<moje_jednostki_usosweb.jpg, id=551, 1089.06876pt x 810.02625pt>
-File: moje_jednostki_usosweb.jpg Graphic file (type jpg)
-<use moje_jednostki_usosweb.jpg>
-Package pdftex.def Info: moje_jednostki_usosweb.jpg  used on input line 809.
-(pdftex.def)             Requested size: 441.01773pt x 328.00938pt.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 814.
-
-<wszystkie_jednostki_usosweb.jpg, id=552, 1328.965pt x 743.77875pt>
+<wszystkie_jednostki_usosweb.jpg, id=533, 1328.965pt x 743.77875pt>
 File: wszystkie_jednostki_usosweb.jpg Graphic file (type jpg)
 <use wszystkie_jednostki_usosweb.jpg>
-Package pdftex.def Info: wszystkie_jednostki_usosweb.jpg  used on input line 81
-5.
+Package pdftex.def Info: wszystkie_jednostki_usosweb.jpg  used on input line 82
+3.
 (pdftex.def)             Requested size: 441.01773pt x 246.82098pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 826.
+               Default added (so using `!tbp') on input line 835.
 
-<kalendarzUSOSweb.jpg, id=555, 1411.2725pt x 750.805pt>
+<kalendarzUSOSweb.jpg, id=535, 1411.2725pt x 750.805pt>
 File: kalendarzUSOSweb.jpg Graphic file (type jpg)
 <use kalendarzUSOSweb.jpg>
-Package pdftex.def Info: kalendarzUSOSweb.jpg  used on input line 827.
+Package pdftex.def Info: kalendarzUSOSweb.jpg  used on input line 836.
 (pdftex.def)             Requested size: 441.01773pt x 234.62598pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 834.
+               Default added (so using `!tbp') on input line 843.
 
-<zapisUSOSweb.jpg, id=557, 1061.9675pt x 622.325pt>
+<zapisUSOSweb.jpg, id=537, 1061.9675pt x 622.325pt>
 File: zapisUSOSweb.jpg Graphic file (type jpg)
 <use zapisUSOSweb.jpg>
-Package pdftex.def Info: zapisUSOSweb.jpg  used on input line 835.
+Package pdftex.def Info: zapisUSOSweb.jpg  used on input line 844.
 (pdftex.def)             Requested size: 441.01773pt x 258.44048pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 844.
+               Default added (so using `!tbp') on input line 853.
 
-<mojeSpotkaniaUSOSweb.jpg, id=559, 1407.2575pt x 752.8125pt>
+<mojeSpotkaniaUSOSweb.jpg, id=539, 1407.2575pt x 752.8125pt>
 File: mojeSpotkaniaUSOSweb.jpg Graphic file (type jpg)
 <use mojeSpotkaniaUSOSweb.jpg>
-Package pdftex.def Info: mojeSpotkaniaUSOSweb.jpg  used on input line 845.
+Package pdftex.def Info: mojeSpotkaniaUSOSweb.jpg  used on input line 854.
 (pdftex.def)             Requested size: 441.01773pt x 235.91957pt.
-[30 <./moje_jednostki_usosweb.jpg>] [31 <./wszystkie_jednostki_usosweb.jpg> <./
-kalendarzUSOSweb.jpg>] [32 <./zapisUSOSweb.jpg> <./mojeSpotkaniaUSOSweb.jpg>]
-Overfull \hbox (3.22061pt too wide) in paragraph at lines 869--870
+[31 <./wszystkie_jednostki_usosweb.jpg>] [32 <./kalendarzUSOSweb.jpg> <./zapisU
+SOSweb.jpg>]
+Overfull \hbox (3.22061pt too wide) in paragraph at lines 878--879
 []\T1/cmr/m/n/10.95 U»ywaj¡c in-stru-men-tów j¦-zy-ko-wych do-st¦p-nych w PHP t
 ak¡ struk-tur¦ naj-wy-god-niej przed-
  []
 
-[33] [34]
-Rozdzia\l  5.
-[35
-
-] [36
+[33 <./mojeSpotkaniaUSOSweb.jpg>] [34] [35] [36
 
 ]
-Rozdzia\l  6.
+Rozdzia\l  5.
 [37] [38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
+Rozdzia\l  6.
+[39] [40
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
 []\T1/cmr/m/n/10.95 Mariusz Czer-niak; Ja-nina Mincer-Daszkiewicz, \T1/cmr/m/it
 /10.95 Do-ku-men-ta-cja
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
 \T1/cmr/m/it/10.95 wdro-»e-niowa\T1/cmr/m/n/10.95 , Mi¦-dzy Uni-wer-sy-tec-kie 
 Cen-trum In-for-ma-ty-za-cji, 2017,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 942--943
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
 []\T1/cmr/m/n/10.95 Jan Ino-wol-ski; Marta Ju-zep-czuk; Ar-tur Po-pªaw-ski, \T1
 /cmr/m/it/10.95 Do-dat-kowe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 942--943
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
 \T1/cmr/m/it/10.95 funk-cjo-nal-no-±ci w in-ter-fej-sie JSF + Rich-Fa-ces\T1/cm
 r/m/n/10.95 , Wiki USOS, 2013,
  []
 
 
-Overfull \hbox (204.19559pt too wide) in paragraph at lines 946--947
+Overfull \hbox (204.19559pt too wide) in paragraph at lines 955--956
 []\T1/cmr/m/it/10.95 Chapter 2. Map-ping En-ti-ties\T1/cmr/m/n/10.95 , jboss.or
 g, https://docs.jboss.org/hibernate/stable/annotations/reference/en/html/entity
 .html. 
  []
 
 
-Overfull \hbox (131.49425pt too wide) in paragraph at lines 948--949
+Overfull \hbox (131.49425pt too wide) in paragraph at lines 957--958
 []\T1/cmr/m/it/10.95 JavaBeans\T1/cmr/m/n/10.95 , Sun Mi-cro-sys-tems, 1997, ht
 tps://www.oracle.com/technetwork/java/javase/documentation/spec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 950--951
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
 []\T1/cmr/m/it/10.95 USOS\T1/cmr/m/n/10.95 , Mi¦-dzy Uni-wer-sy-tec-kie Cen-tru
 m In-for-ma-ty-za-cji,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 960.
-[39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 960.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 969.
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 969.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 960.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 960.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9FDAFDBD403B9D063ACD136FE2C116F0;4260
-(rerunfilecheck)             After:  FA33EA0685D58F6124380BC7C800EA10;3980.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 960.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 969.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 969.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B97CD634EA179B766570E437FCFDB744;3989.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 969.
  ) 
 Here is how much of TeX's memory you used:
- 8729 strings out of 492649
- 130272 string characters out of 6129623
- 252328 words of memory out of 5000000
- 12317 multiletter control sequences out of 15000+600000
+ 8717 strings out of 492649
+ 130005 string characters out of 6129623
+ 252340 words of memory out of 5000000
+ 12313 multiletter control sequences out of 15000+600000
  19522 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,9n,39p,1149b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.14} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.32} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (41 pages, 3310461 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on main.pdf (43 pages, 3279829 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 185 named destinations out of 1000 (max. 500000)
- 552 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 520 words of extra memory for PDF output out of 10000 (max. 10000000)
 
