@@ -133,34 +133,36 @@ Software evolution\\}
 \chapter{Wprowadzenie} \label{chap:wpr}
 \section{Spotkanie}
 
-~~~~~Niektóre problemy wymagają osobistego spotkania z Dziekanem. Niniejsza praca ma na celu usprawnienie procesu zapisów na spotkanie.
+Niektóre problemy wymagają osobistego spotkania z Dziekanem. Niniejsza praca ma na celu usprawnienie procesu zapisów na spotkanie.
 \section{Rozwiązanie dotychczasowe}
-~~~~~Obecnie proces zapisu studenta na spotkanie z Dziekanem wygląda następująco:
+Obecnie proces zapisu studenta na spotkanie z Dziekanem wygląda następująco:
 \begin{enumerate}
 \item student powinien przyjść, zadzwonić albo wysłać wiadomość e-mail do Sekcji Studenckiej (Dziekanatu), podać imię, nazwisko, numer albumu oraz powód wizyty,
 \item student otrzymuje odpowiedź od Sekcji Studenckiej. W przypadku kiedy problem wymaga spotkania z Dziekanem, otrzymuje datę wizyty oraz numer w kolejce na liście wizyt. W przypadku, kiedy problem może być rozwiązany inaczej, otrzymuje instrukcje, co powinien zrobić.
 \end{enumerate}
-~~~~~Studenci preferują zapisywanie się osobiście, ponieważ natychmiast otrzymują ostateczną odpowiedź. Wizyty w Sekcji Studenckiej wymagają od studenta poświęcenia czasu i dostosowania się do krótkiego czasu pracy Sekcji. Przykładowym okresem, gdy szczególnie trudno jest uzyskać kontakt z~Sekcją~Studencką, jest okres przedłużania ważności legitymacji studenckich. Wtedy kolejki studentów potrafią być na tyle długie, że w rozsądnym czasie student nie będzie mógł wejść do~dziekanatu. Warto zadbać o zmniejszenie tłoku w Sekcji Studenckiej.
+~~~~~Studenci preferują zapisywanie się osobiście, ponieważ natychmiast otrzymują ostateczną odpowiedź. Wizyty w Sekcji Studenckiej wymagają od studenta czasu i dostosowania się do godzin otwarcia dziekanatu. Przykładowym okresem, gdy szczególnie trudno jest uzyskać kontakt z~Sekcją~Studencką, jest okres przedłużania ważności legitymacji studenckich. Wtedy kolejki studentów potrafią być na tyle długie, że w rozsądnym czasie student nie będzie mógł wejść do~dziekanatu. Warto zadbać o zmniejszenie tłoku w Sekcji Studenckiej.
 
-Kluczowy jest tutaj fakt, że Sekcja Studencka na Wydziale otwarta jest dla studentów w ograniczonym zakresie. Ogranicza to czasowe możliwości studentów na zapisy. Co więcej, forma, w jakiej przebiegają zapisy, niepotrzebnie zajmuje czas studentów i~pracowników Sekcji Studenckiej.
+Kluczowy jest tutaj fakt, że Sekcja Studencka otwarta jest dla studentów w ograniczonym zakresie. Ogranicza to czasowe możliwości studentów na zapisy. Co więcej, forma, w jakiej przebiegają zapisy, niepotrzebnie zajmuje czas studentów i~pracowników Sekcji Studenckiej.
 
-Ponadto różne sposoby kontaktu mogą powodować niesprawiedliwą kolejność wizyt.
+Ponadto różne sposoby kontaktu mogą powodować niesprawiedliwy przydział terminów spotkań.
 
 
 \section{Ogólnie informacje o systemie USOS}
-~~~~~\href{http://usos.edu.pl}{USOS}, czyli Uniwersytecki System Obsługi Studiów, powstał w~wyniku zapotrzebowania na~narzędzie~informatyczne służące do~zarządzania sprawami studiów na~polskich~uczelniach. Razem z~sukcesem USOS powstało zapotrzebowanie na platformę umożliwiającą studentom częściowy dostęp do funkcjonalności i danych USOS. W tym celu powstał \href{htpp://usosweb.uw.edu.pl}{USOSweb}, czyli internetowa platforma pozwalająca studentom i pracownikom uczelni na dostęp do części funkcjonalności USOS.
+\href{http://usos.edu.pl}{USOS}, czyli Uniwersytecki System Obsługi Studiów, powstał w~wyniku zapotrzebowania na~narzędzie~informatyczne służące do~zarządzania sprawami studiów na~polskich~uczelniach. Razem z~sukcesem USOS pojawiło się zapotrzebowanie na platformę umożliwiającą studentom częściowy dostęp do funkcjonalności i danych USOS. W tym celu powstał \href{htpp://usosweb.uw.edu.pl}{USOSweb}, czyli internetowa platforma pozwalająca studentom i pracownikom uczelni na dostęp do części funkcjonalności USOS.
 
 ~~
 
 USOS dostarcza między innymi takie usługi jak:
 \begin{enumerate}
 \item rekrutacja na studia i~immatrykulacja,
-\item elektroniczne Legitymacje Studenckie,
+\item elektroniczne legitymacje studenckie,
 \item przygotowywanie oferty dydaktycznej,
 \item zarządzanie tokiem studiów,
 \item elektroniczne podania, stypendia i~ankiety,
 \item akademiki i~płatności \cite{usosstart}.
 \end{enumerate}
+
+~~
 
 USOS składa się między innymi z:
 \begin{itemize}
@@ -170,9 +172,9 @@ USOS składa się między innymi z:
 
 
 \section{Cel pracy}
-~~~~~W ramach pracy powstał moduł do systemów USOSadm i~USOSweb, dzięki któremu będzie możliwe umawianie, kontrola i~archiwizacja wizyt studentów u~Dziekana. W USOSweb studenci i~osoby spoza wydziału będą mogły zapisywać się na spotkania z~Dziekanem w~odgórnie ustalonych terminach. Poza ułatwieniem rejestracji i~zwiększeniem jej dostępności, system ten będzie oszczędzać czas Dziekana oraz studentów. Ponadto zmniejszy się zużycie papieru.
+W ramach pracy powstał moduł do systemów USOSadm i~USOSweb, dzięki któremu będzie możliwe umawianie, kontrola i~archiwizacja wizyt studentów u~Dziekana. W USOSweb studenci i~osoby spoza wydziału będą mogły zapisywać się na spotkania z~Dziekanem w~odgórnie ustalonych terminach. Poza ułatwieniem rejestracji i~zwiększeniem jej dostępności, system ten będzie oszczędzać czas Dziekana oraz studentów. Ponadto zmniejszy się zużycie papieru.
 \section{Struktura pracy}
-~~~~~Praca składa się z~5 rozdziałów i~dodatku.
+Praca składa się z~5 rozdziałów i~dodatku.
 Wymagania i~uwagi potencjalnych użytkowników zostały opisane w~rozdziale~\ref{chap:wymagania}.
 W~rozdziale~\ref{chap:specyfikacja} znajduje się specyfikacja nowych funkcjonalności. W~rozdziale \ref{chap:implementacja} jest zawarty opis technologii użytych do~implementacji oraz jej szczegóły. Podsumowanie jest w~rozdziale \ref{chap:rozwoj}.
 
@@ -193,10 +195,10 @@ Napisał skrypt tworzący bazę danych MySQL. Stworzył stronę Notatki w USOSad
 \chapter{Wymagania użytkowników} \label{chap:wymagania}
 
 \section{Wymagania}
-~~~~~Przed przystąpieniem do projektowania postanowiliśmy zapytać potencjalnych użytkowników jakie mają wymagania względem systemu. Zidentyfikowaliśmy trzy główne grupy użytkowników, które zapytaliśmy o zdanie: Dziekana, studentów oraz~pracowników Sekcji Studenckiej Dziekanatu.
+Przed przystąpieniem do projektowania postanowiliśmy zapytać potencjalnych użytkowników jakie mają wymagania względem systemu. Zidentyfikowaliśmy trzy główne grupy użytkowników, które zapytaliśmy o zdanie: Dziekana, studentów oraz~pracowników Sekcji Studenckiej Dziekanatu.
 
 \section{Rozmowa z Dziekanem}
-~~~~~Dziekana, będącego jednym z głównych odbiorców modułu, jako pierwszego zapytaliśmy o~wymagania. Najistotniejsze z~nich to:
+Dziekana, będącego jednym z głównych odbiorców modułu, jako pierwszego zapytaliśmy o~wymagania. Najistotniejsze z~nich to:
 
 \begin{itemize}
 \setlength\itemsep{0,1em}
@@ -211,28 +213,28 @@ Napisał skrypt tworzący bazę danych MySQL. Stworzył stronę Notatki w USOSad
 ~~~~~Wymagania jakie przedstawił Dziekan w dużej mierze uformowały kształt, jaki ten projekt przyjął. Na ich podstawie rozwijaliśmy lub~dodawaliśmy do modułu funkcjonalności.
 
 \section{Ankieta dla studentów} \label{sec:ankieta}
-~~~~~W trakcie projektowania modułu przeprowadziliśmy ankietę internetową wśród studentów MIM, aby dowiedzieć się, jakie byłyby ich preferencje względem niektórych funkcjonalności i~czy pokrywają się z~wymyślonymi przez nas rozwiązaniami. Ankietę wypełniło 170 studentów. Poniżej zaprezentowano pytania i odpowiedzi.
+W trakcie projektowania modułu przeprowadziliśmy ankietę internetową wśród studentów MIM, aby dowiedzieć się, jakie byłyby ich preferencje względem niektórych funkcjonalności i~czy pokrywają się z~wymyślonymi przez nas rozwiązaniami. Ankietę wypełniło 170 studentów. Prezentujemy pytania i odpowiedzi.
 \begin{itemize}
 \setlength\itemsep{0,1em}
 \item Jak wcześnie przed wizytą chciałbyś/chciałabyś zapisać się do dziekana?
 Odpowiedziało 169 studentów.
 \begin{itemize}
 \setlength\itemsep{0,1em}
-\item Tego samego dnia - 17 (28\%).
-\item Na tydzień przed - 113 (67\%).
-\item Na dwa tygodnie przed - 5 (3\%).
-\item Na trzy tygodnie przed - 0.
-\item Na miesiąc przed - 3 (2\%).
-\item Na dłużej niż miesiąc przed - 0.
+\item Tego samego dnia -- 17 (28\%).
+\item Na tydzień przed -- 113 (67\%).
+\item Na dwa tygodnie przed -- 5 (3\%).
+\item Na trzy tygodnie przed -- 0.
+\item Na miesiąc przed -- 3 (2\%).
+\item Na dłużej niż miesiąc przed -- 0.
 \end{itemize}
 
 \item W wypadku gdy limit dostępnych miejsc się zapełni, chciałbyś/chciałabyś?
 Odpowiedziało 170 studentów.
 \begin{itemize}
 \setlength\itemsep{0,1em}
-\item Zostać zapisanym/zapisaną na najbliższy dostępny termin - 17 (10\%).
-\item Zostać zapisanym na następny termin wyznaczony przez siebie - 135 (79\%).
-\item Nic, chcę zapisać się od nowa samodzielnie - 18 (11\%).
+\item Zostać zapisanym/zapisaną na najbliższy dostępny termin -- 17 (10\%).
+\item Zostać zapisanym na następny termin wyznaczony przez siebie -- 135 (79\%).
+\item Nic, chcę zapisać się od nowa samodzielnie -- 18 (11\%).
 \end{itemize}
 
 \item Podając powód na wizytę u Dziekana, chcę.
@@ -240,9 +242,9 @@ Odpowiedziało 170 studentów.
 \begin{itemize}
 \setlength\itemsep{0,1em}
 
-\item Napisać powód samemu - 11 (6\%).
-\item Wybrać powód z listy dostępnych możliwych powodów - 16 (9\%).
-\item Mieszankę powyższych odpowiedzi - 143 (84\%).
+\item Napisać powód samemu -- 11 (6\%).
+\item Wybrać powód z listy dostępnych możliwych powodów -- 16 (9\%).
+\item Mieszankę powyższych odpowiedzi -- 143 (84\%).
 \end{itemize}
 
 \item Czy zapisując się do Dziekana bierzesz pod uwagę sytuację, gdy nie będziesz w stanie pojawić się na wizycie?
@@ -250,8 +252,8 @@ Odpowiedziało 168 studentów.
 \begin{itemize}
 \setlength\itemsep{0,1em}
 
-\item tak - 51 (30\%).
-\item nie - 117 (70\%).
+\item tak -- 51 (30\%).
+\item nie -- 117 (70\%).
 \end{itemize}
 
 \item Jeśli tak, to z jakiego powodu i z jakim wyprzedzeniem przed wizytą będziesz o tym wiedzieć?
@@ -270,19 +272,19 @@ Odpowiedziało 31 studentów. Poniżej przytoczono niektóre odpowiedzi (tekst i
 \begin{itemize}
 \setlength\itemsep{0,1em}
 \item \enquote{Odnośnie pytania ''Z jakim wyprzedzeniem przed wizytą chciałbyś/chciałabyś zapisać się do dziekana?'':    Chciałbym wybrać opcję ''na dzień przed''. Nie było takiej, więc wybrałem ''tego samego dnia''.}
-\item \enquote{Fajnie byłoby widzieć o której godzinie trzeba przyjść, a nie tylko wiedzieć ze jest się 20 na liście.}
+\item \enquote{Fajnie byłoby widzieć o której godzinie trzeba przyjść, a nie tylko wiedzieć że jest się 20 na liście.}
 \item \enquote{Moim zdaniem, byłoby wspaniale, gdyby osoba1 mogła w ciągu tygodnia przed wizytą wypisać się z listy, a na jej miejsce mogłaby dopisać się osoba2, która próbowała dostać się w tym terminie ale limit miejsc był już zapełniony (na przykład osoba2 mogłaby dostawać maila, że miejsce zostało zwolnione i można dopisać się).}
 \item \enquote{Ad pytanie 1 -- 3-5 dni przed    Ad pytanie 2 -- chciałbym zobaczyć, jakie są najbliższe wolne terminy i wybrać któryś z nich jeśli pasuje. Zapisywanie na najbliższy z automatu jest bez sensu, bo może nie pasować). Przy braku terminów, lub zapisie na dalszy niż pożądany, można by dodać opcję ''powiadom mnie, jeśli zwolni się wcześniejszy termin''. Po zwolnieniu terminu system mógłby wysłać powiadomienie mailem do kilku pierwszych osób z kolejki, można by wtedy przełożyć termin swojego spotkania na zwolniony -- na zasadzie ''kto pierwszy ten lepszy'', w szczególności, kto kliknie w powiadomienie jako drugi zawsze może zająć poprzedni termin tego kto kliknął pierwszy :)    Ad pytanie 3 -- najsensowniejszą opcją wydaje mi się połączenie    (1) wybór kategorii wizyty z listy ustalanej (i konfigurowalnej) przez Dziekana (tak żeby ułatwiło mu to ustalanie wizyt, pisanie odpowiedzi, etc),    (2) poniżej samodzielnie krótko (50-100 znaków?) opisać konkretny cel wizyty.    P.S. gratuluję dobrego pomysłu na faktycznie użyteczny projekt ZPP :)}
 \item \enquote{Niech siedzi pani w Sekcji Studenckiej i zapisuje, żadne tam systemy informatyczne.}
 \item \enquote{Na wne jest strona, gdzie się zapisuje do pani prodziekan i działa bardzo dobrze. Na tej stronie wisi lista osób zapisanych na dyżur. Oczywiście w kolejności i przy zapisie wiadomo, którym się będzie. Max 30 osób pani przyjmuje i jeśli ma możliwość, to przyjmuje więcej. Jest lista rezerwowa dla zdesperowanych, którzy czekają cierpliwie jak skończy się lista podstawowa}
-\item \enquote{Przydałaby się możliwość wejścia na zwolnione wolne miejsce. Doświadczenia wizyt u prodziekana pokazują, że z pierwszych 10 osób pojawia się 3-5, a pozostałe miejsca są wolne - czasem przydatna byłaby opcja zapisania się rezerwowo na takie miejsce, np. w razie nagłej,a pilnej sprawy.  Wolę też w takiej sytuacji wejść kilka razy w USOSweb niż czekać tydzień na wizytę.}
+\item \enquote{Przydałaby się możliwość wejścia na zwolnione wolne miejsce. Doświadczenia wizyt u prodziekana pokazują, że z pierwszych 10 osób pojawia się 3-5, a pozostałe miejsca są wolne -- czasem przydatna byłaby opcja zapisania się rezerwowo na takie miejsce, np. w razie nagłej,a pilnej sprawy.  Wolę też w takiej sytuacji wejść kilka razy w USOSweb niż czekać tydzień na wizytę.}
 \end{itemize}
 
 \end{itemize}
 Większość studentów potwierdziła, że zaprojektowane przez nas rozwiązanie będzie dla nich wygodne i~funkcjonalne.
  
 \section{Rozmowa z Sekcją Studencką}
-~~~~~Zapytaliśmy również o zdanie pracowników Sekcji Studenckiej. Ich wymagania wyglądały następująco:
+Zapytaliśmy również o zdanie pracowników Sekcji Studenckiej. Ich wymagania wyglądały następująco:
 \begin{itemize}
 \setlength\itemsep{0,05em}
     \item system powinien być wygodny i prosty w obsłudze,
@@ -296,25 +298,25 @@ Pracownicy Sekcji Studenckiej wyraźnie podkreślali wagę wygody i~łatwości u
 \chapter{Specyfikacja} \label{chap:specyfikacja}
 
 \section{Cel projektu}
-~~~~~Celem projektu jest dodanie do aplikacji USOSadm i USOSweb funkcjonalności zapisów na~spotkania z~Dziekanem. System dzieli się na dwie części: moduł USOSweb dla osoby zapisującej się na spotkanie i~moduł USOSadm dla personelu obsługującego spotkania.
+Celem projektu jest dodanie do aplikacji USOSadm i USOSweb funkcjonalności zapisów na~spotkania z~Dziekanem. System dzieli się na dwie części: moduł USOSweb dla osoby zapisującej się na spotkanie i~moduł USOSadm dla personelu obsługującego spotkania.
 
 \section{Definicje}
 \subsubsection{Kalendarz spotkań}
-~~~~~Obiekt, w którym definiuje się rodzaj spotkania, osobę prowadzącą spotkanie, cykl dydaktyczny oraz jednostkę. Przykład: Dziekan może w danym cyklu dydaktycznym prowadzić spotkania dziekańskie w~jednym kalendarzu oraz konsultacje na~dwóch~różnych~wydziałach w~dwóch~innych~kalendarzach.
+Obiekt, w którym definiuje się rodzaj spotkania, osobę prowadzącą spotkanie, cykl dydaktyczny oraz jednostkę. Przykład: Dziekan może w danym cyklu dydaktycznym prowadzić spotkania dziekańskie w~jednym kalendarzu oraz konsultacje na~dwóch~różnych~wydziałach w~dwóch~innych~kalendarzach.
 
 \subsubsection{Słownik}
-~~~~~Część danych  przechowywanych  w  systemie  USOS, które  raczej  rzadko się zmieniają, a  jednocześnie są wykorzystywane w wielu formularzach systemu, na przykład lista budynków i sal uczelni jest słownikiem, natomiast lista zajęć odbywanych w danej sali już nie \cite{prz}.
+Część danych  przechowywanych  w  systemie  USOS, które  raczej  rzadko się zmieniają, a  jednocześnie są wykorzystywane w wielu formularzach systemu, na przykład lista budynków i sal uczelni, jest słownikiem, natomiast lista zajęć odbywanych w danej sali już nie \cite{prz}.
 
 \subsubsection{Słownik uzasadnień}
-~~~~~Słownik, który zawiera powody do zapisu na spotkanie oraz powody odrzucenia prośby o spotkanie.
+Słownik, który zawiera powody do zapisu na spotkanie oraz powody odrzucenia prośby o spotkanie.
 
 \subsubsection{Okres zapisów}
-~~~~~Przedział czasu, w którym można składać prośby o zapisanie na spotkanie.
+Przedział czasu, w którym można składać prośby o zapisanie na spotkanie.
 
 %\subsection{Miejsce rezerwowe na spotkanie}
 
 \section{Definiowanie spotkania}
-~~~~~Można wyróżnić następujące kluczowe informacje:
+Można wyróżnić następujące kluczowe informacje:
 
 \begin{itemize}
 \setlength\itemsep{0,05em}
@@ -337,7 +339,7 @@ Porządek chronologiczny terminów:
 \end{enumerate}
 
 \section{Zapisy na spotkanie}
-~~~~~Zapisy na spotkanie będą realizowane poprzez kalendarz spotkań, ich przebieg będzie wyglądał następująco:
+Zapisy na spotkanie będą realizowane poprzez kalendarz spotkań, ich przebieg będzie wyglądał następująco:
 
 \begin{enumerate}
     \item zdefiniowanie terminu spotkania,
@@ -347,7 +349,7 @@ Porządek chronologiczny terminów:
 \end{enumerate}
 
 \section{Uczestnik spotkania}
-~~~~~W systemie przechowuje się następujące informacje o uczestniku spotkania:
+W systemie przechowuje się następujące informacje o uczestniku spotkania:
 
 \begin{itemize}
 \setlength\itemsep{0,05em}
@@ -356,34 +358,34 @@ Porządek chronologiczny terminów:
     \item powód spotkania,
     \item spotkanie, w którym osoba chce uczestniczyć,
     %\item czy formularz jest “nowy” w aktualnym cyklu zapisów,
-    \item informacja czy prośba o spotkanie została zaakceptowana, odrzucona czy~nierozpatrzona,
+    \item informacja, czy prośba o spotkanie została zaakceptowana, odrzucona czy~nierozpatrzona,
     %\item informacja czy spotkanie się odbyło,
     \item uzasadnienie odrzucenia prośby.
 \end{itemize}
 
 \section{Dodatkowe wymagania}
-~~~~~Prośby o zapisanie się na~spotkanie mogą zostać zaakceptowane, odrzucone lub mogą nie zmieścić się w~limicie miejsc. Podczas projektowania zakładaliśmy, że ci, których prośby nie zmieściły się~w~limicie, będą mieć przez ograniczony czas możliwość przepisania swojego spotkania na~inny~termin, na~który zapisy nie zostały jeszcze otwarte. Jednak nie zostało to zaimplementowane.
+Prośby o zapisanie się na~spotkanie mogą zostać zaakceptowane, odrzucone lub mogą nie zmieścić się w~limicie miejsc. Podczas projektowania zakładaliśmy, że ci, których prośby nie zmieściły się~w~limicie, będą mieć przez ograniczony czas możliwość przepisania swojego spotkania na~inny~termin, na~który zapisy nie zostały jeszcze otwarte. Jednak nie zostało to zaimplementowane.
 
 Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana na~spotkania. W przypadku, gdy osoba potwierdzająca zapisy studenta odrzuci jego prośbę o~spotkanie z Dziekanem, zostanie ona usunięta z~kolejki, wszyscy studenci znajdujący się niżej na~liście głównej zostaną przeniesieni o~jedno miejsce wyżej i jeśli są zapisy na liście rezerwowej, to ten z pierwszego miejsca zostanie przeniesiony na~listę~główną.
 
 \section{Szczegółowa specyfikacja użytkowania}
 
-\subsection{Używanie modułu do USOSadm przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
+\subsection{Używanie modułu w USOSadm przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
 	\begin{step}
-			\item Utworzenie listy powodów odrzuceń, dla każdego podając:
+			\item Utworzenie listy powodów odrzuceń, dla każdego należy podać:
 					\begin{itemize}
 						\item jednostkę organizacyjną,
 						\item nazwę,
 						\item treść powodu.
 					\end{itemize}
-			\item Utworzenie kalendarza spotkań.
+			\item Utworzenie kalendarza spotkań, dla każdego należy podać:
 					\begin{itemize}
-						\item nazwa kalendarza,
+						\item nazwę kalendarza,
 						\item cykl dydaktyczny,
-						\item jednostka, która organizuje spotkanie,
-						\item osoba z którą są spotkania.
+						\item jednostkę, która organizuje spotkanie,
+						\item osobę, z którą są spotkania.
 					\end{itemize} 
-				\item Utworzenie spotkań, dla każdego podanie:
+				\item Utworzenie spotkań, dla każdego należy podać:
 					\begin{itemize}
 						\item początek i~koniec spotkania,
 						\item początek i~koniec okresu zapisów,
@@ -398,23 +400,23 @@ Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana 
 		\item Wpisywanie notatek w trakcie spotkania.
 	\end{step}
 	
-\subsection{Używanie modułu do USOSweb przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
+\subsection{Używanie modułu w USOSweb przez zalogowanego użytkownika z odpowiednimi uprawnieniami.}
 	\begin{step}
 			\item Wejście w widok \enquote{Dla studentów}.
-			\item Przejście w zakładkę \enquote{Moje jednostki} lub~\enquote{Wszystkie jednostki}.
+			\item Przejście na zakładkę \enquote{Moje jednostki} lub~\enquote{Wszystkie jednostki}.
 			\item Wybranie jednostki, z możliwością sortowania po:
 				\begin{itemize}
 					\item kodzie jednostki,
 					\item nazwie jednostki,
-					\item liczbie dostępnych Kalendarzy. 
+					\item liczbie dostępnych kalendarzy. 
 				\end{itemize}
-			\item Przeglądanie dostępnych Kalendarzy wybranej jednostki:
+			\item Przeglądanie dostępnych kalendarzy wybranej jednostki:
 				\begin{step}
-					\item możliwość ukrycia/odsłonięcia nieaktywnych terminów z dostępnych Kalendarzy,
+					\item możliwość ukrycia/odsłonięcia nieaktywnych terminów z dostępnych kalendarzy,
 					\item dostęp do informacji o:
 						\begin{itemize}
 							\item dacie spotkania,
-							\item godzinach w jakich odbywa się~spotkanie,
+							\item godzinach, w jakich odbywa się~spotkanie,
 							\item początku i~końcu okresu zapisów,
 							\item stanie zapisów,
 							\item liczbie zajętych miejsc.
@@ -440,27 +442,21 @@ Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana 
 \section{Dodatkowe wymagania}
 	\begin{step}
 		%\item Interfejs powinien mieć zintegrowane, zrozumiałe instrukcje użytkowania.
-		\item Interesanci nie mogą mieć dostępu do danych zapisów innych interesantów.
-		\item Korzystanie z aplikacji wymaga konta w uczelnianym Centralnym Systemie Uwierzytelniania (CAS, z ang. \textit{Central Authentication Service}).
+		\item Interesanci nie mogą mieć dostępu do zapisów innych interesantów.
+		\item Korzystanie z aplikacji wymaga konta w uczelnianym Centralnym Systemie Uwierzytelniania (CAS, ang. \textit{Central Authentication Service}).
 	\end{step}
-	
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{schemat.jpg}
-  \caption{Schemat bazy danych (tylko najważniejsze tabele i pola).}
-  \label{fig:schemat}
-\end{figure} % TODO poprawic obrazek
-	
+		
 \section{Schemat bazy danych}
 
-~~~~~W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy następujący schemat bazy danych, pokazany na rysunku \ref{fig:schemat}. Kluczowe jej tabele zawierają następujące informacje:
+W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy schemat bazy danych, pokazany na rysunku \ref{fig:schemat}. Kluczowe jej tabele zawierają następujące informacje:
 
 \begin{itemize}
 \item SPTK\textunderscore UCZESTNICY\textunderscore SPOTKAN
 	\begin{itemize}
 	\item podstawowe dane uczestników spotkania,
-	\item id spotkania,
+	\item identyfikator spotkania,
 	\item powód wraz z uzasadnieniem,
-	\item odmowę wraz z uzasadnieniem,
+	\item odmowa wraz z uzasadnieniem,
 	\item stan spotkania.
 	\end{itemize}
 \item SPTK\textunderscore SPOTKANIA
@@ -470,6 +466,13 @@ Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana 
 	\item limit miejsc,
 	\item limit miejsc rezerwowych,
 	\item opis.
+	\end{itemize}
+\item SPTK\textunderscore KALENDARZ\textunderscore SPOTKAN
+	\begin{itemize}
+	\item jednostka organizacyjna,
+	\item cykl dydaktyczny,
+	\item osoba, która prowadzi spotkania,
+	\item nazwa i opis.
 	\end{itemize}
 \item SPTK\textunderscore NOTATKI\textunderscore ZE\textunderscore SPOTKAN
 	\begin{itemize}
@@ -481,6 +484,12 @@ Limit miejsc rezerwowych ma służyć maksymalnemu wykorzystaniu czasu Dziekana 
 	\item notatka.
 	\end{itemize}
 \end{itemize}
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{schemat.jpg}
+  \caption{Schemat bazy danych (tylko najważniejsze tabele i pola).}
+  \label{fig:schemat}
+\end{figure}
 
 %\FloatBarrier
 \section{Przykładowe scenariusze użycia modułu}
@@ -594,7 +603,7 @@ Poniższe trzy przykłady zakładają istnienie tokenów, które nie zostały za
 
 \chapter{Implementacja} \label{chap:implementacja}
 \section{USOS}
-~~~~~USOS jest skomplikowanym systemem, rozwijanym przez lata. Składa się z wielu komponentów odpowiadających za różne funkcjonalności potrzebne do obsługi studiów. Ze względu na zróżnicowane okresy powstawania oraz przeznaczenie, różnią się między sobą znacząco technologią wykonania, a zasada współdziałania całego systemu jest bardzo skomplikowana.
+USOS jest skomplikowanym systemem, rozwijanym przez lata. Składa się z wielu komponentów odpowiadających za różne funkcjonalności potrzebne do obsługi studiów. Ze względu na zróżnicowane okresy powstawania oraz przeznaczenie, różnią się między sobą znacząco technologią wykonania, a zasada współdziałania całego systemu jest bardzo skomplikowana.
 Składowe, z którymi mieliśmy styczność podczas naszej pracy, to:
 \begin{itemize}
 \item USOSadm w Javie -- moduł przeznaczony dla pracowników administracji,
@@ -607,25 +616,25 @@ Składowe, z którymi mieliśmy styczność podczas naszej pracy, to:
 \section{USOSadm} \label{sec:impusos}
 
 \subsection{Informacje ogólne}
-~~~~~Celem prac w obrębie USOSadm było zaimplementowanie funkcjonalności przy wykorzystaniu przyjętych praktyk programistycznych. Jej zakres obejmował następujące mechanizmy:
+Celem prac w obrębie USOSadm było zaimplementowanie funkcjonalności przy wykorzystaniu przyjętych praktyk programistycznych. Jej zakres obejmował następujące mechanizmy:
 \begin{itemize}
-\item definiowania nowych kalendarzy spotkań oraz spotkań z pracownikami uczelni,
-\item zapisu i akceptowania zapisów na spotkania studentów,
-\item sporządzania notatek ze spotkań,
-\item definiowania listy najczęstszych powodów zapisów na spotkania.
+\item definiowanie nowych kalendarzy spotkań oraz spotkań z pracownikami uczelni,
+\item zapisy i akceptowanie zapisów na spotkania studentów,
+\item sporządzanie notatek ze spotkań,
+\item definiowanie listy najczęstszych powodów zapisów na spotkania.
 \end{itemize}
 
 \subsection{Aplikacja kliencka}
-~~~~~Aplikacja kliencka USOSadm to część aplikacji wykonywana na stanowisku klienta. Składa się m.in. z~kodu HTML i~skryptów JavaScript. Działa w przeglądarce internetowej Mozilla Firefox lub Google Chrome. Na stanowisku należy zainstalować również przeglądarkę dokumentów PDF. Jeśli na stanowisku są obsługiwane Elektroniczne Legitymacje Studenckie/Doktoranckie lub są składane podpisy cyfrowe, to potrzebna jest również aplikacja USOS SIGN \cite{wdr}.
+Aplikacja kliencka USOSadm to część aplikacji wykonywana na stanowisku klienta. Składa się m.in. z~kodu HTML i~skryptów JavaScript. Działa w przeglądarce internetowej Mozilla Firefox lub Google Chrome \cite{wdr}.
 
 \subsection{Serwer}
-~~~~~Serwer USOSadm odpowiedzialny jest za~większą część logiki aplikacji. Napisany został w Javie. Do tworzenia interfejsu użytkownika wykorzystuje się JavaServer Faces oraz biblioteki komponentów RichFaces \cite{wikijsf}.
+Serwer USOSadm odpowiedzialny jest za~większą część logiki aplikacji. Napisany został w Javie. Do tworzenia interfejsu użytkownika wykorzystuje się JavaServer Faces oraz biblioteki komponentów RichFaces \cite{wikijsf}.
 
 \subsection{Komunikacja z bazą danych}
-~~~~~Komunikacja z~bazą~danych została zrealizowana przy pomocy własnego, bogatego API zrealizowanego przy pomocy technologi Hibernate. Technologia Hibernate pozwala na~odwzorowanie danych z~bazy~danych za~pomocą odpowiednio spreparowanych obiektów w~Javie. Klasy mapuje się na tabele, obiekty na wiersze, atrybuty na dane \cite{hibernate}.
+Komunikacja z~bazą~danych została zrealizowana przy pomocy własnego, bogatego API zrealizowanego przy pomocy technologi Hibernate. Technologia Hibernate pozwala na~odwzorowanie danych z~bazy~danych za~pomocą odpowiednio spreparowanych obiektów w~Javie. Klasy mapuje się na tabele, obiekty na wiersze, atrybuty na dane \cite{hibernate}.
 
 \subsection{JavaBean}
-~~~~~Jest to komponent programowy, który może być wielokrotnie używany. Ma cechy takie, jak:
+Jest to komponent programowy, który może być wielokrotnie używany. Ma cechy takie, jak:
 \begin{itemize}
 \item prywatne atrybuty, dostępne przez metody zwane akcesorami,
 \item udostępnia na zewnątrz metody (na przykład dla przycisku na ekranie),
@@ -634,7 +643,7 @@ Składowe, z którymi mieliśmy styczność podczas naszej pracy, to:
 Każdą, utworzoną przez nas, tabelę w USOSadm obsługuje oddzielna klasa zgodna z JavaBean.
 
 \subsection{Klasy implementacji}
-~~~~~Aby zaimplementować nasze formularze, stworzono trzy główne klasy oraz trzy dodatkowe:
+Aby zaimplementować formularze, stworzono trzy główne klasy oraz trzy dodatkowe:
 
 \begin{itemize}
 \item \textsl{KalendarzeSpotkanBean} -- odpowiada za widok Kalendarze spotkań. Ze względu na bogatą funkcjonalność używa kilku dodatkowych modułów:
@@ -648,17 +657,20 @@ Każdą, utworzoną przez nas, tabelę w USOSadm obsługuje oddzielna klasa zgod
 \end{itemize}
 
 \subsection{Pobieranie danych}
-~~~~~Bardzo często obiekty w bazie danych odwołują się do innych obiektów z bazy. Przy pracy z danym obiektem może być konieczne skorzystanie z danych pewnych zależnych obiektów. Z uwagi na to wyróżniamy dwa sposoby pobierania zależnych rekordów.
+Bardzo często obiekty w bazie danych odwołują się do innych obiektów z bazy. Przy pracy z danym obiektem może być konieczne skorzystanie z danych pewnych zależnych obiektów. Z uwagi na to wyróżniamy dwa sposoby pobierania zależnych rekordów.
 
 \begin{itemize}
 \item Gorliwe -- zależne rekordy pobierane są od razu. Jest to szybszy sposób na pobranie wszystkich danych, lecz w przypadku, kiedy te dane nie są potrzebne, pobieramy potencjalnie duże ilości zbędnych danych.
 \item Leniwe -- zależne rekordy pobierane są dopiero później, na żądanie.
 \end{itemize}
 
-Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W przypadku, gdy zależne dane są potrzebne (na przykład trzeba je wyświetlić w tabeli), inicjalizuje się je podczas pobierania danych w klasie Service.
+Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W przypadku, gdy zależne dane są potrzebne (na przykład trzeba je wyświetlić w tabeli), inicjuje się je podczas pobierania danych w klasie Service.
 
 \subsection{Szablony}
-~~~~~Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istniejącymi standardami, każda tabela i formularz posiada swój własny, odrębny szablon.
+Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istniejącymi standardami, każda tabela i formularz posiada swój własny, odrębny szablon.
+
+\subsection{Moduł Spotkania}
+Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na ekranie~\ref{fig:modspoadm}.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{spotkaniaadm.jpg}
@@ -666,8 +678,8 @@ Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W p
   \label{fig:modspoadm}
 \end{figure}
 
-\subsection{Moduł Spotkania}
-~~~~~Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na ekranie \ref{fig:modspoadm}.
+\subsection{Kalendarze spotkań}
+Na ekranie \ref{fig:kalenadm} należy wybrać kalendarz w górnej części ekranu. Wtedy na formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się uczestnicy tego spotkania. Po wybraniu uczestnika można zobaczyć jego notatki na dole ekranu.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{Kalendarzadm.jpg}
@@ -675,17 +687,14 @@ Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W p
   \label{fig:kalenadm}
 \end{figure}
 
-\subsection{Kalendarze spotkań}
-~~~~~Na ekranie \ref{fig:kalenadm} należy wybrać kalendarz w górnej części ekranu. Wtedy na formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się uczestnicy tego spotkania. Po wybraniu uczestnika można zobaczyć jego notatki na dole ekranu.
-
-Do tworzenia nowych kalendarzy, spotkań, uczestników, notatek służą przyciski \enquote{+Dodaj} w lewych górnych rogach odpowiednich formularzy.
+Do tworzenia nowych kalendarzy, spotkań, uczestników, notatek służą przyciski \textsf{+Dodaj} w lewych górnych rogach odpowiednich formularzy.
 
 \subsection{Notatki}
-~~~~~Na ekranie \ref{fig:notatki} należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
+Na ekranie \ref{fig:notatki} należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
 
 Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań.
 
-Aby stworzyć nową notatkę należy kliknąć przycisk \enquote{+Dodaj}, znajduje się on po lewej stronie między formularzem, na którym wybiera się studenta, a formularzem z notatkami. 
+Aby stworzyć nową notatkę należy kliknąć przycisk \textsf{+Dodaj}, znajduje się on po lewej stronie między formularzem, na którym wybiera się studenta, a formularzem z notatkami. 
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_notatek.jpg}
@@ -700,9 +709,9 @@ Aby stworzyć nową notatkę należy kliknąć przycisk \enquote{+Dodaj}, znajdu
 \end{figure}
 
 \subsection{Słownik uzasadnień}
-~~~~~Widok Słownika uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} umieszczono: jednostki, typy uzasadnień oraz ich nazwy po polsku i angielsku. Po wybraniu uzasadnienia na dole ekranu pojawi się jego treść po polsku i angielsku.
+Widok Słownika uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} umieszczono: jednostki, typy uzasadnień oraz ich nazwy po polsku i angielsku. Po wybraniu uzasadnienia na dole ekranu pojawi się jego treść po polsku i angielsku.
 
-Po wciśnięciu przycisku \enquote{Dodaj} lub przycisku przy uzasadnieniu do modyfikowania pojawi się formularz widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
+Po wciśnięciu przycisku \textsf{Dodaj} lub przycisku przy uzasadnieniu do modyfikowania pojawi się formularz widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
@@ -723,7 +732,7 @@ Po wciśnięciu przycisku \enquote{Dodaj} lub przycisku przy uzasadnieniu do mod
 \section{USOSweb} \label{sec:impusosweb}
 
 \subsection{Informacje ogólne}
-~~~~~Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi częściami systemu, stworzyliśmy moduł pozwalający studentowi na:
+Implementacja funkcjonalności w USOSweb polegała na jego rozbudowaniu przy pomocy najlepszych w danej chwili praktyk programowania przyjętych przez zespół tworzący i wspierający system USOSweb. Zachowując spójność z pozostałymi częściami systemu, stworzyliśmy moduł pozwalający studentowi na:
 \begin{itemize}
   \item{wyświetlanie informacji o jednostkach oferujących spotkania,}
   \item{wybór jednostki, w ramach której odbywa się interesujące studenta spotkanie,}
@@ -733,16 +742,16 @@ Po wciśnięciu przycisku \enquote{Dodaj} lub przycisku przy uzasadnieniu do mod
   \begin{itemize}
     \item{wpisywanie się na listę główną lub rezerwową,}
     \item{wypisywanie się,}
-    \item{podgląd aktualnego stanu zapisu na spotkanie, w tym informacje takie jak liczba dostępnych miejsc.}
+    \item{podgląd aktualnego stanu zapisu na spotkanie, w tym informacje takie, jak liczba dostępnych miejsc.}
   \end{itemize}
 }
 \item{wyświetlanie spotkań związanych ze studentem (czyli takich, na które student jest albo był zapisany).}
 \end{itemize}
 
-Dużą uwagę zwróciliśmy na kontrolę dostępu. Pozwalamy studentowi wykonywać tylko te akcje z danymi (na przykład zapisami na spotkania), do których w danej chwili ma on dostęp. W tym celu przy każdym zapytaniu do serwera, wysyłanym z aplikacji klienckiej albo przeglądarki, sprawdzamy, czy użytkownik jest zalogowany oraz czy ma dostęp do danej akcji. Nie zapomnieliśmy również o bezpieczeństwie. Moduł posiada zabezpieczenie przeciwko potencjalnym atakom, więcej na ten temat w sekcji \ref{subsec:bezpiecz}. Staraliśmy maksymalizować użycie gotowych modułów, stworzonych w USOSwebie, minimalizując tym samym duplikowanie kodu.
+Dużą uwagę zwróciliśmy na kontrolę dostępu. Pozwalamy studentowi wykonywać tylko te akcje z danymi (na przykład zapisami na spotkania), do których w danej chwili ma on dostęp. W tym celu przy każdym zapytaniu do serwera, wysyłanym z aplikacji klienckiej albo przeglądarki, sprawdzamy, czy użytkownik jest zalogowany oraz czy ma dostęp do danej akcji. Nie zapomnieliśmy również o bezpieczeństwie. Moduł posiada zabezpieczenie przeciwko potencjalnym atakom, więcej na ten temat można przeczytać w sekcji \ref{subsec:bezpiecz}. Staraliśmy maksymalizować użycie gotowych modułów, stworzonych w USOSwebie, minimalizując tym samym duplikowanie kodu.
 
 \subsection{Opis działania systemu USOSweb}
-~~~~~Jak każda aplikacja webowa, system USOSweb składa się z niżej opisanych elementów.
+Jak każda aplikacja webowa, system USOSweb składa się z niżej opisanych elementów.
 \begin{itemize}
   \item
   Część serwerowa -- program działający na zdalnym komputerze podłączonym do sieci Internet (w USOSweb jest zaimplementowany w PHP).
@@ -761,14 +770,14 @@ Do zrozumienia dalszego opisu implementacji części systemu USOSweb niezbędne 
   Zalogowany użytkownik -- użytkownik, który wykonał procedurę logowania się. Kontekst zalogowanego użytkownika zawiera identyfikator, imię i nazwisko oraz wiele innych pomocniczych informacji. 
 \end{itemize}
 
-Aplikacja serwerowa oparta jest na kontrolerze, zaimplementowanym w języku PHP, który dostaje w parametrach GET opis akcji, jaką użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuję całą logikę, ona tworzy wynikowe dane i ewentualnie powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, znajdujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (na przykład funkcji albo stałych).
+Aplikacja serwerowa oparta jest na kontrolerze, zaimplementowanym w języku PHP, który dostaje w parametrach GET opis akcji, jaką użytkownik chcę wykonać. Każda akcja zaimplementowana jest jako osobna klasa języka PHP (akcja obsługuje całą logikę, ona tworzy wynikowe dane i ewentualnie powoduje efekty uboczne). Za pomocą plików konfiguracyjnych (actions.xml) akcje wiążą się z szablonami (szablony odpowiadają za format wyświetlania danych, które są wynikiem akcji). Akcję mogą, a czasami muszą, korzystać z dodatkowych modułów, które tworzymy jako osobne statyczne albo niestatyczne klasy. Każdy moduł ma zestaw swoich akcji. Poza tym aplikacja serwerowa posiada statyczne klasy, znajdujące się w folderze Utils, będące zbiorem pomocniczych narzędzi (na przykład funkcji albo stałych).
 
 \subsection{Akcje}
-~~~~~Podczas implementacji modułu spotkań, powstało pięć akcji.
+Podczas implementacji modułu spotkań, powstało pięć akcji.
 \begin{itemize}
 \item{\textsl{MojeSpotkaniaAction}}
 
-Akcja odpowiada za wyświetlanie spotkań, związanych z zalogowanym studentem.
+Akcja odpowiada za wyświetlanie spotkań związanych z zalogowanym studentem.
 \item{\textsl{SpotkaniaJednostkiAction}}
 
 Akcja odpowiada za wyświetlanie kalendarzy spotkań wraz z terminami tych spotkań oraz związanych z nimi informacji w wybranej jednostce.
@@ -783,7 +792,7 @@ Akcja odpowiada za tworzenie formularza, pozwalającego na wykonywanie przez stu
 Akcja odpowiada za~zmianę stanu zapisu zalogowanego studenta na dane spotkanie. Jest to jedyna akcja w~danym module, która zmienia dane w~bazie danych. Przyjmuje ona parametry zapytania w postaci POST i~sprawdza CSRF token w celu zabezpieczenia się przed atakami CSRF. Dla każdego zapytania przed modyfikowaniem danych w bazie na początku jest prowadzony proces tak zwanej walidacji w~celu uniemożliwienia wykonania niepoprawnych zmian.
 \end{itemize}
 \subsection{Szablony}
-~~~~~USOSweb korzysta z szablonów Smarty, które są powiązane z~akcjami za~pomocą plików konfiguracyjnych i~zapewniają odpowiednią prezentację danych powstających w~wyniku danej akcji. W~module~spotkań utworzyliśmy pięć szablonów.
+USOSweb korzysta z szablonów Smarty, które są powiązane z~akcjami za~pomocą plików konfiguracyjnych i~zapewniają odpowiednią prezentację danych powstających w~wyniku danej akcji. W~module~spotkań utworzyliśmy pięć szablonów.
 \begin{itemize}
 \item{\textsl{FormularzSpotkania}}
 
@@ -793,7 +802,7 @@ Formularz, który wyświetla się w~oknie~modalnym i pozwala na wykonanie przez 
 Rozwijana lista cykli, gdzie domyślnie rozwinięte są tylko aktywne cykle. Każdy cykl zawiera listę kalendarzy spotkań. Dla każdego kalendarza wyświetlany zostaje opis osoby prowadzącej spotkania i nazwa kalendarza spotkań. Zawiera on również listę dostępnych terminów i~przycisk pozwalający na pokazanie także niedostępnych terminów.
 \item{\textsl{MojeSpotkania}}
 
-Lista spotkań związanych ze studentem. Widok jest identyczny z~widokiem spotkań jednostki, ale pokazywane są tylko spotkania i~kalendarze związane z danym studentem, czyli takie spotkania, na które on jest zapisany. Nie ma żadnych ograniczeń na jednostkę, w której dane spotkanie się odbywa.
+Lista spotkań związanych ze studentem. Widok jest identyczny z~widokiem spotkań jednostki, ale pokazywane są tylko spotkania i~kalendarze związane z danym studentem, czyli takie spotkania, na które jest on zapisany. Nie ma żadnych ograniczeń na jednostkę, w której dane spotkanie się odbywa.
 \item{\textsl{Spotkanie}}
 
 Szablon pomocniczy używany w szablonie \textsl{FormularzSpotkania}.
@@ -802,7 +811,7 @@ Szablon pomocniczy używany w szablonie \textsl{FormularzSpotkania}.
 Lista jednostek z informacją o liczbie kalendarzy spotkań w danej jednostce.
 \end{itemize}
 \subsection{Moduły pomocnicze}
-~~~~~Często akcje w USOSweb wykonują te same czynności, jak na przykład pobranie kontekstu zalogowanego użytkownika lub nazwy jednostki na podstawie kodu albo utworzenie struktury pozwalającej na wyświetlanie tabeli z~danymi na~podstawie zapytania.
+Często akcje w USOSweb wykonują te same czynności, jak na przykład pobranie kontekstu zalogowanego użytkownika lub nazwy jednostki na podstawie kodu albo utworzenie struktury pozwalającej na wyświetlanie tabeli z~danymi na~podstawie zapytania.
 W naszym rozwiązaniu zostały utworzone cztery moduły pomocnicze.
 \begin{itemize}
 \item{\textsl{CyklDydaktyczny}}
@@ -819,16 +828,17 @@ Klasa jest modelem opisującym stan spotkania w~kontekście danej osoby. Ma duż
 Zestaw funkcji pomocniczych.
 \end{itemize}
 
+\subsection{Wybór jednostki}
+Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania. Jeśli jest tylko jedna, to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
+
+Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jednostki studenta. Jeśli jest tylko jedna, to użytkownik zostanie przeniesiony do kalendarzy tej jednostki.
+
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
-  \caption{Wszystkie jednostki.}
+  \caption{Wszystkie jednostki}
   \label{fig:wszjweb}
 \end{figure}
 
-\subsection{Wybór jednostki}
-~~~~~Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania. Jeśli jest tylko jedna to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
-
-Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jednostki studenta. Jeśli jest tylko jedna to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
 
 \subsection{Wybór spotkania}
 
@@ -838,7 +848,7 @@ Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jedno
   \label{fig:kalweb}
 \end{figure}
 
-~~~~~Na ekranie \ref{fig:kalweb} są widoczne dwa kalendarze spotkań. Aby zapisać się, należy kliknąć odpowiedni przycisk.
+Na ekranie \ref{fig:kalweb} są widoczne dwa kalendarze spotkań. Aby zapisać się, należy kliknąć odpowiedni przycisk.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
@@ -846,7 +856,7 @@ Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jedno
   \label{fig:zapisweb}
 \end{figure}
 
-Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybrać powód zapisu z listy, a potem dodać komentarz tekstowy i kliknąć przycisk \enquote{ZAPISZ}.
+Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybrać powód zapisu z listy, ewentualnie wpisać komentarz tekstowy i kliknąć przycisk \textsf{ZAPISZ}.
 
 \subsection{Moje spotkania}
 
@@ -856,11 +866,11 @@ Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybra�
   \label{fig:mojeweb}
 \end{figure}
 
-~~~~~Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
+Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
 
 %\FloatBarrier
 \subsection{Problemy i ich rozwiązania}
-\subsubsection{~~~~~Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}
+\subsubsection{Pobranie nietypowej drzewiastej struktury z danymi o spotkaniach}
 Widok spotkań danej jednostki oraz widok spotkań studenta zostały zaprojektowane w taki sposób, że do ich realizacji należało otrzymać w wyniku akcji drzewiastą strukturę następnej postaci:
 
 \begin{itemize}
@@ -877,31 +887,32 @@ spotkania (terminy) z informacją o stanie danego spotkania w kontekście zalogo
 
 Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole \textsl{kalendarzeSpotkan}, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy \textsl{SpotkanieOsoba} i~zawierał całą informację pomocniczą. Relacyjne bazy danych SQL pozwalają na pobranie informacji wyłącznie w~postaci tabel. Należało więc rozwiązać następujący problem.
 
+\newpage
 \paragraph{W jaki sposób wyciągnąć taką drzewiastą strukturę z bazy danych w optymalny sposób?}
 \begin{itemize}
   \item
-  Można pobierać listę cykli, potem dla każdego cyklu listę kalendarzy i~dla~każdego~kalendarza listę spotkań. Dawałoby to jednak gigantyczną liczbę zapytań.
+  Można pobierać listę cykli, potem dla każdego cyklu listę kalendarzy i~dla~każdego~kalendarza listę spotkań. Dawałoby to jednak dużą liczbę zapytań.
   \item
-  Innym rozwiązaniem mogłoby być pobranie całej drzewiastej struktury w jednym zapytaniu. Jako że relacyjna baza danych, z której korzystamy, zwraca dane tylko w postaci tabel można wywnioskować, że pobieralibyśmy gigantyczną ilość zbędnych i~duplikujących się danych o cyklach i~kalendarzach.
+  Innym rozwiązaniem mogłoby być pobranie całej drzewiastej struktury w jednym zapytaniu. Jako że relacyjna baza danych, z której korzystamy, przekazuje dane tylko w postaci tabel można wywnioskować, że pobieralibyśmy dużą ilość zbędnych i~duplikujących się danych o cyklach i~kalendarzach.
   \item
-  Najlepszym rozwiązaniem było wykonanie trzech zapytań: pobieranie cyklów i~informacji o~nich, pobieranie kalendarzy wraz z~informacjami o~nich oraz~pobranie~spotkań. Po pobraniu danych wiążemy je: tworzymy opisaną wyżej drzewiastą strukturę, iterując po każdej z~list i~używając informacji zawartej w~polach z~kodem cyklu albo~kodem~kalendarza.
+  Najlepszym rozwiązaniem było wykonanie trzech zapytań: pobranie cykli i~informacji o~nich, pobranie kalendarzy wraz z~informacjami o~nich oraz~pobranie~spotkań. Po pobraniu danych wiążemy je: tworzymy opisaną drzewiastą strukturę, iterując po każdej z~list i~używając informacji zawartej w~polach z~kodem cyklu albo~kodem~kalendarza.
 \end{itemize}
 Oczywiście wybraliśmy ostatni sposób, tym samym wykonując minimalną niezbędną liczbą zapytań do bazy danych, co znacząco zmniejsza czas oczekiwania aplikacji serwerowej i przyśpiesza działanie całej aplikacji.
 
 \subsubsection{Podobne akcje}
-~~~~~W module spotkań mieliśmy dwie pary bardzo podobnych akcji: akcje spotkań studenta i~spotkań w~jednostce oraz~akcje wyświetlania jednostek użytkownika i~akcje wyświetlania wszystkich jednostek. W przypadku każdej z~tych par utworzyliśmy implementację ich wspólnej części i~korzystaliśmy z~niej, zapobiegając duplikowania kodu.
+W module spotkań mieliśmy dwie pary bardzo podobnych akcji: akcje spotkań studenta i~spotkań w~jednostce oraz~akcje wyświetlania jednostek użytkownika i~akcje wyświetlania wszystkich jednostek. W przypadku każdej z~tych par utworzyliśmy implementację ich wspólnej części i~korzystaliśmy z~niej, zapobiegając duplikowania kodu.
 \subsubsection{Wielojęzyczność}
-~~~~~System USOSweb wspiera dwa języki: angielski oraz polski. Dla wsparcia wielojęzyczności w naszym module korzystaliśmy z wbudowanego w szablony Smarty znacznika \{t\}, a w~modelu bazy danych dla pól tekstowych takich, jak nazwa albo opis, tworzyliśmy duplikat w języku angielskim.
-\subsection{Zmiany w USOSWeb}
+System USOSweb wspiera dwa języki: polski i angielski. Dla wsparcia wielojęzyczności w naszym module korzystaliśmy z wbudowanego w szablony Smarty znacznika \{t\}, a w~modelu bazy danych dla pól tekstowych takich, jak nazwa albo opis, tworzyliśmy duplikat w języku angielskim.
+\subsection{Zmiany w USOSweb}
 \subsubsection{Wyjątki}
-~~~~~Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość zwracania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie podnoszenia wyjątku, który jest obiektem klasy \textsl{ActionError}.
+Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość przekazywania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie zgłaszania wyjątku, który jest obiektem klasy \textsl{ActionError}.
 \subsubsection{Błąd w Smarty}
-~~~~~W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika \{textarea\} w~szablonach~Smarty. Po wskazaniu atrybutu \textsc{limit} w~danym~tagu, będąc w~kontekście okna modalnego cała zawartość strony znikała. Zmieniliśmy kod JavaScript obsługujący wypisywanie limitu oraz pozostałych dostępnych liter, naprawiając ten błąd.
+W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika \{textarea\} w~szablonach~Smarty. Po wskazaniu atrybutu \textsc{limit} w~danym~tagu, będąc w~kontekście okna modalnego cała zawartość strony znikała. Zmieniliśmy kod JavaScript obsługujący wypisywanie limitu oraz pozostałych dostępnych liter, naprawiając ten błąd.
 \subsection{Potencjalne ataki i zabezpieczenia} \label{subsec:bezpiecz}
 \subsubsection{CSRF}
-~~~~~W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu, w którym zmieniamy dane, dodaliśmy sprawdzenie tokenu CSRF.
+W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu, w którym zmieniamy dane, dodaliśmy sprawdzenie tokenu CSRF.
 \subsubsection{SQL injection}
-~~~~~Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje się wyłącznie jako tekst (nie jako część polecenia). Robi się to w celu zapobiegania atakom typu SQL-injection.
+Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje się wyłącznie jako tekst (nie jako część polecenia). Robi się to w celu zapobiegania atakom typu SQL-injection.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
 %\section{Dokumentacja USOS}
@@ -913,56 +924,61 @@ Oczywiście wybraliśmy ostatni sposób, tym samym wykonując minimalną niezbę
 
 \chapter{Podsumowanie}  \label{chap:rozwoj}
 \section{Co zrobiono}
-~~~~~W ramach pracy powstał moduł systemu USOS, który umożliwia zdalne zapisy na spotkania z Dziekanem. Moduł jest dostępny w USOSadm od wersji 6.4.0-5 \cite{dziennikadm}, a USOSweb od wersji 6.4.0.0-10 \cite{dziennikweb}.
+W ramach pracy powstał moduł systemu USOS, który umożliwia zdalne zapisy na spotkania z Dziekanem. Moduł jest dostępny w USOSadm od wersji 6.4.0-5 \cite{dziennikadm}, a USOSweb od wersji 6.4.0.0-10 \cite{dziennikweb}.
 
 \section{Potencjalny dalszy rozwój}
 
 \subsubsection{Tokeny}
-~~~~~Podczas projektowania chcieliśmy, aby student, którego prośba o zarejestrowanie nie zmieściła się w limicie, miał możliwość zapisania się na spotkanie, na które zapisy nie rozpoczęły się. Można spodziewać się, że tokeny ułatwią zapisy jeszcze bardziej niż niniejszy moduł teraz.
+Podczas projektowania chcieliśmy, aby student, którego prośba o zarejestrowanie nie zmieściła się w limicie, miał możliwość zapisania się na spotkanie, na które zapisy nie rozpoczęły się. Można spodziewać się, że tokeny ułatwią zapisy jeszcze bardziej niż niniejszy moduł teraz.
+
+\subsubsection{Generowanie wielu terminów spotkań}
+W USOSadm możliwe jest wygenerowanie terminów zajęć na cały semestr przy pomocy kalendarza roku akademickiego \cite{kra}. Dużym ułatwieniem byłaby możliwość wygenerowania wielu terminów spotkań za pomocą jednej operacji. Na przykład można by wygenerować terminy spotkań we wszystkie parzyste wtorki w semestrze.
 
 \subsubsection{Mobilny USOS}
 
-~~~~~W ankiecie dla studentów pojawiły się odpowiedzi, że studenci chcieliby znać godzinę spotkania, a nie tylko numer na liście. Projekt można rozszerzyć o integrację z Mobilnym USOS. Potrzebne będzie stworzenie mechanizmów do kontroli stanu spotkania i przepływu studentów w czasie rzeczywistym. Dodanie akcji Dziekana, w której określałby, które spotkanie się rozpoczęło/zakończyło, oraz odpowiednich funkcji w Mobilnym USOS mogłoby umożliwić śledzenie stanu spotkania przez studentów. Na przykład student jest na zajęciach, sprawdza przebieg spotkania w aplikacji mobilnej i wie, w którym momencie musi iść na spotkanie.
+W ankiecie dla studentów pojawiły się odpowiedzi, że studenci chcieliby znać godzinę spotkania, a nie tylko numer na liście. Projekt można rozszerzyć o integrację z Mobilnym USOS. Potrzebne będzie stworzenie mechanizmów do kontroli stanu spotkania i przepływu studentów w czasie rzeczywistym. Dodanie akcji Dziekana, w której określałby, które spotkanie się rozpoczęło/zakończyło, oraz odpowiednich funkcji w Mobilnym USOS mogłoby umożliwić śledzenie stanu spotkania przez studentów. Na przykład student jest na zajęciach, sprawdza przebieg spotkania w aplikacji mobilnej i wie, w którym momencie musi iść na spotkanie.
 
 \subsubsection{Spotkania innego rodzaju}
-~~~~~W rozdziale~\ref{chap:wpr} zauważono, że system powstał po to, aby prowadzić zapisy na spotkania z Dziekanem. Dalszy rozwój systemu mógłby dopasować system również do organizacji innych wydarzeń. Wymagałoby to możliwości obsługi spotkań przez nauczycieli akademickich z poziomu USOSweb. Możliwe byłoby tworzenie wydarzeń takich jak:
+W rozdziale~\ref{chap:wpr} zauważono, że system powstał po to, aby prowadzić zapisy na spotkania z Dziekanem. Dalszy rozwój systemu mógłby dopasować system również do organizacji innych wydarzeń. Wymagałoby to możliwości obsługi spotkań przez nauczycieli akademickich z poziomu USOSweb. Możliwe byłoby tworzenie wydarzeń takich jak:
 \begin{itemize}
 	\item konsultacje z dydaktykami,
 	\item spotkania studenckie lub okolicznościowe np. Święta Bożego Narodzenia.
 \end{itemize}
 
-%\chapter{Spis literatury}
-\chapter{Dodatki} \label{chap:dodatki}
+\addcontentsline{toc}{chapter}{Dodatek A}
+\chapter*{Dodatek A} \label{chap:dodatki}
 %\section{Dokumentacja USOS}
 %\section{Dokumentacja USOSweb}
 %\section{Dokumentacja instalacyjna}
-\section{Opis zawartości płyty CD}
+\section*{Opis zawartości płyty CD}
 TODO
 
 \begin{thebibliography}{99}
 \addcontentsline{toc}{chapter}{Bibliografia}
 
-\bibitem[Rudz2010]{prz} Jan Rudziński, \textit{Przewodnik po systemie}, Między Uniwersyteckie Centrum Informatyzacji, 2010, https://www.usos.edu.pl/sites/default/files/pl-usos-przewodnik.pdf.
+% do wprowadzenia
 
-\bibitem[Czer2017]{wdr} Mariusz Czerniak; Janina Mincer-Daszkiewicz, \textit{Dokumentacja wdrożeniowa}, Między Uniwersyteckie Centrum Informatyzacji, 2017, https://www.usos.edu.pl/node/363/usos-dokumentacja-wdrozeniowa.
-
-\bibitem[Mich2016]{rfd} Rafał Michniewicz; Kamil Olszewski, \textit{Role, Filtry, Dziennik zmian}, Między Uniwersyteckie Centrum Informatyzacji, 2016, https://www.usos.edu.pl/node/622/role-filtry-dziennik-zmian-podrecznik-administratora.
+\bibitem[Czer2017]{wdr} Mariusz Czerniak; Janina Mincer-Daszkiewicz, \textit{Dokumentacja wdrożeniowa}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, 2017, https://www.usos.edu.pl/node/363/usos-dokumentacja-wdrozeniowa.
 
 \bibitem[Inow2013]{wikijsf} Jan Inowolski; Marta Juzepczuk; Artur Popławski, \textit{Dodatkowe funkcjonalności w interfejsie JSF + RichFaces}, Wiki USOS, 2013, https://wiki.usos.edu.pl/w/Devel/Funkcjonalno\%C5\%9Bci+interfejsu.
  	
 \bibitem[Inow2014]{wikibd} Jan Inowolski; Michał Kurzydłowski, \textit{Architektura bazodanowa USOS}, Wiki USOS, 2014, https://wiki.usos.edu.pl/w/Main/Architektura+bazodanowa+USOS.
 
-\bibitem[Hibernate]{hibernate} \textit{Chapter 2. Mapping Entities}, jboss.org, https://docs.jboss.org/hibernate/stable/annotations/reference/en/html/entity.html.
+\bibitem[Mich2016]{rfd} Rafał Michniewicz; Kamil Olszewski, \textit{Role, Filtry, Dziennik zmian}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, 2016, https://www.usos.edu.pl/node/622/role-filtry-dziennik-zmian-podrecznik-administratora.
 
-\bibitem[JavaBean]{javabean} \textit{JavaBeans}, Sun Microsystems, 1997, https://www.oracle.com/technetwork/java/javase/documentation/spec-136004.html.
+\bibitem[Minc2016]{kra} Janina Mincer-Daszkiewicz, \textit{Kalendarz w aplikacjach USOS Rozbijanie terminów na spotkania}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, 2016, https://www.usos.edu.pl/node/3582/kalendarz-w-aplikacjach-usos-rozbijanie-terminow-na-spotkania.
+
+\bibitem[Rudz2010]{prz} Jan Rudziński, \textit{Przewodnik po systemie}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, 2010, https://www.usos.edu.pl/sites/default/files/pl-usos-przewodnik.pdf.
+
+\bibitem[DziennikUSOSadm]{dziennikadm} \textit{Dziennik zmian USOSadm}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, https://docs.usos.edu.pl/usosadm/6.4.0/dziennik\_zmian.html.
+
+\bibitem[DziennikUSOSweb]{dziennikweb} \textit{Dziennik zmian USOSweb}, Między Uniwersyteckie Centrum ds. Informatyzacji, https://docs.usos.edu.pl/usosweb/6.4.0.0/changelog.html.
+
+\bibitem[JavaBean]{javabean} \textit{JavaBeans}, Sun Microsystems, 1997,\\*https://www.oracle.com/technetwork/java/javase/documentation/spec-136004.html.
+
+\bibitem[Hibernate]{hibernate} \textit{Chapter 2. Mapping Entities}, jboss.org,\\*https://docs.jboss.org/hibernate/stable/annotations/reference/en/html/entity.html.
 
 \bibitem[USOSstart]{usosstart} \textit{USOS}, Między Uniwersyteckie Centrum Informatyzacji, https://www.usos.edu.pl/usos-start.
-
-%\bibitem[DzUSOSadm]{dziennikadm} \textit{Dziennik zmian USOSadm}, Między Uniwersyteckie Centrum Informatyzacji, https://docs.usos.edu.pl/usosadm/6.4.0/dziennik_zmian.html.
-
-\bibitem[DzennikUSOSadm]{dziennikadm} \textit{Dziennik zmian USOSadm}, Między Uniwersyteckie Centrum Informatyzacji, https://docs.usos.edu.pl/usosadm/6.4.0/dziennik\_zmian.html.
-
-\bibitem[DzennikUSOSweb]{dziennikweb} \textit{Dziennik zmian USOSweb}, Między Uniwersyteckie Centrum Informatyzacji, https://docs.usos.edu.pl/usosweb/6.4.0.0/changelog.html.
 
 \end{thebibliography}
 
