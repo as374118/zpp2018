@@ -664,7 +664,7 @@ Bardzo często obiekty w bazie danych odwołują się do innych obiektów z bazy
 \item Leniwe -- zależne rekordy pobierane są dopiero później, na żądanie.
 \end{itemize}
 
-Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W przypadku, gdy zależne dane są potrzebne (na przykład trzeba je wyświetlić w tabeli), inicjuje się je podczas pobierania danych w klasie Service.
+Przyjętym standardem w USOSadm jest leniwe pobieranie zależnych rekordów. W przypadku, gdy zależne dane są potrzebne (na przykład trzeba je wyświetlić w tabeli), inicjuje się je podczas pobierania danych w klasie \textsl{Service}.
 
 \subsection{Szablony}
 Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istniejącymi standardami, każda tabela i formularz posiada swój własny, odrębny szablon.
@@ -678,7 +678,7 @@ Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na e
   \label{fig:modspoadm}
 \end{figure}
 
-\subsection{Kalendarze spotkań}
+\subsection{Kalendarze spotkań} %TODO: poprawić
 Na ekranie \ref{fig:kalenadm} należy wybrać kalendarz w górnej części ekranu. Wtedy na formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się uczestnicy tego spotkania. Po wybraniu uczestnika można zobaczyć jego notatki na dole ekranu.
 
 \begin{figure}[!]
@@ -907,11 +907,11 @@ System USOSweb wspiera dwa języki: polski i angielski. Dla wsparcia wielojęzyc
 \subsubsection{Wyjątki}
 Przy wysyłaniu danych do serwera w postaci JSON chcieliśmy otrzymać informację o~ewentualnym~błędzie również w postaci JSON. W tym celu rozbudowaliśmy mechanizm wyjątków używany w USOSweb dodając możliwość przekazywania wyniku wyjątku w postaci JSON wskazując odpowiednią opcję w momencie zgłaszania wyjątku, który jest obiektem klasy \textsl{ActionError}.
 \subsubsection{Błąd w Smarty}
-W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika \{textarea\} w~szablonach~Smarty. Po wskazaniu atrybutu \textsc{limit} w~danym~tagu, będąc w~kontekście okna modalnego cała zawartość strony znikała. Zmieniliśmy kod JavaScript obsługujący wypisywanie limitu oraz pozostałych dostępnych liter, naprawiając ten błąd.
+W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika \{textarea\} w~szablonach~Smarty. Wskazanie atrybutu \textsc{limit} w danym znaczniku, w kontekście okna modalnego, powodowało zniknięcie zawartości całej strony. Zmieniliśmy kod JavaScript obsługujący wypisywanie limitu oraz pozostałych dostępnych liter, naprawiając ten błąd.
 \subsection{Potencjalne ataki i zabezpieczenia} \label{subsec:bezpiecz}
 \subsubsection{CSRF}
 W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu, w którym zmieniamy dane, dodaliśmy sprawdzenie tokenu CSRF.
-\subsubsection{SQL injection}
+\subsubsection{SQL injection} % TODO poprawić
 Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje się wyłącznie jako tekst (nie jako część polecenia). Robi się to w celu zapobiegania atakom typu SQL-injection.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
