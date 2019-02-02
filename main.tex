@@ -911,8 +911,9 @@ W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika
 \subsection{Potencjalne ataki i zabezpieczenia} \label{subsec:bezpiecz}
 \subsubsection{CSRF}
 W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu, w którym zmieniamy dane, dodaliśmy sprawdzenie tokenu CSRF.
-\subsubsection{SQL injection} % TODO poprawić
-Każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli oraz przy każdym zapytaniu do bazy danych traktuje się wyłącznie jako tekst (nie jako część polecenia). Robi się to w celu zapobiegania atakom typu SQL-injection.
+\subsubsection{SQL injection}
+SQL injection - metoda ataku, wykorzystująca lukę w aplikacji i pozwalająca modyfikować zapytania do bazy danych SQL.
+W celu zapobiegania tego typu atakom w aplikacji serwerowej USOSweb każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
 %\section{Dokumentacja USOS}
