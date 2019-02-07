@@ -679,9 +679,17 @@ Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na e
 \end{figure}
 
 \subsection{Kalendarze spotkań}
-Kalendarz spotkań ma rozbudowaną strukturę \ref{fig:kalenadm}. Na ekranie należy wybrać kalendarz w górnej części ekranu. Wtedy na formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się uczestnicy tego spotkania. Po wybraniu uczestnika na dole ekranu można zobaczyć zakładki z szczegółowymi informacjami o powodach jego zapisu oraz ewentualnego odrzucenia, oraz jego notatkami ze spotkań \ref{fig:kalennotadm}.
+Widok Kalendarze spotkań ma rozbudowaną strukturę. Widać to na ekranie \ref{fig:kalenadm}. Należy wybrać kalendarz w górnej części ekranu. Wtedy na 
+formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się 
+uczestnicy tego spotkania. Po wybraniu uczestnika na dole ekranu można zobaczyć zakładki z szczegółowymi informacjami o powodach jego zapisu oraz 
+ewentualnego odrzucenia, oraz jego notatkami ze spotkań. Fragment dolnego formularza, na którym widać notatki studenta jest na ekranie 
+\ref{fig:kalennotadm}.
 
-Widok zawiera komplet formularzy do tworzenia i edycji wpisów w modelach. Obejmuje to formularz kalendarzy spotkań \ref{fig:kalenformkalenadm}, formularz spotkań \ref{fig:kalenformspotkadm} oraz formularz uczestników spotkania w wersji dla uczestnika z systemu USOS \ref{fig:kalenformuczusosadm}, oraz spoza systemu \ref{fig:kalenformucznieusosadm}.
+Widok zawiera komplet formularzy do tworzenia i edycji wpisów w modelach. Obejmuje to formularz kalendarzy spotkań, widoczny na ekranie 
+\ref{fig:kalenformkalenadm}, formularz spotkań, widoczny na ekranie \ref{fig:kalenformspotkadm}, formularz uczestników spotkania w wersji dla uczestnika 
+z systemu USOS \ref{fig:kalenformuczusosadm}, oraz spoza systemu \ref{fig:kalenformucznieusosadm}. Formularze te otwiera się odpowiednimi przyciskami 
+\textsf{+Dodaj}, które są w lewych górnych rogach odpowiednich formularzy lub przyciskami do edytowania, które są w każdym wierszu z tabeli po prawej 
+stronie.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_kalendarzy.jpg}
@@ -720,11 +728,11 @@ Widok zawiera komplet formularzy do tworzenia i edycji wpisów w modelach. Obejm
 \end{figure}
 
 \subsection{Notatki}
-Na ekranie \ref{fig:notatki} należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
+Formularz Notatki ma prostą strukturę. Widać to na ekranie \ref{fig:notatki}. Należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
 
-Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań.
-
-Aby stworzyć nową notatkę należy kliknąć przycisk \textsf{+Dodaj}, znajduje się on po lewej stronie między formularzem, na którym wybiera się studenta, a formularzem z notatkami. 
+Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań. Aby otworzyć ten 
+formularz należy użyć przycisku \textsf{+Dodaj} po lewej stronie pomiędzy formulrzem, w którym wyświetlają się studenci, a formularzem, w którym są 
+notatki lub użyć przycisku do modyfikowania, takie przyciski są po prawej stronie wiersza z tabeli.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_notatek.jpg}
@@ -741,7 +749,8 @@ Aby stworzyć nową notatkę należy kliknąć przycisk \textsf{+Dodaj}, znajduj
 \subsection{Słownik uzasadnień}
 Widok Słownika uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} umieszczono: jednostki, typy uzasadnień oraz ich nazwy po polsku i angielsku. Po wybraniu uzasadnienia na dole ekranu pojawi się jego treść po polsku i angielsku.
 
-Po wciśnięciu przycisku \textsf{Dodaj} lub przycisku przy uzasadnieniu do modyfikowania pojawi się formularz widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
+Po wciśnięciu przycisku \textsf{Dodaj}, przycisku po prawej stronie wiersza z tabeli lub przycisku na dole po lewej stronie pojawi się formularz 
+widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
 
 \begin{figure}[!]
   \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
@@ -942,8 +951,9 @@ W trakcie implementowania natknęliśmy się na~błąd w~implementacji znacznika
 \subsubsection{CSRF}
 W celu zapobiegania potencjalnym atakom CSRF w jedynym miejscu, w którym zmieniamy dane, dodaliśmy sprawdzenie tokenu CSRF.
 \subsubsection{SQL injection}
-SQL injection - metoda ataku, wykorzystująca lukę w aplikacji i pozwalająca modyfikować zapytania do bazy danych SQL.
-W celu zapobiegania tego typu atakom w aplikacji serwerowej USOSweb każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia potencjalnie niebezpiecznych symboli.
+SQL injection -- metoda ataku, której celem jest zmodyfikowanie zapytania do bazy danych przez wprowadzenie kodu SQL do parametru zapytania. W celu 
+zapobiegania tego typu atakom w aplikacji serwerowej USOSweb każdy parametr będący częścią zapytania do bazy przechodzi przez procedurę czyszczenia z 
+potencjalnie niebezpiecznych symboli.
 
 %\chapter{Dokumentacje użytkownika} \label{chap:dokumentacja_uzytkownika}
 %\section{Dokumentacja USOS}
