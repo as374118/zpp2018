@@ -467,6 +467,7 @@ W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy schemat bazy danych
 	\item limit miejsc rezerwowych,
 	\item opis.
 	\end{itemize}
+\newpage
 \item SPTK\textunderscore KALENDARZ\textunderscore SPOTKAN
 	\begin{itemize}
 	\item jednostka organizacyjna,
@@ -672,18 +673,18 @@ Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istnieją
 \subsection{Moduł Spotkania}
 Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na ekranie~\ref{fig:modspoadm}.
 
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{spotkaniaadm.jpg}
-  \caption{Dostęp do modułu Spotkania.}
-  \label{fig:modspoadm}
-\end{figure}
-
 \subsection{Kalendarze spotkań}
 Widok Kalendarze spotkań ma rozbudowaną strukturę. Widać to na ekranie \ref{fig:kalenadm}. Należy wybrać kalendarz w górnej części ekranu. Wtedy na 
 formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się 
 uczestnicy tego spotkania. Po wybraniu uczestnika na dole ekranu można zobaczyć zakładki z szczegółowymi informacjami o powodach jego zapisu oraz 
 ewentualnego odrzucenia, oraz jego notatkami ze spotkań. Fragment dolnego formularza, na którym widać notatki studenta jest na ekranie 
 \ref{fig:kalennotadm}.
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{spotkaniaadm.jpg}
+  \caption{Dostęp do modułu Spotkania.}
+  \label{fig:modspoadm}
+\end{figure}
 
 Widok zawiera komplet formularzy do tworzenia i edycji wpisów w modelach. Obejmuje to formularz kalendarzy spotkań, widoczny na ekranie 
 \ref{fig:kalenformkalenadm}, formularz spotkań, widoczny na ekranie \ref{fig:kalenformspotkadm}, formularz uczestników spotkania w wersji dla uczestnika 
@@ -872,38 +873,13 @@ Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dos
 
 Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jednostki studenta. Jeśli jest tylko jedna, to użytkownik zostanie przeniesiony do kalendarzy tej jednostki.
 
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
-  \caption{Wszystkie jednostki}
-  \label{fig:wszjweb}
-\end{figure}
-
-
 \subsection{Wybór spotkania}
 
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{kalendarzUSOSweb.jpg}
-  \caption{Kalendarze spotkań.}
-  \label{fig:kalweb}
-\end{figure}
-
 Na ekranie \ref{fig:kalweb} są widoczne dwa kalendarze spotkań. Aby zapisać się, należy kliknąć odpowiedni przycisk.
-
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
-  \caption{Zapis na spotkanie.}
-  \label{fig:zapisweb}
-\end{figure}
 
 Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybrać powód zapisu z listy, ewentualnie wpisać komentarz tekstowy i kliknąć przycisk \textsf{ZAPISZ}.
 
 \subsection{Moje spotkania}
-
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{mojeSpotkaniaUSOSweb.jpg}
-  \caption{Moje spotkania.}
-  \label{fig:mojeweb}
-\end{figure}
 
 Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
 
@@ -925,6 +901,31 @@ spotkania (terminy) z informacją o stanie danego spotkania w kontekście zalogo
 \end{itemize}
 
 Używając instrumentów językowych dostępnych w PHP taką strukturę najwygodniej przedstawić jako listę obiektów cykli, gdzie każdy z~nich ma pole \textsl{kalendarzeSpotkan}, będące listą obiektów kalendarzy spotkań w danym cyklu. Każdy z tych obiektów miałby pole spotkania, będące listą obiektów klasy \textsl{SpotkanieOsoba} i~zawierał całą informację pomocniczą. Relacyjne bazy danych SQL pozwalają na pobranie informacji wyłącznie w~postaci tabel. Należało więc rozwiązać następujący problem.
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
+  \caption{Wszystkie jednostki}
+  \label{fig:wszjweb}
+\end{figure}
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{kalendarzUSOSweb.jpg}
+  \caption{Kalendarze spotkań.}
+  \label{fig:kalweb}
+\end{figure}
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
+  \caption{Zapis na spotkanie.}
+  \label{fig:zapisweb}
+\end{figure}
+
+\begin{figure}[!]
+  \includegraphics[width=\linewidth]{mojeSpotkaniaUSOSweb.jpg}
+  \caption{Moje spotkania.}
+  \label{fig:mojeweb}
+\end{figure}
+
 
 \newpage
 \paragraph{W jaki sposób wyciągnąć taką drzewiastą strukturę z bazy danych w optymalny sposób?}
@@ -1019,7 +1020,7 @@ TODO
 
 \bibitem[Hibernate]{hibernate} \textit{Chapter 2. Mapping Entities}, jboss.org,\\*https://docs.jboss.org/hibernate/stable/annotations/reference/en/html/entity.html.
 
-\bibitem[USOSstart]{usosstart} \textit{USOS}, Między Uniwersyteckie Centrum Informatyzacji, https://www.usos.edu.pl/usos-start.
+\bibitem[USOSstart]{usosstart} \textit{USOS}, MiędzyUniwersyteckie Centrum ds. Informatyzacji, https://www.usos.edu.pl/usos-start.
 
 \end{thebibliography}
 
