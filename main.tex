@@ -99,7 +99,7 @@ Software evolution\\}
 \usepackage[tableposition = top]{caption}
 % \usepackage[none]{hyphenat}
 \usepackage{graphicx}
-\usepackage{float} 
+\usepackage{float}
 \usepackage[section]{placeins}
 
 \newlist{step}{enumerate}{10}
@@ -492,7 +492,6 @@ W wyniku wymagań i potrzeb implementacyjnych, utworzyliśmy schemat bazy danych
   \label{fig:schemat}
 \end{figure}
 
-%\FloatBarrier
 \section{Przykładowe scenariusze użycia modułu}
 Dla prostoty przyjęto dzień jako niepodzielną jednostkę czasu.
 
@@ -673,6 +672,13 @@ Wizualna prezentacja widoków jest definiowana w szablonach. Zgodnie z istnieją
 \subsection{Moduł Spotkania}
 Dostęp do modułu Spotkania został umieszczony w menu Studenci, co widać na ekranie~\ref{fig:modspoadm}.
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\linewidth]{spotkaniaadm.jpg}
+  \caption{Dostęp do modułu Spotkania}
+  \label{fig:modspoadm}
+\end{figure}
+
 \subsection{Kalendarze spotkań}
 Widok Kalendarze spotkań ma rozbudowaną strukturę. Widać to na ekranie \ref{fig:kalenadm}. Należy wybrać kalendarz w górnej części ekranu. Wtedy na 
 formularzu Spotkania w kalendarzu będą widoczne spotkania z tego kalendarza. Po wybraniu spotkania, na formularzu Uczestnicy spotkania, pojawią się 
@@ -680,10 +686,18 @@ uczestnicy tego spotkania. Po wybraniu uczestnika na dole ekranu można zobaczy�
 ewentualnego odrzucenia, oraz jego notatkami ze spotkań. Fragment dolnego formularza, na którym widać notatki studenta jest na ekranie 
 \ref{fig:kalennotadm}.
 
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{spotkaniaadm.jpg}
-  \caption{Dostęp do modułu Spotkania}
-  \label{fig:modspoadm}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{widok_kalendarzy.jpg}
+  \caption{Widok kalendarzy spotkań}
+  \label{fig:kalenadm}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{widok_kalendarzy_tabela_notatek.jpg}
+  \caption{Zakładka notatek}
+  \label{fig:kalennotadm}
 \end{figure}
 
 Widok zawiera komplet formularzy do tworzenia i edycji wpisów w modelach. Obejmuje to formularz kalendarzy spotkań, widoczny na ekranie 
@@ -692,37 +706,29 @@ z systemu USOSadm \ref{fig:kalenformuczusosadm}, oraz spoza systemu \ref{fig:kal
 \textsf{+Dodaj}, które są w lewych górnych rogach odpowiednich formularzy lub przyciskami do edytowania, które są w każdym wierszu z tabeli po prawej 
 stronie.
 
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{widok_kalendarzy.jpg}
-  \caption{Widok kalendarzy spotkań}
-  \label{fig:kalenadm}
-\end{figure}
-
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{widok_kalendarzy_tabela_notatek.jpg}
-  \caption{Zakładka notatek}
-  \label{fig:kalennotadm}
-\end{figure}
-
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_kalendarzy.jpg}
   \caption{Formularz dodawania kalendarza spotkań}
   \label{fig:kalenformkalenadm}
 \end{figure}
 
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_spotkan.jpg}
   \caption{Formularz dodawania spotkania}
   \label{fig:kalenformspotkadm}
 \end{figure}
 
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_uczestnikow_USOS.jpg}
   \caption{Formularz dodawania uczestnika spotkania z USOS}
   \label{fig:kalenformuczusosadm}
 \end{figure}
 
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_uczestnikow_nieUSOS.jpg}
   \caption{Formularz dodawania uczestnika spotkania spoza USOS}
   \label{fig:kalenformucznieusosadm}
@@ -731,17 +737,19 @@ stronie.
 \subsection{Notatki}
 Formularz Notatki ma prostą strukturę. Widać to na ekranie \ref{fig:notatki}. Należy wybrać studenta w górnej części ekranu, następnie notatkę w dolnej części ekranu.
 
-Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań. Aby otworzyć ten 
-formularz należy użyć przycisku \textsf{+Dodaj} po lewej stronie pomiędzy formulrzem, w którym wyświetlają się studenci, a formularzem, w którym są 
-notatki lub użyć przycisku do modyfikowania, takie przyciski są po prawej stronie wiersza z tabeli.
-
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{widok_notatek.jpg}
   \caption{Widok notatek ze spotkań}
   \label{fig:notatki}
 \end{figure}
 
-\begin{figure}[!]
+Na ekranie \ref{fig:formularz_notatek} widać formularz służący do dodawania lub modyfikowania notatek ze spotkań. Aby otworzyć ten 
+formularz należy użyć przycisku \textsf{+Dodaj} po lewej stronie pomiędzy formulrzem, w którym wyświetlają się studenci, a formularzem, w którym są 
+notatki lub użyć przycisku do modyfikowania, takie przyciski są po prawej stronie wiersza z tabeli.
+
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_notatek.jpg}
   \caption{Formularz dodawania notatki ze spotkania}
   \label{fig:formularz_notatek}
@@ -750,16 +758,18 @@ notatki lub użyć przycisku do modyfikowania, takie przyciski są po prawej str
 \subsection{Słownik uzasadnień}
 Widok Słownika uzasadnień jest bardzo prosty w budowie i obsłudze. Na ekranie \ref{fig:uzasadnienia} umieszczono: jednostki, typy uzasadnień oraz ich nazwy po polsku i angielsku. Po wybraniu uzasadnienia na dole ekranu pojawi się jego treść po polsku i angielsku.
 
-Po wciśnięciu przycisku \textsf{Dodaj}, przycisku po prawej stronie wiersza z tabeli lub przycisku na dole po lewej stronie pojawi się formularz 
-widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
-
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{widok_uzasadnien.jpg}
   \caption{Widok Słownika uzasadnień zapisów na spotkanie}
   \label{fig:uzasadnienia}
 \end{figure}
 
-\begin{figure}[!]
+Po wciśnięciu przycisku \textsf{Dodaj}, przycisku po prawej stronie wiersza z tabeli lub przycisku na dole po lewej stronie pojawi się formularz 
+widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do dodawania lub modyfikowania uzasadnień.
+
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{formularz_uzasadnien.jpg}
   \caption{Formularz dodawania uzasadnienia zapisu na spotkanie}
   \label{fig:formularz_uzasadnienia}
@@ -768,7 +778,6 @@ widoczny na ekranie \ref{fig:formularz_uzasadnienia}. Ten formularz służy do d
 %subsection{Tokeny}
 %Niestety nie udało się zaimplementować mechanizmu tokenów w ramach tego modułu. Pozostaje on jako %możliwa ścieżka dalszego rozwoju funkcjonalności.
 
-%\FloatBarrier
 \section{USOSweb} \label{sec:impusosweb}
 
 \subsection{Informacje ogólne}
@@ -871,39 +880,40 @@ Zestaw funkcji pomocniczych.
 \subsection{Wybór jednostki}
 Na ekranie \ref{fig:wszjweb} jest widoczna lista wyboru spośród wszystkich dostępnych jednostek (a nie tylko jednostek związanych ze studentem) oferujących spotkania. Jeśli jest tylko jedna, to użytkownik zostanie przeniesiony do kalendarzy tej jednostki. 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
+  \caption{Wszystkie jednostki}
+  \label{fig:wszjweb}
+\end{figure}
+
 Podobnie wygląda ekran \enquote{Moje jednostki}. Na tym ekranie są tylko jednostki studenta. Jeśli jest tylko jedna, to użytkownik zostanie przeniesiony do kalendarzy tej jednostki.
 
 \subsection{Wybór spotkania}
 
 Na ekranie \ref{fig:kalweb} są widoczne dwa kalendarze spotkań. Aby zapisać się, należy kliknąć odpowiedni przycisk.
 
-Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybrać powód zapisu z listy, ewentualnie wpisać komentarz tekstowy i kliknąć przycisk \textsf{ZAPISZ}.
-
-\subsection{Moje spotkania}
-
-Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
-
-%\FloatBarrier
-
-\begin{figure}[!]
-  \includegraphics[width=\linewidth]{wszystkie_jednostki_usosweb.jpg}
-  \caption{Wszystkie jednostki}
-  \label{fig:wszjweb}
-\end{figure}
-
-\begin{figure}[!]
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{kalendarzUSOSweb.jpg}
   \caption{Kalendarze spotkań}
   \label{fig:kalweb}
 \end{figure}
 
-\begin{figure}[!]
+Na ekranie \ref{fig:zapisweb} student, który chce zapisać się powinien wybrać powód zapisu z listy, ewentualnie wpisać komentarz tekstowy i kliknąć przycisk \textsf{ZAPISZ}.
+
+\begin{figure}[H]
+  \centering
   \includegraphics[width=\linewidth]{zapisUSOSweb.jpg}
   \caption{Zapis na spotkanie}
   \label{fig:zapisweb}
 \end{figure}
 
-\begin{figure}[!]
+\subsection{Moje spotkania}
+
+Na ekranie \ref{fig:mojeweb} widać spotkania, na które student złożył prośbę o zapisanie. Można sprawdzić, czy prośba została zaakceptowana.
+
+\begin{figure}[H]
   \includegraphics[width=\linewidth]{mojeSpotkaniaUSOSweb.jpg}
   \caption{Moje spotkania}
   \label{fig:mojeweb}
